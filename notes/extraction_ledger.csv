@@ -1,0 +1,426 @@
+source_pdf,page,lecture_or_lab,item_type,short_title,covered_in_notebook_section,status
+Lecture 1 - 8.pdf.pdf,1,Lecture 1,figure,Figure / Diagram on Lecture page 1,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,2,Lecture 1,figure,Figure / Diagram on Lecture page 2,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,2,Lecture 1,example,understand this subject is by example. We begin with two extremely humble equati,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,3,Lecture 1,figure,Figure / Diagram on Lecture page 3,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,3,Lecture 1,remark,Note: Plotting lines must be practiced more apart from these notes. What is a sy,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,4,Lecture 1,figure,Figure / Diagram on Lecture page 4,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,5,Lecture 1,figure,Figure / Diagram on Lecture page 5,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,6,Lecture 1,figure,Figure / Diagram on Lecture page 6,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,6,Lecture 1,example,"The above examples show that systems of linear equations can have no solutions, ","Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,6,Lecture 1,theorem,Theorem 1 — Trichotomy for linear systems,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,6,Lecture 1,remark,"Note: When a system of linear equations has at least one solution (i.e., in case","Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,6,Lecture 1,theorem,"theorem), it is called consistent. If it has no solutions (i.e., in case (a) of ","Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,7,Lecture 1,figure,Figure / Diagram on Lecture page 7,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,7,Lecture 1,definition,which was a deﬁnition given during the school days. Now let’s learn what gives b,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,8,Lecture 1,figure,Figure / Diagram on Lecture page 8,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,8,Lecture 1,exercise,Q.1) Sketch the following lines: x + 2y = 2 x →y = 2,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,9,Lecture 1,figure,Figure / Diagram on Lecture page 9,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,9,Lecture 1,exercise,"Q.2) For the equation: x + y = 4, 2x →2y = 4, draw the row picture and column pi","Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,9,Lecture 1,exercise,Q.3) Find the combinations of the columns (using column picture representation) ,"Section 1: Linear Systems, Row Picture, and Column Picture",covered
+Lecture 1 - 8.pdf.pdf,10,Lecture 2,figure,Figure / Diagram on Lecture page 10,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,11,Lecture 2,figure,Figure / Diagram on Lecture page 11,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,11,Lecture 2,formula,A colour recipe is 2r + g + 0b. Compute the resulting colour vector:,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,11,Lecture 2,exercise,Predict and then compute: Bach + MLK = ,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,11,Lecture 2,example,In both examples: • the numbers on the outside told us how much of each object t,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,12,Lecture 2,formula,Let us move a step forward. Let A = ,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,13,Lecture 2,figure,Figure / Diagram on Lecture page 13,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,13,Lecture 2,example,"Later in the sheet, the cooking example will give these dimensions concrete mean",Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,14,Lecture 2,figure,Figure / Diagram on Lecture page 14,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,15,Lecture 2,figure,Figure / Diagram on Lecture page 15,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,15,Lecture 2,exercise,A question to keep alive Matrices care whether a multiplier is placed on the lef,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,16,Lecture 2,figure,Figure / Diagram on Lecture page 16,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,16,Lecture 2,formula,From One Recipe to a Recipe Book One recipe makes one dish Suppose a canteen wor,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,16,Lecture 2,formula,"One recipe makes one dish Suppose a canteen works with three ingredients: Rice,",Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,16,Lecture 2,formula,Why must the recipe vector have exactly three entries? What three quantities sho,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,17,Lecture 2,figure,Figure / Diagram on Lecture page 17,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,17,Lecture 2,formula,Three recipes make a recipe book The canteen now wants three dishes: cv1 =,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,17,Lecture 2,formula,"We could calculate Acv1, Acv2, and Acv3 separately. Instead, place the three rec",Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,17,Lecture 2,exercise,Predict before calculating: • What should one column of AB represent? • What sho,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,17,Lecture 2,exercise,• Predict the dimensions of AB and attach meaning to both dimensions. Column Way,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,18,Lecture 2,figure,Figure / Diagram on Lecture page 18,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,18,Lecture 2,formula,A vector on the right is one recipe. A matrix on the right is a recipe book: sev,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,18,Lecture 2,formula,MUL-TEA-PLICATION: one recipe vector brews one cup; one recipe matrix brews an e,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,18,Lecture 2,definition,Row Way: one property across the whole menu Take the cost row of A: ),Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,18,Lecture 2,definition,Rows of AB : one property across every dish. Column Way and Row Way are not unre,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,18,Lecture 2,exercise,around di!erent questions. Why the inner dimensions match Write dimensions with ,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,19,Lecture 2,figure,Figure / Diagram on Lecture page 19,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,19,Lecture 2,formula,"A recipe book has only two ingredient rows, but the ingredient-proﬁle matrix con",Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,19,Lecture 2,formula,Three colour recipes are c1 = '1,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,19,Lecture 2,formula,Place them into a palette-recipe matrix: D = '1,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,20,Lecture 2,figure,Figure / Diagram on Lecture page 20,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,20,Lecture 2,formula,Base-light matrix ↑colour-recipe matrix = palette matrix. The physical objects c,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,20,Lecture 2,formula,dish recipes ﬁnished menu Colour,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,20,Lecture 2,formula,colour recipes palette Binary Images: Matrices You Can See,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,21,Lecture 2,figure,Figure / Diagram on Lecture page 21,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,22,Lecture 2,figure,Figure / Diagram on Lecture page 22,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,22,Lecture 2,exercise,"Before multiplying, predict which expression ﬂips the picture top-to-bottom and ",Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,23,Lecture 2,figure,Figure / Diagram on Lecture page 23,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,24,Lecture 2,figure,Figure / Diagram on Lecture page 24,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,24,Lecture 2,example,"any cell. Examples include the identity, reversal matrix F, and other permutatio",Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,25,Lecture 2,figure,Figure / Diagram on Lecture page 25,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,27,Lecture 2,figure,Figure / Diagram on Lecture page 27,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,27,Lecture 2,exercise,One pattern I can now predict without calculating every entry is Does matrix mul,Section 2: Matrix Multiplication and Network Transformations,covered
+Lecture 1 - 8.pdf.pdf,28,Lecture 3,figure,Figure / Diagram on Lecture page 28,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,28,Lecture 3,formula,"Sheet 3: One Recipe, Inﬁnite Menu Vectors, Linear Combinations, Span and Ax = b ","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,28,Lecture 3,formula,"• recognise the same “scale and add” idea in colours, sounds, and recipes; • dis","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,29,Lecture 3,figure,Figure / Diagram on Lecture page 29,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,29,Lecture 3,definition,"deﬁnition, write what comes to mind. What is a vector? Your Answer:","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,29,Lecture 3,exercise,return to the question “What is a vector?” and broaden the answer. Three notatio,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,30,Lecture 3,figure,Figure / Diagram on Lecture page 30,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,31,Lecture 3,figure,Figure / Diagram on Lecture page 31,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,31,Lecture 3,formula,Recipe If R = ,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,31,Lecture 3,formula,"Recipe mixing In each picture, one choice of coe”cients gives one output. The sp","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,32,Lecture 3,figure,Figure / Diagram on Lecture page 32,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,33,Lecture 3,figure,Figure / Diagram on Lecture page 33,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,33,Lecture 3,definition,"Property 1: Commutativity of vector addition For vectors of the same space, v + ","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,33,Lecture 3,definition,Property 2: Associativity of vector addition (u + v) + w = u + (v + w). Delivery,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,34,Lecture 3,figure,Figure / Diagram on Lecture page 34,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,34,Lecture 3,definition,Property 3: Distributivity over vector addition ω(v + w) = ωv + ωw. Digital Map ,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,34,Lecture 3,definition,Property 4: Distributivity over scalar addition (c + d)v = cv + dv. For a sound ,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,34,Lecture 3,definition,Property 5: Additive identity v + 0 = v. The zero vector looks di!erent in di!er,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,34,Lecture 3,definition,Property 6: Additive inverse v + (↓v) = 0. Image Enlargement: associativity of s,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,35,Lecture 3,figure,Figure / Diagram on Lecture page 35,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,35,Lecture 3,definition,Property 7: Associativity of scalar multiplication c(dv) = (cd)v. These rules ar,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,35,Lecture 3,definition,Look at these three expressions before reading the deﬁnition. Colour: 0.2r + 0.5,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,35,Lecture 3,formula,Recipe: 1 R + 2 P + 1 2V.,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,35,Lecture 3,definition,"Deﬁnition: Linear combination A linear combination of v1, . . . , vk is any vect","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,36,Lecture 3,figure,Figure / Diagram on Lecture page 36,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,36,Lecture 3,formula,Recipe one chosen dish proﬁle all mathematically reachable pro-,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,37,Lecture 3,formula,(c) Recipe. Suppose R = ,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,38,Lecture 3,figure,Figure / Diagram on Lecture page 38,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,38,Lecture 3,definition,"Deﬁnition: Span span{v1, . . . , vk} = {c1v1 + · · · + ckvk | c1, . . . , ck ↑R}","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,39,Lecture 3,figure,Figure / Diagram on Lecture page 39,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,39,Lecture 3,exercise,The same question in three worlds r g,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,39,Lecture 3,remark,Physical Note: Real colour intensities and recipe amounts are usually restricted,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,39,Lecture 3,example,"Real colour intensities and recipe amounts are usually restricted, for example t","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,40,Lecture 3,figure,Figure / Diagram on Lecture page 40,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,40,Lecture 3,formula,The colour-recipe question and the matrix equation ask the same thing in two lan,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,41,Lecture 3,figure,Figure / Diagram on Lecture page 41,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,42,Lecture 3,figure,Figure / Diagram on Lecture page 42,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,42,Lecture 3,example,(d) Use one intuitive example to explain the same distinction. Choose one: • one,"Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,42,Lecture 3,formula,"• one recipe versus all possible recipes. Your Answer: In the next sheets, we wi","Section 3: Linear Combinations, Span, and Vector Spaces",covered
+Lecture 1 - 8.pdf.pdf,43,Lecture 4,figure,Figure / Diagram on Lecture page 43,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,44,Lecture 4,figure,Figure / Diagram on Lecture page 44,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,44,Lecture 4,exercise,as a question about a target: Which coe!cients combine the columns of A to produ,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,44,Lecture 4,exercise,A useful question Do we really need to solve the equations exactly as they were ,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,44,Lecture 4,exercise,That question is the beginning of Gaussian elimination. Warm-up: the rope activi,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,44,Lecture 4,exercise,"Warm-up: the rope activity, revisited In the classroom activity, two taut ropes ","Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,44,Lecture 4,exercise,"In the classroom activity, two taut ropes represented two lines: x + y = 5 2x →y","Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,45,Lecture 4,figure,Figure / Diagram on Lecture page 45,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,46,Lecture 4,figure,Figure / Diagram on Lecture page 46,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,46,Lecture 4,exercise,Here is the key change from the old activity. We will not ask you to make a rope,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,47,Lecture 4,figure,Figure / Diagram on Lecture page 47,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,47,Lecture 4,formula,Now we move from two lines in R2 to three unknown recipe amounts. Three premixed,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,48,Lecture 4,figure,Figure / Diagram on Lecture page 48,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,49,Lecture 4,figure,Figure / Diagram on Lecture page 49,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,50,Lecture 4,figure,Figure / Diagram on Lecture page 50,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,50,Lecture 4,formula,Recipe for a Perfect Matrix - (using Gaussian Elimination) 1. Find the ﬁrst non-,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,50,Lecture 4,example,Solved Example Apply Gaussian Elimination to the following matrix: A =,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,52,Lecture 4,figure,Figure / Diagram on Lecture page 52,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,52,Lecture 4,formula,Step 1: Writing the Augmented matrix.  ,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,52,Lecture 4,formula,"Step 2: Eliminate enteries below pivot in column 1. R2 ↓R2 →2R1, R3 ↓R3 →R1","Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,52,Lecture 4,formula,Step 3: Perform the same elimination process for pivot in column 2 R3 ↓R3 →R2 ,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,52,Lecture 4,formula,Step 4: Back Substitution to get the solutions! z = 6 3 =↑,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,52,Lecture 4,formula,A ﬁnished cake sits before you. Its recipe card has vanished. Three premix jars ,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,52,Lecture 4,formula,Mission: Recover the secret recipe without opening the cake. The three premixes ,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,53,Lecture 4,formula,(c) Recover the recipe. Your Answer: (d) Explain in one sentence why this is the,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,54,Lecture 4,figure,Figure / Diagram on Lecture page 54,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,55,Lecture 4,figure,Figure / Diagram on Lecture page 55,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,55,Lecture 4,exercise,Activity! Create a system of two linear equations with two variables that have n,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,56,Lecture 4,figure,Figure / Diagram on Lecture page 56,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,56,Lecture 4,definition,Deﬁnition The rank of coe!cent matrix A is equal to the number of pivots after t,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,57,Lecture 4,figure,Figure / Diagram on Lecture page 57,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,57,Lecture 4,remark,Sheet 4 takeaway: Same solution. Simpler system. Zeros with meaning. 15,"Section 4: Gaussian Elimination, Row Operations, and Rank",covered
+Lecture 1 - 8.pdf.pdf,58,Lecture 5,figure,Figure / Diagram on Lecture page 58,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,59,Lecture 5,figure,Figure / Diagram on Lecture page 59,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,59,Lecture 5,remark,Flashback: what did Gaussian elimination really do? FLASHBACK FROM SHEET 4 In Sh,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,59,Lecture 5,remark,"FLASHBACK FROM SHEET 4 In Sheet 4, we did not treat row operations as random tri",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,59,Lecture 5,exercise,PREDICT Suppose tomorrow you must perform exactly the same row operation on a di,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,59,Lecture 5,exercise,Your prediction: R2 →R2 ↑2R1 ?,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,60,Lecture 5,figure,Figure / Diagram on Lecture page 60,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,60,Lecture 5,exercise,"PREDICT Before multiplying anything: if E1 acts on a matrix A from the left, whi",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,60,Lecture 5,definition,Deﬁnition An elementary matrix is obtained by performing exactly one elementary ,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,61,Lecture 5,figure,Figure / Diagram on Lecture page 61,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,61,Lecture 5,exercise,Predict the e!ect on A R1 ↓R2 S =,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,61,Lecture 5,exercise,PREDICT LEFT OR RIGHT? We want to perform a row operation on A using an elementa,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,62,Lecture 5,figure,Figure / Diagram on Lecture page 62,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,62,Lecture 5,remark,"FLASHBACK FROM SHEETS 2 AND 3 In the kitchen model, a matrix turns an ingredient",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,62,Lecture 5,definition,"In the kitchen model, a matrix turns an ingredient recipe into a property vector",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,62,Lecture 5,exercise,"PREDICT Across all three orders, what changes and what stays ﬁxed? Stays ﬁxed:",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,63,Lecture 5,figure,Figure / Diagram on Lecture page 63,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,63,Lecture 5,formula,Step 1: eliminate below the ﬁrst pivot Choose the two row operations: R2 →,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,63,Lecture 5,formula,Step 2: eliminate below the second pivot Choose the next operation: R3 →,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,63,Lecture 5,exercise,PREDICT Did we use a row swap anywhere? ↭Yes,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,63,Lecture 5,formula,"Step 3: store each elimination move Let E1, E2, E3 store the three row-addition ",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,64,Lecture 5,figure,Figure / Diagram on Lecture page 64,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,64,Lecture 5,formula,Step 4: compress the whole elimination path Because the stored row moves send A ,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,65,Lecture 5,figure,Figure / Diagram on Lecture page 65,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,66,Lecture 5,figure,Figure / Diagram on Lecture page 66,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,66,Lecture 5,formula,Your ﬁnal recipe: x2 = ,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,67,Lecture 5,figure,Figure / Diagram on Lecture page 67,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,68,Lecture 5,exercise,"PREDICT A ﬁxed matrix A will be used with 1000 di!erent right-hand sides b1, . .",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,69,Lecture 5,exercise,"Using your factors from Question 2, solve Bx = ",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,figure,Figure / Diagram on Lecture page 70,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,exercise,Do not confuse the tool with the next question LU is a powerful computational or,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,exercise,LU is a powerful computational organisation of elimination. But a deeper questio,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,formula,"Do not answer that with a slogan about LU. In the next sheet, we will step back ",Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,exercise,simpler question: what kind of outputs can A actually produce? PREDICT : QUESTIO,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,exercise,PREDICT : QUESTION FOR SHEET 6 If one column of A can already be built from the ,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,exercise,Your prediction: Summary of the sheet Complete each sentence in your own words.,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,70,Lecture 5,formula,The recipe changed. The kitchen did not. 13,Section 5: Elementary Matrices and LU Decomposition,covered
+Lecture 1 - 8.pdf.pdf,71,Lecture 6,figure,Figure / Diagram on Lecture page 71,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,72,Lecture 6,figure,Figure / Diagram on Lecture page 72,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,72,Lecture 6,remark,"Flashback: two dials, but how much freedom? In Sheet 3, a choice of coe!cients g","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,72,Lecture 6,exercise,PREDICT Both machines have two columns. Do they have the same amount of freedom?,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,73,Lecture 6,figure,Figure / Diagram on Lecture page 73,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,73,Lecture 6,exercise,PREDICT The computer displays three ﬁles. Does that mean we have three genuinely,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,74,Lecture 6,figure,Figure / Diagram on Lecture page 74,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,74,Lecture 6,exercise,"PREDICT Can you turn the three knobs to values that are not all zero, yet make t","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,74,Lecture 6,definition,"Deﬁnition A set of vectors {v1, . . . , vn} is linearly dependent if there is a ","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,75,Lecture 6,example,"For the audio example, the redundancy was easy to spot. For a larger matrix it m","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,75,Lecture 6,exercise,is exactly the same question as c1v1 + · · · + cnvn = 0. Use the elimination ski,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,76,Lecture 6,figure,Figure / Diagram on Lecture page 76,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,76,Lecture 6,exercise,"For each set below, ﬁrst predict how many genuinely independent directions are p","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,76,Lecture 6,exercise,PREDICT Suppose we want one number attached to a matrix that reports how many ge,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,77,Lecture 6,figure,Figure / Diagram on Lecture page 77,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,78,Lecture 6,figure,Figure / Diagram on Lecture page 78,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,78,Lecture 6,exercise,"PREDICT If a new column is already a linear combination of the old columns, does","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,79,Lecture 6,figure,Figure / Diagram on Lecture page 79,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,80,Lecture 6,figure,Figure / Diagram on Lecture page 80,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,80,Lecture 6,exercise,PREDICT Complete the rule before reading the next page: Ax = b is solvable ↔↗ran,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,81,Lecture 6,figure,Figure / Diagram on Lecture page 81,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,81,Lecture 6,exercise,Do not memorize the three lines as unrelated rules. Ask two questions in order: ,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,81,Lecture 6,formula,"Before choosing b, predict: if a target is reachable, will the recipe be unique ","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,81,Lecture 6,formula,recipes? Three systems. Three outcomes. For each system:,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,81,Lecture 6,exercise,1. predict the outcome; 2. row-reduce enough to ﬁnd rank(A) and rank([A | b]); 3,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,82,Lecture 6,figure,Figure / Diagram on Lecture page 82,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,82,Lecture 6,exercise,DO : System A /︂ x1 + x2 = 4,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,82,Lecture 6,exercise,DO : System B /︂ x1 + 2x2 = 3,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,82,Lecture 6,exercise,DO : System C /︂ x1 + 2x2 = 3,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,82,Lecture 6,exercise,Compress the lecture into four questions What can the machine make?,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,83,Lecture 6,figure,Figure / Diagram on Lecture page 83,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,83,Lecture 6,exercise,3. Predict without multiplying entry-by-entry: A(x1 →x2) = )︄,"Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,83,Lecture 6,exercise,"PREDICT The control setting changed, but the output did not. What kinds of nonze","Section 6: Linear Independence, Column Space, and Redundancy",covered
+Lecture 1 - 8.pdf.pdf,84,Lecture 7,figure,Figure / Diagram on Lecture page 84,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,85,Lecture 7,figure,Figure / Diagram on Lecture page 85,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,85,Lecture 7,exercise,"PREDICT If the matrix is hungry for vectors, where do those input vectors come f","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,86,Lecture 7,figure,Figure / Diagram on Lecture page 86,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,86,Lecture 7,exercise,Two di!erent questions on two sides of the machine Right-side question: What can,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,86,Lecture 7,exercise,"Right-side question: What can the machine make? Out of all vectors living in Rm,","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,86,Lecture 7,exercise,Left-side question: What can the machine not see? Could a nonzero input enter th,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,87,Lecture 7,figure,Figure / Diagram on Lecture page 87,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,87,Lecture 7,example,Example 1 - Identity machine A = ⌉︄,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,87,Lecture 7,example,Example 2: Linearly Dependent column vectors A = ⌉︄,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,87,Lecture 7,example,Example 3 - Reachable output versus invisible input A = ⌉︄,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,88,Lecture 7,figure,Figure / Diagram on Lecture page 88,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,88,Lecture 7,exercise,PREDICT Without solving Ax = b: 1. Which target can the machine reach?,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,88,Lecture 7,formula,"3. For the reachable target, could di!erent input recipes produce the same outpu","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,88,Lecture 7,example,"Example 4 - An invisible axis, a reachable plane A = )︄","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,89,Lecture 7,figure,Figure / Diagram on Lecture page 89,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,89,Lecture 7,example,"Example 5 - An invisible plane, a reachable axis A = )︄","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,90,Lecture 7,figure,Figure / Diagram on Lecture page 90,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,90,Lecture 7,exercise,PREDICT (do not formalise this yet) Compare Examples 4 and 5. When more input di,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,90,Lecture 7,example,"Compare Examples 4 and 5. When more input directions disappear, what seems to ha","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,91,Lecture 7,figure,Figure / Diagram on Lecture page 91,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,91,Lecture 7,exercise,PREDICT The output machine hears exactly the same thing. Were the controls the s,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,92,Lecture 7,figure,Figure / Diagram on Lecture page 92,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,92,Lecture 7,exercise,PREDICT The zero input x = 0 always works. Does that alone prove that the column,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,93,Lecture 7,figure,Figure / Diagram on Lecture page 93,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,94,Lecture 7,figure,Figure / Diagram on Lecture page 94,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,94,Lecture 7,exercise,Two questions. Two sides. One matrix. INPUT SPACE Rn N(A),"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,94,Lecture 7,exercise,Question 1 - OUTPUT SIDE: Can the machine reach target b? b ≃C(A)? Question 2 - ,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,94,Lecture 7,exercise,"Question 2 - INPUT SIDE: If it reaches b, can we change the input without changi","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,95,Lecture 7,figure,Figure / Diagram on Lecture page 95,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,95,Lecture 7,exercise,PREDICT What happens if we change the working input by an invisible input change,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,95,Lecture 7,exercise,Predict ﬁrst: Now calculate: A(xp + xn) = Axp + Axn =,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,96,Lecture 7,figure,Figure / Diagram on Lecture page 96,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,96,Lecture 7,example,See the geometry in the smallest possible example Let A =,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,96,Lecture 7,exercise,Sheet 6 answered the ﬁrst question: Ax = b has a solution ↔↑b ≃C(A). Now null sp,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,96,Lecture 7,exercise,Now null space answers the next question. PREDICT Suppose a solution exists.,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,96,Lecture 7,exercise,PREDICT Suppose a solution exists. Case 1: N(A) = {0}. How many vectors are in x,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,97,Lecture 7,figure,Figure / Diagram on Lecture page 97,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,97,Lecture 7,exercise,The two questions are di!erent: 1. Existence: Can the target be reached? 2. Uniq,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,98,Lecture 7,figure,Figure / Diagram on Lecture page 98,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,98,Lecture 7,formula,"DO Step 1 - One working meal Check that xp works. In words, this means one milk ","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,98,Lecture 7,exercise,PREDICT The sandwich column is visibly aS = aPB + 2aB.,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,99,Lecture 7,figure,Figure / Diagram on Lecture page 99,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,99,Lecture 7,exercise,"Across all four scenarios, the null space answers the same structural question: ","Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,100,Lecture 7,figure,Figure / Diagram on Lecture page 100,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,101,Lecture 7,figure,Figure / Diagram on Lecture page 101,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,101,Lecture 7,exercise,Later we will ask a more abstract question: what can a vector space itself be? S,"Section 7: Null Space, Subspaces, and Complete Solutions",covered
+Lecture 1 - 8.pdf.pdf,102,Lecture 8,figure,Figure / Diagram on Lecture page 102,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,102,Lecture 8,formula,• ﬁnd a complete solution step by step; • ﬁnd bases for N(A) and C(A) and interp,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,figure,Figure / Diagram on Lecture page 103,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,formula,Recipe to cook the Complete Solution Step 1: Apply Gaussian Elimination.,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,formula,Step 1: Apply Gaussian Elimination. Step 2:,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,formula,Step 2: Find the null space: xn. Step 3:,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,formula,Step 3: Find the particular solution (xP) by substituting free vari- ables as ze,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,formula,Step 4: Add them. xC = xP + xn CHECKPOINT,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,exercise,PREDICT Suppose N(A) = {0} and we ﬁnd one working input xp for a reachable targe,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,example,Example 1 - Complete solution of the diet system We return to the same simpliﬁed,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,103,Lecture 8,formula,Step 1 - Solve Ax = 0 Row echelon form gives REF(A) =,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,104,Lecture 8,figure,Figure / Diagram on Lecture page 104,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,104,Lecture 8,formula,"Step 2 - Find one particular solution For the augmented system, the same elimina",Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,104,Lecture 8,formula,"Step 3 - Add the null-space change From Step 1, N(A) =",Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,104,Lecture 8,formula,"From Step 1, N(A) = ⌉︄",Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,105,Lecture 8,figure,Figure / Diagram on Lecture page 105,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,105,Lecture 8,example,Example 2 - You complete the full solution Consider A =,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,105,Lecture 8,formula,DO Step 1 - Null space Row reduce A and solve Ax = 0. Your Answer:,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,105,Lecture 8,formula,DO Step 2 - One working input Find one xp satisfying Axp = b. Your Answer:,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,105,Lecture 8,formula,DO Step 3 - Complete solution x = xp + xn = Your Answer:,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,106,Lecture 8,figure,Figure / Diagram on Lecture page 106,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,106,Lecture 8,exercise,"PREDICT For R2, which set is enough to build every vector without redundancy? ⎛/",Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,107,Lecture 8,figure,Figure / Diagram on Lecture page 107,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,108,Lecture 8,figure,Figure / Diagram on Lecture page 108,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,108,Lecture 8,exercise,PREDICT For the matrix B =,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,109,Lecture 8,figure,Figure / Diagram on Lecture page 109,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,109,Lecture 8,exercise,PREDICT The vector y =,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,110,Lecture 8,figure,Figure / Diagram on Lecture page 110,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,110,Lecture 8,example,"For this 2 ↓2 example, N(AT ) = span{ ⎡ →2",Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,110,Lecture 8,example,"Example 4 - A 2 ↓3 matrix: all outputs reachable, many inputs Consider A =",Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,111,Lecture 8,figure,Figure / Diagram on Lecture page 111,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,112,Lecture 8,figure,Figure / Diagram on Lecture page 112,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,112,Lecture 8,exercise,PREDICT Take the null vector z =,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,113,Lecture 8,figure,Figure / Diagram on Lecture page 113,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,114,Lecture 8,figure,Figure / Diagram on Lecture page 114,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,115,Lecture 8,figure,Figure / Diagram on Lecture page 115,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,115,Lecture 8,exercise,PREDICT Why must the four entries of Bf always add to zero? 14,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,116,Lecture 8,figure,Figure / Diagram on Lecture page 116,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,116,Lecture 8,exercise,"The four spaces explain four di""erent network questions For the 4 ↓5 incidence m",Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lecture 1 - 8.pdf.pdf,116,Lecture 8,exercise,PREDICT The graph has 4 nodes but the incidence matrix has rank 3. What repeated,Section 8: The Four Fundamental Subspaces and Network Duality,covered
+Lab 1 - 8.pdf,1,Lab 1,figure,Lab Figure / Graph / Diagram on page 1,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,1,Lab 1,exercise,Q. 1) Write the following system in matrix notation: 2x + y →z = 4 x →z = 1 3x +,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,1,Lab 1,exercise,Q. 2) Sketch x + y = 3 x →y = 1 State the number of solutions.,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,1,Lab 1,exercise,Q. 3) Convert the following matrix equations back into systems of linear equatio,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,1,Lab 1,exercise,"Q. 4) Draw the two pictures in two planes for the equations x →2y = 0, x + y = 6",Lab 1 Solutions,covered
+Lab 1 - 8.pdf,1,Lab 1,exercise,"Q. 5) Fill in the blanks: (a) The intersection of two planes through (0,0,0) is",Lab 1 Solutions,covered
+Lab 1 - 8.pdf,1,Lab 1,exercise,"Q. 6) Starting with x + 4y = 7, ﬁnd the equation for the parallel line through x",Lab 1 Solutions,covered
+Lab 1 - 8.pdf,1,Lab 1,exercise,Q. 7) Sketch the following three lines: 2x + y = 5 x →y = 1 3x = 6 1,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,2,Lab 1,exercise,Q. 8) For the system 2x + y = 7 x →2y = →1 draw the row picture and the column p,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,2,Lab 1,exercise,"Q. 9) Without solving the systems algebraically, try to answer whether each syst",Lab 1 Solutions,covered
+Lab 1 - 8.pdf,2,Lab 1,exercise,Q. 10) A cafe sells only co!ee and sandwiches. Two co!ees and one sandwich cost,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,2,Lab 1,exercise,Q. 11) Consider x →y = 2 3x →3y = k Find the values of k for which the system ha,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,2,Lab 1,exercise,Q. 12) The following equations are certain to have the solution x = y = 0. Using,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,2,Lab 1,exercise,Q. 13) Explain why does the following system u + v + w = 2 u + 2v + 3w = 1 v + 2,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,3,Lab 1,exercise,Q. 14) Consider the following linear system: u   1 1 0  + v   1 2 1  + w,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,3,Lab 1,exercise,"Q. 15) In the following equations, the third column (multiplying w) is the same",Lab 1 Solutions,covered
+Lab 1 - 8.pdf,3,Lab 1,exercise,Challenge Q. 16) Describe the intersection of the three planes u + v + w + z = 6,Lab 1 Solutions,covered
+Lab 1 - 8.pdf,4,Lab 2,figure,Lab Figure / Graph / Diagram on page 4,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,4,Lab 2,exercise,"Q.1) A startup manufactures three products: laptops, tablets and smart watches.",Lab 2 Solutions,covered
+Lab 1 - 8.pdf,4,Lab 2,exercise,Q.2) A music recommendation system stores user preferences as u and song charact,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,4,Lab 2,exercise,Q.3) Tiny sound clips consisting of amplitudes of the Bach and MLK audios from t,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,5,Lab 2,figure,Lab Figure / Graph / Diagram on page 5,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,5,Lab 2,exercise,"Q.4) A 5 ↑5 matrix contains zeros everywhere except aii = 1 and ai,5 = 2 for i =",Lab 2 Solutions,covered
+Lab 1 - 8.pdf,5,Lab 2,exercise,Q.5) Three stage lamps are pointed at a white wall. Each lamp’s colour is stored,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,6,Lab 2,exercise,Q.6) A communication system receives signals from six antennas. Their signal str,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,7,Lab 2,exercise,Q.7) Let A be the 3 ↑3 matrix of subjects: A =   ⊋ ⊋ Algebra ⊋ Matrix multipli,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,7,Lab 2,exercise,Q.8) A social network contains 10 creators. Matrix A is a 10 × 10 inﬂuence matri,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,8,Lab 2,figure,Lab Figure / Graph / Diagram on page 8,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,8,Lab 2,exercise,Challenge: Can a Matrix Count Routes?,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,8,Lab 2,exercise,Q.9) Consider the transportation network: A B C D E Let M be its adjacency matri,Lab 2 Solutions,covered
+Lab 1 - 8.pdf,9,Lab 3,figure,Lab Figure / Graph / Diagram on page 9,Lab 3 Solutions,covered
+Lab 1 - 8.pdf,9,Lab 3,exercise,"Q.1) Given two vectors: v1 = !1 0 "" , v2 = !0 1 "" (a) Compute 3v1 + 2v2 (b) 3v1",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,9,Lab 3,exercise,"Q.2) A linear combination produces vector, whereas the span describes vectors th",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,9,Lab 3,exercise,"Q.3) A drone has two basic movement commands: v = !2 1 "" , w = !1 2 "" . Without",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,9,Lab 3,exercise,Q.4) A digital artist creates colours using two basis colours: R =   255 0 0 ,Lab 3 Solutions,covered
+Lab 1 - 8.pdf,9,Lab 3,exercise,"Q.5) A sailboat can move according to v = !4 0 "" and w = !0 3 "" . Express Three",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,10,Lab 3,figure,Lab Figure / Graph / Diagram on page 10,Lab 3 Solutions,covered
+Lab 1 - 8.pdf,10,Lab 3,exercise,Q.6) Consider the following three systems of two linear equations in two variabl,Lab 3 Solutions,covered
+Lab 1 - 8.pdf,10,Lab 3,exercise,"Q.7) A rover can move according to v1 = !2 1 "" , v2 = !→1 2 "" . Without ﬁnding a",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,10,Lab 3,exercise,"Q.8) A song is described using three features: Energy, Danceability, Acousticnes",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,11,Lab 3,exercise,"Q.9) The growth of two species contributes v1 =   1 2 1  , v2 =   2 4 2 ",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,11,Lab 3,exercise,"Q.10) Three toy drones occupy positions !1 0 "" , !0 1 "" , !1 1 "" . (a) Determine",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,11,Lab 3,exercise,"Q.11) Three sensors record vibration modes v1 =   1 0 1  , v2 =   0 1 1 ",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,12,Lab 3,exercise,"Q.12) The movement commands available are v1 =   1 2 0  , v2 =   0 1 1  ",Lab 3 Solutions,covered
+Lab 1 - 8.pdf,12,Lab 3,exercise,Q.13) A chemist can combine three reaction pathways represented by v1 =   1 0,Lab 3 Solutions,covered
+Lab 1 - 8.pdf,12,Lab 3,exercise,Challenge Q.14) The Inﬁnite Monkey Drone Controller Recall the Inﬁnite Monkey Th,Lab 3 Solutions,covered
+Lab 1 - 8.pdf,14,Lab 4,exercise,Q.1) A robot moving on a factory ﬂoor receives the following navigation commands,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,14,Lab 4,exercise,Q.2) Apply Gaussian Elimination to obtain the Row Echelon Form of A =   1 2 1,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,14,Lab 4,exercise,Q.3) drone records measurements from four sensors: B =   1 2 1 0 2 4 2 1 1 2 1,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,14,Lab 4,exercise,Q.4) A small online store tracks revenue from three products: x + y + z = 120 2x,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,14,Lab 4,exercise,"Q.5) A quadcopter has four motors producing thrusts x1, x2, x3, x4. The followin",Lab 4 Solutions,covered
+Lab 1 - 8.pdf,15,Lab 4,exercise,Q.6) Find the rank of the rectangular matrix A =   1 2 3 4 5 2 4 6 8 10 1 1,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,15,Lab 4,exercise,Q.7) A chemistry laboratory records concentrations of four compounds in four exp,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,15,Lab 4,exercise,Q.8) Reduce the following 3 ↑5 matrix to Row Echelon Form and determine its rank,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,15,Lab 4,exercise,Q.9) A delivery company operates between ﬁve warehouses. The shipment variables,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,15,Lab 4,exercise,Q.10) A machine-learning dataset contains measurements from six features across,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,16,Lab 4,figure,Lab Figure / Graph / Diagram on page 16,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,16,Lab 4,exercise,Q.11) A robotic arm is controlled by four joint parameters. x + y + z + w = 12 2,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,16,Lab 4,exercise,Q.12) For the matrix A =   1 2 1 3 2 4 2 6 1 3 2 4 3 7 4 10   (a) Find t,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,16,Lab 4,exercise,Challenge Problem: Graph Theory and Matrices Recall the graph theoretic applicat,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,17,Lab 4,figure,Lab Figure / Graph / Diagram on page 17,Lab 4 Solutions,covered
+Lab 1 - 8.pdf,18,Lab 5,figure,Lab Figure / Graph / Diagram on page 18,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,18,Lab 5,exercise,Q.1) Fill in the blanks: Row Operations Elementary Matrix E Inverse Elementary E,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,18,Lab 5,exercise,Q.2) An elementary matrix E and a matrix A are given. Identify the row operation,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,18,Lab 5,exercise,Q.3) Consider a matrix A which After a certain elementary row operation is chang,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,18,Lab 5,exercise,Q.4) Find a matrix E which when multiplied with A =   6 2 1 3 5 2 2 1 4  red,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,18,Lab 5,exercise,Q.5) State whther the following statements are True/False: (a) The product of tw,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,19,Lab 5,exercise,Q.6) Find the LU decomposition of following matrices and verify A = LU (a) A = ,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,19,Lab 5,exercise,Q.7) Compute L and U for the symmetric matrix A =   a a a a b b a b c   Find,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,19,Lab 5,exercise,Q.8) A robotics engineer has forgotten the original matrix A. After three row op,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,19,Lab 5,exercise,Q.9) The same three stage lamps are pointed at the white wall. Each lamp’s colou,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,20,Lab 5,exercise,"Q.10) If A and B have nonzeros in the positions marked by x, which zeros are sti",Lab 5 Solutions,covered
+Lab 1 - 8.pdf,20,Lab 5,exercise,"Q.11) A logistics company operates four warehouses W1, W2, W3, and W4 to distrib",Lab 5 Solutions,covered
+Lab 1 - 8.pdf,21,Lab 5,figure,Lab Figure / Graph / Diagram on page 21,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,21,Lab 5,exercise,Q.12) A city’s water authority operates three pumping stations that supply water,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,21,Lab 5,exercise,Challenge Q.13) A chemical manufacturing company produces four specialty cleanin,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,22,Lab 5,figure,Lab Figure / Graph / Diagram on page 22,Lab 5 Solutions,covered
+Lab 1 - 8.pdf,23,Lab 6,figure,Lab Figure / Graph / Diagram on page 23,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,23,Lab 6,exercise,"Q.1) Show that the vectors v1 = (1, 2, 3, 4), v2 = (0, 1, 0, →1), and v3 = (1, 3",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,23,Lab 6,exercise,Q.2) State whether the following statements are True/False: (a) A set containing,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,23,Lab 6,exercise,"Q.3) Determine whether b is in the column space of A using the rank condition, a",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,23,Lab 6,exercise,Q.4) Determine whether the following vectors are linearly independent or linearl,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,23,Lab 6,exercise,"Q.5) Fill in the blanks: (a) If A is any 8 by 8 invertible matrix, then its colu",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,figure,Lab Figure / Graph / Diagram on page 24,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,exercise,Q.6) For which real values of ω do the following vectors form a linearly depende,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,exercise,Q.7) State whether the following statements are True or False. Give proper count,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,exercise,"Q.8) Construct a 3 by 3 matrix whose column space contains (1, 1, 0) and (1, 0,",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,exercise,Q.9) How many pivot columns must a 7 ↑5 matrix have if its columns are linearly,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,exercise,"Q.10) For what values of h is v3 in span{v1, v2}, and for what values of h is {v",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,exercise,Q.11) The columns of AB are combinations of the columns of A. This means: The co,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,24,Lab 6,exercise,"Q.12) Determine whether the vectors v1, v2 and v3 are linearly independent or li",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,25,Lab 6,figure,Lab Figure / Graph / Diagram on page 25,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,25,Lab 6,exercise,"Q.13) For which right-hand sides (ﬁnd a condition on b1, b2, b3) are these syste",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,25,Lab 6,exercise,Q.14) Your team is building a college robot with four control mechanisms. Their,Lab 6 Solutions,covered
+Lab 1 - 8.pdf,25,Lab 6,exercise,"Challenge Q.14) In previous labs, the theatre had three lamps, and every colour",Lab 6 Solutions,covered
+Lab 1 - 8.pdf,27,Lab 7,exercise,Q.1) State True/False. Justify your answer. (a) The null space of A is the solut,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,27,Lab 7,exercise,"Q.2) Find the null space of !1 3 3 9 """,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,27,Lab 7,exercise,Q.3) Let A =   2 4 ↑2 1 ↑2 ↑5 7 3 3 7 ↑8 6   (a) If the column space of A is,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,27,Lab 7,exercise,Q.4) Find a 2 →2 matrices whose null space is the line 3x ↑5y = 0.,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,27,Lab 7,exercise,"Q.5) Find the complete solution of !2 6 1 3 "" !x1 x2 "" = !10 5 "" Medium",Lab 7 Solutions,covered
+Lab 1 - 8.pdf,27,Lab 7,exercise,Q.6) Find the complete solution of Ax = b:   1 0 2 3 1 3 2 0 2 0 4 9    ,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,27,Lab 7,exercise,Q.7) Under what conditions on b1 and b2 does Ax = b have a solution? A = !1 2 0,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,figure,Lab Figure / Graph / Diagram on page 28,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,Q.8) Construct a 2 →2 matrix whose null space equals column space. Further justi,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,Q.9) Find the null space of A =   1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 4,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,Q.10) Determine whether the following are subspaces of R3: S =      x y z ,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,"Q.11) Assume that the sets include the bounding lines. In each case, give a spec",Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,"Q.12) Construct a matrix whose column space contains (1, 1, 5) and (0, 3, 1) and",Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,"Q.13) Construct a matrix whose column space contains (1, 1, 0) and (0, 1, 1) and",Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,Q.14) Find a 3 →3 matrix whose null space is the x-axis and whose column space i,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,28,Lab 7,exercise,Q.15) Find a 2 →3 matrix A such that the complete solution of the system Ax = !,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,29,Lab 7,figure,Lab Figure / Graph / Diagram on page 29,Lab 7 Solutions,covered
+Lab 1 - 8.pdf,29,Lab 7,exercise,"Challenge Q.16) Six beams, one molecule Six laser beams are aimed at a single mo",Lab 7 Solutions,covered
+Lab 1 - 8.pdf,30,Lab 7,exercise,"Challenge. Keeping the restriction Fi ↔0, can every net force b ↓R2 still be mad",Lab 7 Solutions,covered
+Lab 1 - 8.pdf,31,Lab 8,figure,Lab Figure / Graph / Diagram on page 31,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,31,Lab 8,exercise,Q.1) State True/False. Justify your answer. (a) If m = n then the row space of A,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,31,Lab 8,exercise,Q.2) Find the basis of column space and null space of the following matrix. Furt,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,31,Lab 8,exercise,"Q.3) Answer each part and explain your reasoning. (a) If A is a 7 ↑5 matrix, wha",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,31,Lab 8,exercise,"Q.4) In each part, use the information in the table to ﬁnd the dimension of the",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,32,Lab 8,exercise,Q.5) Find the complete solution x = xp + xn of Ax = b for A = )︄ [︄ 1 3 3 2 2 6,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,32,Lab 8,exercise,"Q.6) Matrix B is the row echelon form of matrix A. Without calculations, list ra",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,32,Lab 8,exercise,"Q.7) Given A = LU, without computing A, ﬁnd bases for the four fundamental subsp",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,32,Lab 8,exercise,Q.8) Find the dimension and construct a basis for the four subspaces associated,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,32,Lab 8,exercise,"Q.9) Under what conditions on b1, b2, b3 is the following system solvable? Augme",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,32,Lab 8,exercise,"Q.10) If V is the subspace spanned by (1, 1, 1) and (2, 1, 0), ﬁnd a matrix A th",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,32,Lab 8,exercise,"Q.11) Answer each part, with an explanation. (a) Suppose a 4 ↑7 matrix A has fou",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,33,Lab 8,figure,Lab Figure / Graph / Diagram on page 33,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,33,Lab 8,exercise,Q.12) Are there values of r and s for which )︄ ⌋︄⌋︄[︄ 1 0 0 0 r →2 2 0 s →1 r +,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,33,Lab 8,exercise,"Q.13) If the product of two matrices is the zero matrix, AB = 0, show that the c",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,33,Lab 8,exercise,"Q.14) Construct a matrix with the required property, or explain why this is impo",Lab 8 Solutions,covered
+Lab 1 - 8.pdf,33,Lab 8,exercise,Q.15) Suppose A is an m ↑n matrix of rank r. Under what conditions on those numb,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,33,Lab 8,exercise,Q.16) A is an m ↑n matrix of rank r. Suppose there are right sides b for which A,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,33,Lab 8,exercise,Q.17) The graph below has 3 nodes and 3 edges. Write down its 3 ↑3 incidence mat,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,34,Lab 8,figure,Lab Figure / Graph / Diagram on page 34,Lab 8 Solutions,covered
+Lab 1 - 8.pdf,34,Lab 8,exercise,"Challenge Q.18) Six pipes, one water grid A campus water grid has 5 junctions v1",Lab 8 Solutions,covered

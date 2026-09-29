@@ -1,0 +1,871 @@
+=== PAGE 71 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 6: NEW SIGNAL OR ECHO?
+Linear Independence • Column Space • Rank
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• tell when a new vector adds new reach and when it is only repeating what you already had;
+• ﬁnd how many genuinely new directions of information a matrix carries;
+• describe every output that a matrix can make;
+• decide whether a target b can be reached by solving Ax = b.
+control settings x
+A
+output Ax
+We will keep opening this same machine.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== PAGE 72 ===
+Newton School of Technology
+Mathematics-3
+Flashback: two dials, but how much freedom?
+In Sheet 3, a choice of coe!cients gave one linear combination. Let us bring those coe!cient dials
+back for two very small experiments.
+DO A
+v1 =
+)︄
+[︄1
+1
+]︄
+⌊︄,
+v2 =
+)︄
+[︄1
+→1
+]︄
+⌊︄.
+Set c1 = 2 and c2 = 1.
+c1v1 + c2v2 =
+)︄
+[︄
+]︄
+⌊︄.
+Now try to reach
+b =
+)︄
+[︄4
+→2
+]︄
+⌊︄.
+Find one pair (c1, c2) that works:
+)︄
+[︄c1
+c2
+]︄
+⌊︄=
+)︄
+[︄
+]︄
+⌊︄
+DO B
+w1 =
+)︄
+[︄1
+2
+]︄
+⌊︄,
+w2 =
+)︄
+[︄2
+4
+]︄
+⌊︄.
+Set c1 = 2 and c2 = →1.
+c1w1 + c2w2 =
+)︄
+[︄
+]︄
+⌊︄.
+Can you reach
+b =
+)︄
+[︄1
+0
+]︄
+⌊︄?
+↭Yes
+↭No
+Why?
+x
+y
+v1
+v2
+two genuinely di"erent directions
+x
+y
+w1
+w2
+two dials, but only one direction
+PREDICT
+Both machines have two columns. Do they have the same amount of freedom?
+Complete in your own words:
+The number of columns does not always tell us
+2
+
+
+=== PAGE 73 ===
+Newton School of Technology
+Mathematics-3
+Three audio tracks appear on the screen
+A digital audio clip can be represented by a long list of sampled values. We will use only four samples
+so that we can do the mathematics by hand.
+Track 1: Instrument
+Track 2: Voice
+Track 3: Mix
+s1 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+s2 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+0
+1
+1
+0
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+s3 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+1
+2
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+1. Compute the sum of the ﬁrst two tracks.
+s1 + s2 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+2. Compare your answer with s3. What do you notice?
+3. Suppose Track 3 is deleted. Which audio outputs become impossible to make that
+were possible before?
+PREDICT
+The computer displays three ﬁles. Does that mean we have three genuinely new directions of
+audio information?
+↭Yes
+↭No
+Explain without using a new technical word yet:
+A new column can be present without adding new capability.
+3
+
+
+=== PAGE 74 ===
+Newton School of Technology
+Mathematics-3
+Can nonzero controls produce zero output?
+Keep the same three tracks.
+A mixing board chooses three coe!cients:
+c1s1 + c2s2 + c3s3.
+PREDICT
+Can you turn the three knobs to values that are not all zero, yet make the total audio vector
+equal to the zero vector?
+c1s1 + c2s2 + c3s3 = 0.
+Try one setting:
+(c1, c2, c3) = (
+,
+,
+).
+DO
+Use the relationship you discovered on the previous page.
+s3 =
+so
+s1 +
+s2 +
+s3 = 0.
+What does this say about Track 3?
+We now have language for exactly what happened.
+Deﬁnition
+A set of vectors {v1, . . . , vn} is linearly dependent if there is a choice of coe!cients, not all
+zero, such that
+c1v1 + · · · + cnvn = 0.
+If the equation
+c1v1 + · · · + cnvn = 0
+has only
+c1 = · · · = cn = 0,
+then the vectors are linearly independent.
+CHECKPOINT
+Say it without symbols:
+Dependent means one or more columns are carrying information that can already be built from
+the others.
+Independent means no column can be rebuilt from the others.
+4
+
+
+=== PAGE 75 ===
+Newton School of Technology
+Mathematics-3
+How do we test this when the relationship is hidden?
+For the audio example, the redundancy was easy to spot. For a larger matrix it may not be obvious.
+Put the vectors into the columns of a matrix:
+A =
+)︄
+⌋︄⌋︄[︄
+|
+|
+|
+v1
+v2
+· · ·
+vn
+|
+|
+|
+]︄
+⌈︄⌈︄⌊︄,
+c =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+c1
+c2
+...
+cn
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Then
+Ac = 0
+is exactly the same question as
+c1v1 + · · · + cnvn = 0.
+Use the elimination skill you already have. For our three audio tracks,
+A =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Row-reduce A enough to see whether every coe!cient in Ac = 0 is forced to be zero.
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+R3→R3↑R1
+→→→→→→→→→→→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+R4→R4+R1
+→→→→→→→→→→→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+R3→R3↑R2
+→→→→→→→→→→→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Which coe!cient is free?
+Give one nonzero solution of Ac = 0:
+c =
+)︄
+⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌊︄.
+CHECKPOINT
+For a homogeneous system Ac = 0:
+• a pivot in every column forces only the zero coe!cient vector;
+• a free variable allows a nonzero coe!cient vector and exposes redundancy.
+5
+
+
+=== PAGE 76 ===
+Newton School of Technology
+Mathematics-3
+Three columns do not always give three directions
+For each set below, ﬁrst predict how many genuinely independent directions are present. Then use
+the relationships among the columns to check.
+Machine A
+Machine B
+Machine C
+a1 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+b1 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+c1 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+a2 =
+)︄
+⌋︄⌋︄[︄
+2
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+b2 =
+)︄
+⌋︄⌋︄[︄
+0
+1
+0
+]︄
+⌈︄⌈︄⌊︄
+c2 =
+)︄
+⌋︄⌋︄[︄
+0
+1
+0
+]︄
+⌈︄⌈︄⌊︄
+a3 =
+)︄
+⌋︄⌋︄[︄
+→1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+b3 =
+)︄
+⌋︄⌋︄[︄
+1
+1
+0
+]︄
+⌈︄⌈︄⌊︄
+c3 =
+)︄
+⌋︄⌋︄[︄
+0
+0
+1
+]︄
+⌈︄⌈︄⌊︄
+x
+y
+z
+line
+x
+y
+z
+plane
+x
+y
+z
+3D space
+Independent directions:
+Independent directions:
+Independent directions:
+DO
+Write one relationship that explains the redundancy in Machine A:
+Write one relationship that explains the redundancy in Machine B:
+Why does the same kind of relationship fail in Machine C?
+PREDICT
+Suppose we want one number attached to a matrix that reports how many genuinely independent
+column directions it carries.
+What should that number be for A, B, C?
+A :
+B :
+C :
+6
+
+
+=== PAGE 77 ===
+Newton School of Technology
+Mathematics-3
+Give that count a name
+NOW WE CAN NAME IT
+The number of genuinely independent column directions in a matrix is called its rank.
+rank(A) = maximum number of linearly independent columns of A
+Gaussian elimination gives us a fast way to ﬁnd the same number:
+rank(A) = number of pivots in a row-echelon form of A.
+Return to the audio machine
+A =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+0
+0
+0
+0
+0
+0
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+DO
+Number of columns in the original audio matrix:
+Number of pivots after elimination:
+Therefore
+rank(A) =
+In one sentence: the computer stores three channels, but only
+of them carry genuinely
+independent directions of information.
+RANK CAN HEAR THE ROOM.
+More recorded channels do not automatically mean more independent information.
+CHECKPOINT
+Important: a picture can help us guess the number of independent directions. Row reduction
+gives an exact algebraic check.
+7
+
+
+=== PAGE 78 ===
+Newton School of Technology
+Mathematics-3
+One output versus everything the machine can make
+Write the matrix by its columns:
+A =
+)︄
+⌋︄⌋︄[︄
+|
+|
+|
+a1
+a2
+· · ·
+an
+|
+|
+|
+]︄
+⌈︄⌈︄⌊︄.
+For one ﬁxed coe!cient vector
+x =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+x1
+x2
+...
+xn
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+,
+we already know from Sheet 3 that
+Ax = x1a1 + x2a2 + · · · + xnan.
+Case 1: one chosen coe!cient vector.
+Ax gives
+Case 2: let x vary over every possible real coe!cient vector.
+The collection of all outputs is
+{Ax : x ↓Rn} = span{a1, . . . , an}.
+In words, this is
+NOW WE CAN NAME IT
+That entire set of reachable outputs has a name:
+C(A) = {Ax : x ↓Rn} = span{columns of A}
+It is called the column space of A.
+CHECKPOINT Do not mix these up
+One Ax -
+one output vector; one linear combination of the columns.
+C(A) -
+the set of all output vectors obtainable as x varies.
+PREDICT
+If a new column is already a linear combination of the old columns, does the column space get
+larger?
+↭Yes
+↭No
+Why?
+8
+
+
+=== PAGE 79 ===
+Newton School of Technology
+Mathematics-3
+Same mathematics, new world: a broken controller
+A game character lives in a 3D world. Only two movement buttons still work:
+A =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄.
+Column 1 moves East/West. Column 2 moves North/South. There is no Up/Down button.
+x
+y
+z
+Button 1
+Button 2
+b1
+b2
+reachable ﬂoor
+DO
+Without row reduction, answer from the meaning of the columns.
+1. Can you reach
+b1 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+0
+]︄
+⌈︄⌈︄⌊︄?
+If yes, give one control vector x:
+x =
+)︄
+[︄
+]︄
+⌊︄.
+2. Can you reach
+b2 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+3
+]︄
+⌈︄⌈︄⌊︄?
+↭Yes
+↭No
+Explain using the column space, not the picture alone:
+CHECKPOINT
+For this controller,
+C(A) =
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+⌋︄⌋︄[︄
+x
+y
+0
+]︄
+⌈︄⌈︄⌊︄: x, y ↓R
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+The controller has rank 2, and its reachable outputs form a two-direction ﬂat set inside R3.
+9
+
+
+=== PAGE 80 ===
+Newton School of Technology
+Mathematics-3
+Can the target be reached?
+The equation
+Ax = b
+asks whether some control setting x produces the target b.
+From the previous page, complete the statement:
+Ax = b has a solution exactly when b is
+NOW WE CAN NAME IT
+Ax = b is solvable ↔↗b ↓C(A).
+Can rank detect this without a picture?
+Adding the target as one more column gives the augmented matrix
+[A | b].
+For the broken controller,
+A =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄,
+rank(A) = 2.
+DO Reachable target
+b1 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+0
+]︄
+⌈︄⌈︄⌊︄,
+[A | b1] =
+)︄
+⌋︄⌋︄[︄
+1
+0
+5
+0
+1
+4
+0
+0
+0
+]︄
+⌈︄⌈︄⌊︄.
+rank([A | b1]) =
+Did adding b1 create a new independent di-
+rection?
+↭Yes
+↭No
+DO Unreachable target
+b2 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+3
+]︄
+⌈︄⌈︄⌊︄,
+[A | b2] =
+)︄
+⌋︄⌋︄[︄
+1
+0
+5
+0
+1
+4
+0
+0
+3
+]︄
+⌈︄⌈︄⌊︄.
+rank([A | b2]) =
+Did adding b2 create a new independent di-
+rection?
+↭Yes
+↭No
+PREDICT
+Complete the rule before reading the next page:
+Ax = b is solvable ↔↗rank(A)
+rank([A | b]).
+10
+
+
+=== PAGE 81 ===
+Newton School of Technology
+Mathematics-3
+One test, three possible outcomes
+NOW WE CAN NAME IT
+The rank test for solvability is
+Ax = b is solvable ↔↗rank(A) = rank([A | b]).
+Why? Because a reachable target was already built from the old columns, so adding it cannot
+create a new independent direction.
+Now suppose A has n columns, so x has n variables.
+Outcome
+Meaning
+Rank condition
+Solution does not
+exist
+Solution exists
+CHECKPOINT
+Do not memorize the three lines as unrelated rules. Ask two questions in order:
+Is the target reachable? Compare rank(A) and rank([A | b]).
+Read the system before calculating. For
+A =
+)︄
+[︄1
+2
+2
+4
+]︄
+⌊︄,
+we already know the second column repeats the ﬁrst direction.
+Before choosing b, predict: if a target is reachable, will the recipe be unique or will there be many
+recipes?
+Three systems. Three outcomes.
+For each system:
+1. predict the outcome;
+2. row-reduce enough to ﬁnd rank(A) and rank([A | b]);
+3. classify the system.
+11
+
+
+=== PAGE 82 ===
+Newton School of Technology
+Mathematics-3
+DO : System A
+/︂
+x1 + x2 = 4
+x1 →x2 = 2
+rank(A) =
+rank([A|b]) =
+Solve:
+DO : System B
+/︂
+x1 + 2x2 = 3
+2x1 + 4x2 = 6
+rank(A) =
+rank([A|b]) =
+Solve:
+DO : System C
+/︂
+x1 + 2x2 = 3
+2x1 + 4x2 = 7
+rank(A) =
+rank([A|b]) =
+Solve:
+CHECKPOINT
+For Systems B and C the matrix A is the same. Only b changed.
+What changed about the target’s relationship with the column space?
+Compress the lecture into four questions
+What can the machine
+make?
+C(A) = {Ax} is the set of all reachable outputs.
+Does a column add
+something new?
+Test whether the columns are independent or whether one is redundant.
+How
+much
+indepen-
+dent information?
+rank(A) counts independent column directions; elimination ﬁnds it by pivots.
+Can we reach b?
+Ax = b is solvable exactly when b ↓C(A), equivalently when rank(A) =
+rank([A|b]).
+MORE CHANNELS ↘= MORE INFORMATION.
+What matters is whether a column adds a genuinely new direction.
+12
+
+
+=== PAGE 83 ===
+Newton School of Technology
+Mathematics-3
+One last puzzle
+Return to the audio machine, where s3 = s1 + s2, and compare
+x1 =
+)︄
+⌋︄⌋︄[︄
+2
+1
+0
+]︄
+⌈︄⌈︄⌊︄,
+x2 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+1
+]︄
+⌈︄⌈︄⌊︄.
+DO
+1. Expand both outputs and check
+Ax1
+=
+Ax2.
+2. Compute
+x1 →x2 =
+)︄
+⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌊︄.
+3. Predict without multiplying entry-by-entry:
+A(x1 →x2) =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Why must this happen?
+PREDICT
+The control setting changed, but the output did not.
+What kinds of nonzero input changes can a matrix fail to see?
+That is where we open the machine next.
+13
+
+

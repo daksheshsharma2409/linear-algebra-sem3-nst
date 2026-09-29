@@ -1,0 +1,759 @@
+=== PAGE 43 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 4: Same Solution, Simpler System
+Gaussian Elimination: Change the Equations, Not the Answer
+Name:
+ID/Batch:
+This sheet will teach you:
+• Gaussian Elimination
+• Row operations
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== PAGE 44 ===
+Newton School of Technology
+Mathematics-3
+Quick Recap: What problem did Sheet 3 leave us with?
+In Sheet 3, we learned to read
+Ax = b
+as a question about a target:
+Which coe!cients combine the columns of A to produce the
+target b?
+For a small system, guessing or substitution may be manageable. For a larger system, we need a method
+that is systematic, repeatable, and suitable for computation.
+Consider
+x + y + z = 6,
+2x + 3y + z = 14,
+x + 2y + 3z = 14.
+How would you begin if nobody had taught you Gaussian elimination?
+Your Answer:
+A useful question
+Do we really need to solve the equations exactly as they were given, or can we replace them by
+easier equations that carry the same solution information?
+That question is the beginning of Gaussian elimination.
+Warm-up: the rope activity, revisited
+In the classroom activity, two taut ropes represented two lines:
+x + y = 5
+2x →y = 1 .
+Their meeting point represents the solution of the system.
+x
+y
+(2, 3)
+x + y = 5
+2x →y = 1
+The point (2, 3) is not special because we already know its coordinates. It is special because it satisﬁes
+both equations at the same time.
+2
+
+
+=== PAGE 45 ===
+Newton School of Technology
+Mathematics-3
+Move 1: exchange the order
+Suppose we write the black equation (2x →y = 1) ﬁrst and the orange equation (x + y = 5) second.
+Did the two geometric lines change?
+↭Yes
+↭No
+Did their common point change?
+↭Yes
+↭No
+Algebraically, this is
+What changed?
+Only the order in which we store the equations changed. The system carries the same
+information.
+Move 2: rewrite one equation at a di!erent scale
+The orange equation is
+x + y = 5.
+Multiply the whole equation by 2:
+2x + 2y = 10.
+Does 2x + 2y = 10 draw a new line, or the same line?
+Your Answer:
+Why must the scaling number be nonzero if we want to preserve exactly the same equation information?
+Your Answer:
+Geometry
+Check geometrically:
+x
+y
+Algebra
+What does this mean algebraically?
+Your Answer:
+3
+
+
+=== PAGE 46 ===
+Newton School of Technology
+Mathematics-3
+Has the intersection point changed?
+↭Yes
+↭No
+The missing third move: can two ropes manufacture an easier rope?
+Here is the key change from the old activity. We will not ask you to make a rope parallel to an axis.
+That would already tell you what we want.
+Instead, ask:
+Can the two equations manufacture a new
+equation that is easier to use?
+Look again:
+R1 :
+x + y = 5,
+R2 :
+2x →y = 1.
+What happens if you add the two true statements?
+Your Answer:
+You should obtain
+3x = 6
+=↑
+x = 2.
+Why this is useful
+We did not ask for an axis-parallel line ﬁrst. The axis-parallel line appeared because one
+variable cancelled. Once one coordinate is isolated, the intersection is easier to read.
+Geometrically
+Try it geometrically:
+x
+y
+Algebra
+What does this mean algebraically?
+Your Answer:
+4
+
+
+=== PAGE 47 ===
+Newton School of Technology
+Mathematics-3
+The three valid moves
+Move
+Row notation
+What it means
+Exchange
+Scale
+Replace
+.
+A move that is not valid
+Changing only the constant on one side, such as
+x + y = 5
+→↓
+x + y = 7,
+shifts the line and changes the solution set. That is not a row operation.
+Complete the sentence:
+Gaussian elimination is not about changing the
+. It is about changing
+the
+until the solution becomes easier to read.
+Colour Mystery: create a sensor that is blind to one ingredient
+Now we move from two lines in R2 to three unknown recipe amounts.
+Three premixed colour bottles have channel proﬁles
+C1 =
+
+
+1
+1
+0
+
+,
+C2 =
+
+
+1
+0
+1
+
+,
+C3 =
+
+
+0
+1
+1
+
+.
+The target has channel report
+b =
+
+
+5
+4
+3
+
+.
+Let x1, x2, x3 be the unknown amounts of C1, C2, C3.
+C1 = (1, 1, 0)
+C2 = (1, 0, 1)
+C3 = (0, 1, 1)
+Target (5, 4, 3)
+The matrix equation is
+
+
+
+
+
+
+x1
+x2
+x3
+
+=
+
+
+5
+4
+3
+
+.
+Read by rows, the laboratory reports are
+Red: x1 + x2 = 5,
+Green: x1 + x3 = 4,
+Blue: x2 + x3 = 3.
+5
+
+
+=== PAGE 48 ===
+Newton School of Technology
+Mathematics-3
+The challenge
+Can you combine two reports to create a new report that does not see x1 at all? Do not
+solve the full system yet.
+Which two reports contain x1 with the same coe!cient?
+Your Answer:
+What happens if you calculate Green →Red?
+Your Answer:
+The new report is
+→x2 + x3 = →1.
+Why is it blind to x1?
+Your Answer:
+A zero has meaning
+The zero coe!cient of x1 is not cosmetic. It says: this new report no longer depends on x1.
+Now combine the new report with the Blue report so that x2 also disappears.
+Your Answer:
+You should reach
+2x3 = 2.
+Hence x3 =
+, then x2 =
+, then x1 =
+.
+The same colour puzzle as row operations
+Start from the augmented matrix:
+
+
+1
+1
+0
+5
+1
+0
+1
+4
+0
+1
+1
+3
+
+.
+The two report-combining moves were
+R2 ↓R2 →R1,
+then
+R3 ↓R3 + R2.
+So
+
+
+1
+1
+0
+5
+1
+0
+1
+4
+0
+1
+1
+3
+
+→↓
+
+
+1
+1
+0
+5
+0
+→1
+1
+→1
+0
+1
+1
+3
+
+→↓
+
+
+1
+1
+0
+5
+0
+→1
+1
+→1
+0
+0
+2
+2
+
+.
+What pattern is appearing?
+Your Answer:
+The purpose of elimination
+We create zeros so that later equations involve fewer unknowns. Eventually the system becomes
+triangular, and the unknowns can be recovered from the bottom upward.
+6
+
+
+=== PAGE 49 ===
+Newton School of Technology
+Mathematics-3
+What is happening geometrically in three dimensions?
+With unknowns (x1, x2, x3), each linear equation
+ax1 + bx2 + cx3 = d
+represents a plane in R3.
+Our three colour reports are therefore three planes. Their common point is
+(x1, x2, x3) = (3, 2, 1).
+x1
+x2
+x3
+(3, 2, 1)
+When we replace one row by a combination of rows, the new plane still passes through the old common
+solution. For two nonparallel planes, every linear combination of their equations contains their line of
+intersection.
+Geometric picture of row replacement
+In 2D, the replacement line can be thought of as turning through the same intersection point.
+In 3D, the replacement plane can be thought of as changing while preserving the common
+intersection information.
+Why does the solution stay the same after row replacement? Use the picture to explain.
+Your Answer:
+Now name the algorithm: Gaussian elimination
+We have already discovered the ingredients. Now we package them into an algorithm.
+Gaussian elimination
+Gaussian elimination uses elementary row operations to transform a system into row echelon
+form, where the equations become progressively simpler from top to bottom.
+8.1
+Pivot and row echelon form
+A pivot position is the position of the ﬁrst nonzero entry in a nonzero row after the matrix has been
+organised in echelon form.
+A matrix is in row echelon form when:
+1. all zero rows, if any, are at the bottom;
+7
+
+
+=== PAGE 50 ===
+Newton School of Technology
+Mathematics-3
+2. the pivot in each lower nonzero row lies to the right of the pivot above it;
+3. every entry below a pivot is zero.
+
+
+↔
+↔
+↔
+↔
+0
+↔
+↔
+↔
+0
+0
+↔
+↔
+0
+0
+0
+0
+
+
+Why the staircase matters
+Moving downward, each equation depends on fewer unknowns. The ﬁnal nonzero row is the easiest
+equation. Then we work upward by back substitution.
+Recipe for a Perfect Matrix - (using Gaussian Elimination)
+1. Find the ﬁrst non-zero entry in the leftmost column. This is your
+pivot.
+2. If needed, swap rows to bring the pivot into position.
+3. Use the pivot row to create zeros below the pivot.
+4. Move to the next column and repeat the process.
+5. Continue until all pivots form a staircase pattern.
+Remember: Use only the three valid row operations and never change
+the solution of the system!
+Solved Example
+Apply Gaussian Elimination to the following matrix:
+A =
+
+
+1
+1
+1
+2
+3
+1
+1
+2
+3
+
+
+Solution:
+
+
+1
+1
+1
+2
+3
+1
+1
+2
+3
+
+
+R2→R2↑2R1
+R3→R3↑R1
+→→→→→→→→↓
+
+
+1
+1
+1
+0
+1
+→1
+0
+1
+2
+
+R3→R3↑R2
+→→→→→→→→↓
+
+
+1
+1
+1
+0
+1
+→1
+0
+0
+3
+
+=↑
+row echelon form
+This above form after application of gaussian elimination is the row echleon form.
+8
+
+
+=== PAGE 51 ===
+Newton School of Technology
+Mathematics-3
+Try it Yourself: Apply Gaussian Elimination to the following matrices:
+(a) A =
+
+
+1
+2
+1
+2
+5
+1
+1
+3
+4
+
+
+Your Answer:
+(b) B =
+
+
+1
+1
+2
+5
+2
+3
+1
+8
+1
+2
+3
+9
+
+
+Your Answer:
+8.2
+Solving Ax = b using Gaussian Elimination
+Some of you might have already learnt this method during your school days. But now you have the
+clarity how and why it works. Let us try to ﬁnd solution of system of linear equations using guassian
+Elimination.
+Consider the system:
+x + y + z = 6
+2x + 3y + z = 14
+x + 2y + 3z = 14
+9
+
+
+=== PAGE 52 ===
+Newton School of Technology
+Mathematics-3
+Step 1: Writing the Augmented matrix.
+
+
+1
+1
+1
+6
+2
+3
+1
+14
+1
+2
+3
+14
+
+
+Step 2: Eliminate enteries below pivot in column 1.
+R2 ↓R2 →2R1,
+R3 ↓R3 →R1
+
+
+1
+1
+1
+6
+0
+1
+→1
+2
+0
+1
+2
+8
+
+
+Step 3: Perform the same elimination process for pivot in column 2
+R3 ↓R3 →R2
+
+
+1
+1
+1
+6
+0
+1
+→1
+2
+0
+0
+3
+6
+
+
+Step 4: Back Substitution to get the solutions!
+z = 6
+3 =↑
+z = 2
+y →z = 2 =↑
+y = 4
+x + y + z = 6 =↑
+x = 0
+Final Answer:
+
+
+x
+y
+z
+
+=
+
+
+0
+4
+2
+
+
+Method audit
+At no stage did we change the answer. We repeatedly changed the representation of the same
+solution problem until the answer became easy to read.
+Challenge I: Global MasterChef Mystery
+CONFIDENTIAL KITCHEN BRIEF – NEW SOUS CHEFS
+A ﬁnished cake sits before you. Its recipe card has vanished. Three premix jars are in the pantry.
+You know what each premix contains, and the kitchen laboratory has measured the total Flour,
+Sugar, and Cocoa in the ﬁnished cake.
+Mission: Recover the secret recipe without opening the cake.
+The three premixes are
+P1 =
+
+
+1
+1
+0
+
+,
+P2 =
+
+
+1
+0
+1
+
+,
+P3 =
+
+
+0
+1
+1
+
+,
+where the coordinates mean
+
+
+Flour
+Sugar
+Cocoa
+
+.
+The laboratory report for the cake is
+
+
+5
+4
+3
+
+.
+10
+
+
+=== PAGE 53 ===
+Newton School of Technology
+Mathematics-3
+Let x1, x2, x3 be the amounts of P1, P2, P3.
+(a) Write the three laboratory equations.
+Your Answer:
+(b) Combine reports until one new report talks about only one premix.
+Your Answer:
+(c) Recover the recipe.
+Your Answer:
+(d) Explain in one sentence why this is the same mathematics as the RGB puzzle.
+Your Answer:
+Chef’s note
+We did not remove Flour, Sugar, or Cocoa from the cake. We subtracted one fact about the
+cake from another fact about the cake. Gaussian elimination manipulates information, not the
+physical object.
+Transfer Challenge II: balancing a chemical reaction
+When propane burns,
+x1C3H8 + x2O2 →↓x3CO2 + x4H2O.
+Atoms are neither created nor destroyed. Balance Carbon, Hydrogen, and Oxygen to form a system of
+linear equations.
+If the chemist chooses x1 = 1, determine x2, x3, x4 using elimination.
+Your Answer:
+11
+
+
+=== PAGE 54 ===
+Newton School of Technology
+Mathematics-3
+Transfer Challenge III: tra”c ﬂow
+A tra!c engineer is studying the movement of vehicles through a network of one-way streets in downtown
+Baltimore. Since vehicles are neither created nor destroyed at an intersection, the total ﬂow entering each
+intersection must equal the total ﬂow leaving it.
+A tra!c sensor installed on the road between intersections C and D records a ﬂow of 200 vehicles per hour,
+i.e., x5 = 200. Determine the remaining tra!c ﬂows using Gaussian elimination. Show the augmented
+matrix and all row operations used. Do not solve the system by direct substitution.
+Your Answer:
+12
+
+
+=== PAGE 55 ===
+Newton School of Technology
+Mathematics-3
+11.1
+Visualizing Elimination:
+Consider the two linear equations:
+x →2y = 1
+3x + 2y = 11
+Now, apply gaussian elimination to the system:
+Your Answer:
+Activity!
+Create a system of two linear equations with two variables that have no solution. Give the graphical
+visualization:
+Your Answer:
+x
+y
+No Solution – Before Elimination
+x
+y
+No Solution – After Elimination
+13
+
+
+=== PAGE 56 ===
+Newton School of Technology
+Mathematics-3
+Now, create a system of two linear equations with two variables that have iniﬁnitely many solutions. Give
+the graphical visualization:
+Your Answer:
+x
+y
+↗Solution – Before Elimination
+x
+y
+↗Solution – After Elimination
+Rank: First Level of Understanding
+The marking of pivots is more useful than you think! The number of pivots in a matrix actually contribute
+to a new concept.
+Deﬁnition
+The rank of coe!cent matrix A is equal to the number of pivots after the gaussian elimination.
+Apply Gaussian elimination, identify the pivots and then determine the rank of matrix
+A =
+
+
+1
+2
+1
+2
+5
+1
+1
+3
+4
+
+
+Your Solution:
+Final reﬂection
+Complete these in your own words.
+1. Why do we want zeros below pivots?
+Your Answer:
+14
+
+
+=== PAGE 57 ===
+Newton School of Technology
+Mathematics-3
+2. Why is Rj ↘Rj + kRi legal?
+Your Answer:
+3. What is the geometric meaning of elimination for two lines?
+Your Answer:
+4. What is the geometric meaning of elimination for planes in three variables?
+Your Answer:
+5. Finish the sentence:
+Gaussian elimination keeps the
+ﬁxed and changes
+the
+until the solution is easier to read.
+Sheet 4 takeaway:
+Same solution. Simpler system. Zeros with meaning.
+15
+
+

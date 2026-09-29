@@ -1,0 +1,168 @@
+=== LAB PAGE 1 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 1
+Name:
+ID/Batch:
+Easy
+Q. 1) Write the following system in matrix notation:
+2x + y →z = 4
+x →z = 1
+3x + y + 2z = 6
+Q. 2) Sketch
+x + y = 3
+x →y = 1
+State the number of solutions.
+Q. 3) Convert the following matrix equations back into systems of linear equations.
+(a)
+!2
+1
+3
+3
+1
+1
+" 
+
+x
+y
+z
+
+=
+!5
+4
+"
+(b)
+
+
+4
+0
+→1
+2
+3
+7
+
+
+!
+x
+y
+"
+=
+
+
+4
+1
+10
+
+
+Q. 4) Draw the two pictures in two planes for the equations x →2y = 0, x + y = 6.
+Medium
+Q. 5) Fill in the blanks:
+(a) The intersection of two planes through (0,0,0) is probably a
+but it could be a
+. It can’t be the origin itself.
+(b) The intersection of a plane through (0,0,0) with a line through (0,0,0) is probably a
+but it could be a
+.
+Q. 6) Starting with x + 4y = 7, ﬁnd the equation for the parallel line through x = 0, y = 0. Find the
+equation of another line perpendicular to the ﬁrst at x = 3, y = 1.
+Q. 7) Sketch the following three lines:
+2x + y = 5
+x →y = 1
+3x = 6
+1
+
+
+=== LAB PAGE 2 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+(a) Does this system have a common solution?
+(b) What happens if all the right-hand sides become zero?
+(c) Is there any another non-zero choice of right-hand sides that allows all three lines to intersect
+at the same point? If yes, give one such example.
+Q. 8) For the system
+2x + y = 7
+x →2y = →1
+draw the row picture and the column picture. Explain, in one or two sentences, how these two
+pictures represent the same mathematical problem from di!erent perspectives.
+Q. 9) Without solving the systems algebraically, try to answer whether each system has: exactly one
+solution, inﬁnitely many solutions, or no solution.
+(a) x + y = 3;
+2x + 2y = 6
+(b) x + y = 3;
+2x + 2y = 3
+(c) x + y = 3;
+x →y = 1
+Q. 10) A cafe sells only co!ee and sandwiches. Two co!ees and one sandwich cost |250. One co!ee and
+three sandwiches cost |350.
+(a) Form a system of linear equations.
+(b) Solve using substitution or elimination method.
+(c) Write the corresponding matrix equation.
+(d) Explain the row picture of this system.
+Q. 11) Consider
+x →y = 2
+3x →3y = k
+Find the values of k for which the system has: (a) exactly one solution, (b) inﬁnitely many solutions,
+and (c) no solution.
+Explain your reasoning geometrically.
+Hard
+Q. 12) The following equations are certain to have the solution x = y = 0. Using row picture or column
+picture, determine for which values of a is there a whole line of solution?
+ax + 2y = 0
+2x + ay = 0
+Q. 13) Explain why does the following system
+u + v + w = 2
+u + 2v + 3w = 1
+v + 2w = 0
+have no solutions. What value should replace the last zero on the right side to allow the equations
+to have solution.
+2
+
+
+=== LAB PAGE 3 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Q. 14) Consider the following linear system:
+u
+
+
+1
+1
+0
+
++ v
+
+
+1
+2
+1
+
++ w
+
+
+1
+3
+2
+
+=
+
+
+b1
+b2
+b3
+
+
+Show that the three columns lie in the same plane by expressing the third column as a combination
+of the ﬁrst two.
+Q. 15) In the following equations, the third column (multiplying w) is the same as the right side. The
+column form of the equations immediately gives the solution for (u, v, w)?
+6u + 7v + 8w = 8
+4u + 5v + 9w = 9
+2u →2v + 7w = 7
+Challenge
+Q. 16) Describe the intersection of the three planes u + v + w + z = 6 and u + w + z = 4 and u + w = 2
+(all in four dimensional space.) Is it a line or a point or an empty set? What is the intersection if
+the fourth plane u = →1 is included? Find a fourth equation that leaves us with no solution.
+3
+
+

@@ -1,0 +1,282 @@
+=== LAB PAGE 23 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 6
+Name:
+ID/Batch:
+Easy
+Q.1) Show that the vectors v1 = (1, 2, 3, 4), v2 = (0, 1, 0, →1), and v3 = (1, 3, 3, 3) form a linearly
+dependent set in R4. Express v3 as the linear combination of the other two.
+Q.2) State whether the following statements are True/False:
+(a) A set containing a single vector is linearly independent.
+(b) The columns of any 4 ↑5 matrix are linearly dependent.
+(c) No linearly independent set contains the zero vector.
+(d) Two vectors are linearly dependent if and only if they lie on a line through the origin.
+Q.3) Determine whether b is in the column space of A using the rank condition, and if so, express b as a
+linear combination of the column vectors of A.
+(a) A =
+)︄
+[︄
+1
+1
+2
+1
+0
+1
+2
+1
+3
+]︄
+⌊︄
+,
+b =
+)︄
+[︄
+→1
+0
+2
+]︄
+⌊︄
+(b) A =
+)︄
+[︄
+1
+→1
+1
+→1
+1
+→1
+→1
+→1
+1
+]︄
+⌊︄
+,
+b =
+)︄
+[︄
+2
+0
+0
+]︄
+⌊︄
+Q.4) Determine whether the following vectors are linearly independent or linearly dependent. Further,
+geometrically explain the span of these vectors.
+(a) v1 = (2, →2, 0), v2 = (6, 1, 4), v3 = (2, 0, →4) in R3
+(b) v1 = (→1, 2, 3), v2 = (2, →4, →6), v3 = (→3, 6, 0) in R3
+(c) v1 = (4, 6, 8), v2 = (2, 3, 4), v3 = (→2, →3, →4) in R3
+(d) v1 = (3, 8, 7, →3), v2 = (1, 5, 3, →1), v3 = (2, →1, 2, 6), v4 = (4, 2, 6, 4) in R4
+Medium
+Q.5) Fill in the blanks:
+(a) If A is any 8 by 8 invertible matrix, then its column space is
+.
+(b) If A is an m ↑n matrix, then the columns of A are linearly independent if and only if A has
+pivot columns.
+(c) If the 9 by 12 system Ax= b is solvable for every b, then C(A) =
+.
+(d) C(AB) must
+(contain ↓/ be contained in ↔/ equal =) the column space of (A or
+B) for all 4 ↑4 matrices A and B.
+(e) If A is a 4 ↑3 matrix and Ax = b is not solvable for some b and the solutions are not unique
+when they exist, possible values for the rank of A are
+(list all possibilities).
+1
+
+
+=== LAB PAGE 24 ===
+Newton School of Technology
+Mathematics-3
+Q.6) For which real values of ω do the following vectors form a linearly dependent set in R3?
+v1 = (ω, →1
+2, →1
+2),
+v2 = (→1
+2, ω, →1
+2),
+v3 = (→1
+2, →1
+2, ω)
+Q.7) State whether the following statements are True or False. Give proper counter example if the
+statement is false.
+(a) If C(A) contains only the zero vector, then A is the zero matrix.
+(b) The column space of 2A equals the column space of A.
+(c) The column space of A →I equals the column space of A.
+(d) If the set of vectors {v1, v2, v3} is linearly independent, then {kv1, kv2, kv3} is also linearly
+independent for every nonzero scalar k.
+(e) If v1, . . . , v4 are in R4 and {v1, v2, v3} is linearly independent, then {v1, v2, v3, v4} is also
+linearly dependent.
+(f) If v1, . . . , v4 are in R4 and v3 is not a linear combination of {v1, v2, v4}, then {v1, v2, v3, v4}
+is linearly independent.
+Q.8) Construct a 3 by 3 matrix whose column space contains (1, 1, 0) and (1, 0, 1) but not (1, 1, 1).
+Further, also construct a 3 by 3 matrix whose column space is only a line.
+Q.9) How many pivot columns must a 7 ↑5 matrix have if its columns are linearly independent? Why?
+How many pivot columns must a 5 ↑7 matrix have if its columns span R5? Why?
+Q.10) For what values of h is v3 in span{v1, v2}, and for what values of h is {v1, v2, v3} linearly dependent?
+Justify each answer.
+v1 =
+)︄
+[︄
+2
+→4
+1
+]︄
+⌊︄,
+v2 =
+)︄
+[︄
+→6
+7
+→3
+]︄
+⌊︄,
+v3 =
+)︄
+[︄
+8
+h
+4
+]︄
+⌊︄
+Hard
+Q.11) The columns of AB are combinations of the columns of A. This means: The column space of AB is
+contained in (possibly equal to) the column space of A. Give an example where the column spaces
+of A and AB are not equal.
+Q.12) Determine whether the vectors v1, v2 and v3 are linearly independent or linearly dependent.
+2
+
+
+=== LAB PAGE 25 ===
+Newton School of Technology
+Mathematics-3
+Q.13) For which right-hand sides (ﬁnd a condition on b1, b2, b3) are these systems solvable?
+)︄
+[︄
+1
+4
+2
+2
+8
+4
+→1
+→4
+→2
+]︄
+⌊︄
+)︄
+[︄
+x!
+x2
+x3
+]︄
+⌊︄=
+)︄
+[︄
+b1
+b2
+b3
+]︄
+⌊︄
+Q.14) Your team is building a college robot with four control mechanisms. Their movement e!ects along
+three axes are given by the columns of:
+A =
+)︄
+[︄
+1
+0
+1
+2
+0
+1
+1
+1
+1
+1
+2
+3
+]︄
+⌊︄.
+To save money and simplify the build, you want to eliminate any controls that don’t add new
+movement capabilities.
+(a) How will you determine the redundant control mechanisms?
+(b) Which control mechanisms are redundant?
+(c) What is the smallest number of control mechanisms the team needs to retain to preserve all
+possible movement patterns that the full robot could produce?
+(d) If the team keeps control mechanisms 1 and 2, can it still produce every movement pattern
+that it could produce using all four controls?
+Challenge
+Q.14) In previous labs, the theatre had three lamps, and every colour had exactly one recipe. The theatre
+has now bought a fourth lamp. Written as RGB columns, the four lamps are
+L =
+)︄
+[︄
+1
+0
+1
+1
+0
+1
+1
+1
+0
+1
+0
+1
+]︄
+⌊︄
+↗R
+↗G
+↗B
+=
+)︄
+[︄
+|
+|
+|
+|
+Red
+Cyan
+Yellow
+White
+|
+|
+|
+|
+]︄
+⌊︄
+Red (1, 0, 0)
+Cyan (0, 1, 1)
+Yellow (1, 1, 0)
+White (1, 1, 1)
+A recipe x gives the brightness of each lamp, and Lx is the colour on the wall. The set of all
+colours the rig can make is Col(L).
+(a) Apply Gaussian elimination to L. How many pivots are there, and what is the rank?
+(b) Are the four lamp colours linearly independent? Without calculating, give a one-line reason
+using only the shape of L.
+(c) Find four numbers, not all zero, so that multiplying the four lamp colours by them and adding
+gives (0, 0, 0).
+(d) A student says: “White is the extra lamp, so return White.”
+(i) Using (c), show that the theatre could return Red instead and still make every colour it
+makes now.
+(ii) Using linear independence, show that returning Yellow is not safe: the three lamps left
+over can only make colours whose green and blue amounts are equal.
+(e) Last lecture the three-lamp rig made amber
+b = (4, 3, 1) from the recipe (2, 1, 2). On the new rig this recipe is x = (2, 1, 2, 0).
+(i) Check that Lx = b.
+3
+
+
+=== LAB PAGE 26 ===
+Newton School of Technology
+Mathematics-3
+(ii) Part (c) says Red and Cyan together can be traded for White. Use this trade to write
+down a di!erent recipe that also gives amber, and verify it.
+(iii) If brightness may be any real number, how many recipes give amber?
+(iv) In one sentence: what changed from last lecture to destroy the one-recipe-per-colour rule?
+(f) True or false? Give a reason for each.
+(i) Buying the fourth lamp increased the number of colours the theatre can make.
+(ii) Any four vectors in R3 are linearly dependent.
+(iii) Any three of these four lamps are linearly independent.
+4
+
+

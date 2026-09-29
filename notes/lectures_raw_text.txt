@@ -1,0 +1,6937 @@
+=== LECTURE PAGE 1 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Linear Algebra
+Sheet 1
+Name:
+ID/Batch:
+This sheet will teach you:
+• System of Linear Equations and their solutions
+• Matrix representations
+1
+
+
+=== LECTURE PAGE 2 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Introduction
+This course begins with the central problem of linear algebra: solving linear equations. The way to
+understand this subject is by example. We begin with two extremely humble equations, recognizing that
+you could solve them without a course in linear algebra.
+Nevertheless I hope you will give Gauss a chance to solve once.
+We can look at that system by rows or by columns. We want to see them both.
+Let’s Begin
+What does the following equation represent geometrically?
+x + y = 2
+Your Answer:
+In mathematics, an equation of this form is called as a linear equation in 2 variables.
+Why is the above given equation a linear equation?
+(Hint: Try to compare the uniformity of values of y after uniform change in values of x.)
+Your Answer:
+Is sin(x) + sin(y) = 1 a linear equation? Justify you answer.
+Your Answer:
+Let’s plot this equation x + y = 2 below:
+x
+y
+2
+
+
+=== LECTURE PAGE 3 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Note:
+Plotting lines must be practiced more apart from these notes.
+What is a system of linear equations?
+Your Answer:
+What is the meaning of solution of a system of linear equations?
+Your Answer:
+Algebra verse
+Geometry verse
+x
+y
+Recall, How do we solve the system of a linear equations?
+x + y = 2
+→x + y = 0
+Method 1:
+Method 2:
+Solve these equations using both the method below:
+3
+
+
+=== LECTURE PAGE 4 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Method 1
+Method 2
+What does the following equation represent?
+x + y + z = 1
+Your Answer:
+What does the following system signify?
+x + y + z = 1
+2x + 2y + 2z = →1
+x + y →z = 0
+Your Answer:
+Algebra verse
+Geometry verse
+What are all the possible ways these three equations can have solutions?
+4
+
+
+=== LECTURE PAGE 5 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Unique Solution
+Inﬁnitely many solution
+Inﬁnitely many solution
+No Solution
+No Solution
+No Solution
+5
+
+
+=== LECTURE PAGE 6 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+The above examples show that systems of linear equations can have no solutions, exactly one solution, or
+inﬁnitely many solutions. We will show shortly that these are the only possibilities.
+Theorem 1
+—
+Trichotomy for linear systems
+Every system of linear equations has either
+a) no solutions,
+b) exactly one solution, or
+c) inﬁnitely many solutions.
+Note:
+When a system of linear equations has at least one solution (i.e., in cases (b) and (c) of the
+theorem), it is called consistent. If it has no solutions (i.e., in case (a) of the theorem), it is
+called inconsistent.
+Whatever we have done till now is known as row picture (two intersecting/ parallel lines).
+Why do we need Linear Algebra?
+How do we solve system of 3 linear equations with 3 unknowns? What strategy do you apply?
+Your Answer:
+The main strategy that you apply is to reduce the equation from 3 variables to 2 variables by eliminating
+a variable. Then you just apply the same rules of solving system of linear equations with two variables.
+Now, let’s add one more variable in the equation with three variables
+x + y + z + w = 1
+Can we visualize this equation? (Even by using computers and online plotting tools.) Can we draw the
+full picture of the object without losing any information?
+↭Yes
+↭No
+What does the above equation represent?
+Your Answer:
+We will now learn a notation that you might have already encountered previously during your school
+6
+
+
+=== LECTURE PAGE 7 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+days, the matrix notation. You might have understood matrix as a rectangular array of numbers,
+which was a deﬁnition given during the school days. Now let’s learn what gives birth to matrices!!
+Matrix Notation
+How to write a matrix notation given system of linear equations. Let’s learn in 2 equation and 2 unknowns
+case ﬁrst and then it works for any number of equations and unknowns. That’s the beauty of linear
+algebra, everything can be understood in 2 by 2 case and then it works well in higher
+numbers as well.
+Consider the following system:
+x + y = 2
+→x + y = 0
+How to write the matrix notation?
+• Write the system of linear equations clearly.
+• Make a matrix using only the numbers (coe!cients) in front of the variables from both
+equations. We call this the coe!cient matrix.
+• List the variables x and y as a column vectors. This is called the unknown vector.
+• Take the constants on the right-hand side of the equations and write them as a column
+vector.
+• Now write the matrix equation in the form: (coe!cient matrix) × (variable vector) =
+(RHS constants vector)
+Now use the system of linear equations given above and try to write its matrix notation below.
+!
+" !
+"
+=
+!
+"
+Important Point:
+Whenever you learn a new notation, immediately check the notation works or not!
+Now let’s check whether the notation works. First check the Left Hand Side:
+# 1
+1
+→1
+1
+$ #x
+y
+$
+=
+We will now learn another way of writing the matrix:
+7
+
+
+=== LECTURE PAGE 8 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+!
+1
+1
+→1
+1
+" !
+x
+y
+"
+=
+!
+2
+0
+"
+!
+"
++
+!
+"
+=
+!
+2
+0
+"
+The above equation is scaling the vectors and then adding then together to make the vector on the
+right hand side.
+Draw the two vectors on the left hand side in the above equation. Also draw the vector on the right hand
+side of the equation.
+x
+y
+This is called as the column picture of linear systems. The scaling of the two vectors on the right
+hand side and then their addition should give rise to the resultant vector on the right hand side.
+What values of x and y (scaling of the two vectors) will get you to
+#2
+0
+$
+?
+Your Answer:
+Problems:
+Q.1) Sketch the following lines:
+x + 2y = 2
+x →y = 2
+y = 1
+Does this system have a solution? What happens if all right-hand sides are zero? Is there any
+nonzero choice of right-hand sides that allows the three lines to intersect at the same point?
+Your Answer:
+8
+
+
+=== LECTURE PAGE 9 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Q.2) For the equation: x + y = 4, 2x →2y = 4, draw the row picture and column picture.
+Row Picture
+x
+y
+Column Picture
+x
+y
+Q.3) Find the combinations of the columns (using column picture representation) that equal b =
+
+
+b1
+b2
+b3
+
+.
+u →v →w = b1
+v + w = b2
+w = b3
+Your Answer:
+9
+
+
+=== LECTURE PAGE 10 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Linear Algebra
+Sheet 2: MUL-TEA-PLICATION
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• compute matrix–vector products by organising complete columns or complete rows;
+• interpret a matrix on the right as several vectors placed side by side;
+• explain the meanings of the rows and columns of a matrix product;
+• choose whether left or right multiplication is useful for a given task;
+• manipulate binary images using shift and ﬂip matrices;
+• construct a multiplier that changes an initial matrix into a speciﬁed target, when possible.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+1
+
+
+=== LECTURE PAGE 11 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Quick Recap
+In high school, you learned the familiar row–column rule: take one row and one column, multiply
+corresponding entries, and add those products to obtain one entry of the answer. This rule is
+correct, but it is only one view of matrix multiplication. Today, we will investigate views that
+reveal complete rows, complete columns, and the structure of a product before every entry is
+calculated.
+In Lecture Zero, colours and sounds were not used as decoration. They revealed one repeated
+mathematical move:
+Scale objects of the same kind, then add them.
+Colour mixing
+Treat the pure lights as columns:
+r =
+
+
+1
+0
+0
+
+,
+g =
+
+
+0
+1
+0
+
+,
+b =
+
+
+0
+0
+1
+
+.
+A colour recipe is
+2r + g + 0b.
+Compute the resulting colour vector:
+2
+
+
+1
+0
+0
+
++
+
+
+0
+1
+0
+
++ 0
+
+
+0
+0
+1
+
+=
+
+
+
+.
+Sound mixing
+Represent two tiny sound clips by sam-
+pled amplitudes:
+Bach =
+
+
+2
+→1
+1
+0
+
+,
+MLK =
+
+
+1
+1
+→1
+2
+
+.
+Predict and then compute:
+Bach + MLK =
+
+
+
+,
+1
+2Bach + MLK =
+
+
+
+.
+In both examples:
+• the numbers on the outside told us how much of each object to use;
+• addition produced another object of the same kind.
+What might a column vector beside a matrix be telling us?
+Your Answer:
+Note
+We are deliberately not naming this repeated operation yet. Sheet 3 will isolate it, draw it,
+and give it a formal name.
+2
+
+
+=== LECTURE PAGE 12 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Reconnect with the familiar method
+Let
+A =
+'1
+2
+2
+5
+(
+,
+B =
+'3
+1
+2
+0
+(
+.
+Compute AB, taking the ﬁrst displayed matrix as A.
+Your Answer:
+Let us move a step forward. Let
+A =
+
+
+1
+0
+2
+→1
+3
+1
+0
+1
+4
+
+,
+B =
+
+
+2
+1
+3
+4
+0
+→1
+1
+2
+0
+
+.
+Compute AB.
+Your Answer:
+How many individual scalar multiplications did the entry-by-entry method require?
+Your Answer:
+Now consider rectangular matrices:
+A =
+'2
+1
+4
+0
+→2
+3
+(
+,
+B =
+
+
+1
+3
+2
+2
+0
+1
+→1
+4
+0
+
+.
+Compute C = AB.
+C = AB =
+Write the dimensions of A, B, and C:
+Your Answer:
+Now try the reverse product BA. What prevents it from being formed?
+Your Answer:
+If A is an m ↑n matrix and B is a p ↑q matrix, what structural requirement must hold for AB
+to exist? Why do the inner dimensions control compatibility?
+3
+
+
+=== LECTURE PAGE 13 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Your ﬁrst explanation:
+Keep this answer
+Later in the sheet, the cooking example will give these dimensions concrete meanings. You
+will return to this explanation and revise it.
+A large product: choose a viewpoint
+Suppose you need only the second column of a large product AB. Would you still calculate
+every entry of AB?
+↭Yes
+↭No
+What information from B might be enough?
+Your Answer:
+Consider
+A =
+
+
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+
+
+,
+x =
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+.
+Before calculating, circle a strategy:
+eight separate row calculations
+combine complete columns
+Compute Ax.
+Your Answer:
+Method audit
+1. How many distinct columns does A actually have?
+2. Which columns repeat?
+4
+
+
+=== LECTURE PAGE 14 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+3. Did you calculate eight unrelated dot products, or did you combine repeated complete
+columns? Explain.
+4. If only the ﬁfth entry of Ax were needed, which viewpoint would be more direct?
+Today’s goal
+Pause the entry-by-entry calculation. Let us look for structure before doing more arithmetic.
+one complete column at a time
+or
+one complete row at a time .
+The familiar entry method remains correct. Our goal is to stop treating it as the only
+possible viewpoint.
+Matrix–Vector Multiplication
+Matrix multiplication is a crucial skill in linear algebra. Let us use a memorable visual grammar
+to organise it: Column Tea, Row Tea, and together, MUL-TEA-PLICATION.
+Column MUL-TEA-PLICATION
+A matrix stores complete ingredient columns. A column vector on the right tells us how much
+of each complete column to use.
+Try it:
+
+
+1
+1
+1
+1
+→1
+0
+1
+1
+1
+
+
+
+
+1
+1
+→2
+
+=
+Now recompute the previous 8 ↑8 by 8 ↑1 product using the Column Way.
+Your Answer:
+5
+
+
+=== LECTURE PAGE 15 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Column-Way audit
+1. Which complete columns were scaled?
+2. Which complete columns were repeated?
+3. What structural feature became visible that the entry-by-entry method hid?
+Row MUL-TEA-PLICATION
+To form a weighted combination of the rows of an m ↑n matrix A, place a compatible 1 ↑m
+row vector on the left. Its entries tell us how much of each complete row to use.
+A question to keep alive
+Matrices care whether a multiplier is placed on the left or on the right. We will explain
+this much more deeply when matrices are studied as transformations and transformations
+are composed.
+Try it:
+(a)
+)
+1
+1
+→2
+*
+
+
+1
+1
+1
+1
+→1
+0
+1
+1
+1
+
+=
+(b)
+)
+1
+0
+→1
+2
+4
+*
+
+
+5
+3
+1
+2
+2
+4
+1
+6
+0
+3
+→4
+2
+0
+3
+9
+
+
+=
+Row-Way audit
+1. Which complete rows were scaled in part (b)?
+2. Which rows contributed nothing? Why?
+6
+
+
+=== LECTURE PAGE 16 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+3. How was this organisation di!erent from computing three separate output entries?
+From One Recipe to a Recipe Book
+One recipe makes one dish
+Suppose a canteen works with three ingredients:
+Rice,
+Paneer,
+Vegetables.
+Each ingredient has three recorded properties:
+Cost,
+Calories,
+Protein.
+A =
+
+
+20
+60
+30
+200
+250
+80
+4
+18
+3
+
+
+Rice
+Paneer
+Vegetables
+Cost
+20
+60
+30
+Calories
+200
+250
+80
+Protein
+4
+18
+3
+Before multiplying anything:
+• What does one complete column of A describe?
+• What does one complete row of A describe?
+A rice–vegetable bowl uses one unit of rice, no paneer, and one unit of vegetables:
+cv1 =
+
+
+1
+0
+1
+
+.
+Why must the recipe vector have exactly three entries? What three quantities should Ar1
+contain?
+Your Answer:
+Acv1 = 1
+
+
+20
+200
+4
+
++ 0
+
+
+60
+250
+18
+
++ 1
+
+
+30
+80
+3
+
+=
+
+
+
+.
+Interpret every entry of the answer in words.
+Your Answer:
+7
+
+
+=== LECTURE PAGE 17 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Three recipes make a recipe book
+The canteen now wants three dishes:
+cv1 =
+
+
+1
+0
+1
+
+,
+cv2 =
+
+
+1
+1
+1
+
+,
+cv3 =
+
+
+0
+2
+1
+
+.
+We could calculate Acv1, Acv2, and Acv3 separately. Instead, place the three recipe vectors side
+by side:
+B =
+
+
+|
+|
+|
+cv1
+cv2
+cv3
+|
+|
+|
+
+=
+
+
+1
+1
+0
+0
+1
+2
+1
+1
+1
+
+.
+Dish 1
+Dish 2
+Dish 3
+Rice
+1
+1
+0
+Paneer
+0
+1
+2
+Vegetables
+1
+1
+1
+Predict before calculating:
+• What should one column of AB represent?
+• What should the ﬁrst column of AB be: Acv1, Acv2, or Acv3? Why?
+• What should the second row of AB contain?
+• Predict the dimensions of AB and attach meaning to both dimensions.
+Column Way: one ﬁnished dish at a time
+AB = A
+
+
+|
+|
+|
+cv1
+cv2
+cv3
+|
+|
+|
+
+=
+
+
+|
+|
+|
+Acv1
+Acv2
+Acv3
+|
+|
+|
+
+.
+Calculate:
+Acv2 =
+=
+
+
+
+,
+Acv3 =
+=
+
+
+
+.
+8
+
+
+=== LECTURE PAGE 18 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Therefore,
+AB =
+
+
+
+.
+The matrix–matrix click
+AB =
+)
+Ab1
+Ab2
+· · ·
+Abp
+*
+.
+A vector on the right is one recipe. A matrix on the right is a recipe book: several recipe
+vectors placed side by side.
+MUL-TEA-PLICATION: one recipe vector brews one cup; one recipe matrix
+brews an entire tray.
+Row Way: one property across the whole menu
+Take the cost row of A:
+)
+20
+60
+30
+*
+.
+Compute
+)
+20
+60
+30
+*
+B =
+Complete the menu row by row:
+)
+200
+250
+80
+*
+B =
+)
+4
+18
+3
+*
+B =
+Hence
+AB =
+
+
+
+.
+What does each resulting row mean?
+Your Answer:
+Two views of the same product
+Columns of AB : one complete ﬁnished dish per column,
+Rows of AB : one property across every dish.
+Column Way and Row Way are not unrelated tricks. They organise the same product
+around di!erent questions.
+Why the inner dimensions match
+Write dimensions with meanings:
+(properties ↑ingredients)
++
+,-
+.
+A
+(ingredients ↑dishes)
++
+,-
+.
+B
+= (properties ↑dishes)
++
+,-
+.
+AB
+.
+9
+
+
+=== LECTURE PAGE 19 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Return to your ﬁrst explanation
+A recipe book has only two ingredient rows, but the ingredient-proﬁle matrix contains
+three ingredients. What information is missing? Why can the product not be formed
+meaningfully?
+Now return to the explanation you wrote earlier. What can you add or correct?
+Transfer: From a Dish Menu to a Colour Palette
+Use additive light mixing, consistent with the RGB-bulb demonstration from Lecture Zero.
+Let the columns of C be RGB proﬁles of two base lights:
+C =
+
+
+1
+0
+1
+2
+1
+0
+1
+
+=
+
+
+|
+|
+Amber
+Cyan
+|
+|
+
+.
+Rows correspond to red, green, and blue intensity.
+Three colour recipes are
+c1 =
+'1
+0
+(
+,
+c2 =
+' 1
+21
+2
+(
+,
+c3 =
+' 1
+54
+5
+(
+.
+Place them into a palette-recipe matrix:
+D =
+'1
+1
+2
+1
+5
+0
+1
+2
+4
+5
+(
+.
+Without calculating:
+• What should each column of CD represent?
+• What should the second row of CD represent?
+• What should the dimensions of CD be?
+Compute the palette. Since C is 3 ↑2 and D is 2 ↑3, your answer must be a 3 ↑3 matrix:
+CD = .
+Draw three colour swatches and annotate each one with its RGB column.
+10
+
+
+=== LECTURE PAGE 20 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Your Answer:
+The same skeleton survives
+Base-light matrix ↑colour-recipe matrix = palette matrix.
+The physical objects changed from ingredients to light, but the column/row skeleton
+remained the same.
+One skeleton, two worlds
+World
+Left matrix
+Right matrix
+Product
+Cooking
+ingredient proﬁles
+dish recipes
+ﬁnished menu
+Colour
+base-light RGB proﬁles
+colour recipes
+palette
+Binary Images: Matrices You Can See
+A 4 ↑4 black-and-white image can be represented by a binary matrix:
+1 = shaded cell,
+0 = unshaded cell.
+Mathematical convention
+All products in this section use ordinary real-number matrix multiplication. We are
+not using Boolean matrix multiplication and we are not working modulo 2. The selected
+shift and ﬂip matrices keep the outputs in these activities binary.
+Start with a 2 ↑2 shaded block in the centre:
+X0 =
+
+
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+1
+0
+0
+0
+0
+0
+
+.
+Shift matrices
+The following matrices shift rows or columns by one cell, inserting zeros at the new boundary:
+U =
+
+
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+
+,
+D =
+
+
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+
+,
+11
+
+
+=== LECTURE PAGE 21 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+L =
+
+
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+
+,
+R =
+
+
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+
+.
+Notice that U and R have identical numerical entries, while D and L have identical numerical
+entries. Why can the same array create a di!erent visible e!ect depending on whether it appears
+on the left or right?
+Your Answer:
+Forward Direction 1: Given the matrix, ﬁnd the image
+Initial image
+Operation
+Shade the result
+UX0
+X0L
+UX0R
+After shading, explain:
+• Which multiplication moved the shaded cells vertically?
+• Which multiplication moved them horizontally?
+• In UX0R, which factor changes column positions and which changes row positions?
+12
+
+
+=== LECTURE PAGE 22 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Compress the evidence
+Left multiplication reorganises complete rows.
+Right multiplication reorganises complete columns.
+The shaded grids are the evidence. The rule is a compression of what you observed.
+Forward Direction 2: Flips
+Let
+F =
+
+
+0
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+0
+
+
+reverse an order. Start with
+XL =
+
+
+1
+0
+0
+0
+1
+0
+0
+0
+1
+1
+1
+0
+0
+0
+0
+0
+
+.
+Initial
+FXL
+XLF
+Before multiplying, predict which expression ﬂips the picture top-to-bottom and which ﬂips it
+left-to-right. Explain using rows and columns, not by quoting a rule.
+Your Answer:
+Reverse Direction: Design the Multiplier
+Now the product is not given. The initial and target images are given. Decide what belongs on
+the left, what belongs on the right, or whether both are needed.
+You may use
+I, U, D, L, R, F
+and repeated multiplication such as U2 or R2, where needed.
+Challenge 1: Move the centre block to the top-right corner
+Initial
+Target
+13
+
+
+=== LECTURE PAGE 23 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Find P and Q such that
+PX0Q = target.
+Your Answer:
+Why does P belong on the left and Q on the right?
+Your Answer:
+Challenge 2: Turn the main diagonal into the anti-diagonal
+Initial I4
+Target
+Find two di!erent multiplication expressions that produce the target.
+Method 1
+Method 2
+Why can multiplication on two di!erent sides produce the same visible answer when the starting
+image is I4? Would the same be true for every initial image X?
+Your Answer:
+14
+
+
+=== LECTURE PAGE 24 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Challenge 3: Can every shape be reached?
+Allowed operations for this challenge
+Use only matrices that permute complete rows or complete columns without deleting
+any cell. Examples include the identity, reversal matrix F, and other permutation matrices.
+Do not use the zero-inserting shifts U, D, L, R in this particular challenge.
+Compare the centre block with the plus-shaped target:
+Initial
+Desired target
+Can row and column permutations alone create the plus shape? Do not search blindly. Compare:
+• the total number of shaded cells;
+• the multiset of shaded-cell counts across rows;
+• the multiset of shaded-cell counts across columns.
+State your conclusion and evidence.
+Your Answer:
+Partner Design Studio
+1. Draw any 4 ↑4 binary image with at least ﬁve shaded cells.
+2. Create a target using row shifts, column shifts, ﬂips, or a combination.
+3. Do not show your matrices to your partner.
+4. Your partner decides whether the operation belongs on the left, right, or both sides.
+5. Your partner writes the matrices and veriﬁes the result by multiplication.
+My initial image
+My target image
+P =
+,
+Q =
+.
+Reasoning:
+15
+
+
+=== LECTURE PAGE 25 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Your Answer:
+Scale Up: The 8 ↑8 Image Challenge
+Start with a centred 4 ↑4 shaded square inside an 8 ↑8 frame. It occupies rows 3 through 6
+and columns 3 through 6:
+The target is the same 4 ↑4 square in the top-left corner:
+Construct, do not guess
+The picture must move upward by two rows and leftward by two columns.
+Construct an 8 ↑8 left multiplier P→2 and an 8 ↑8 right multiplier Q↑2.
+For P→2, decide which old row should become new row 1, new row 2, and so on. For Q↑2, decide
+which old column should become new column 1, new column 2, and so on.
+Fill P→2
+Fill Q↑2
+16
+
+
+=== LECTURE PAGE 26 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Verify
+Let the centred image matrix be X8. Shade the result of
+P→2X8Q↑2.
+Open 8 ↑8 challenge
+Create an arrow, letter, staircase, or symmetric pattern in an 8 ↑8 grid. Then design:
+1. one left multiplication that changes only its vertical arrangement;
+2. one right multiplication that changes only its horizontal arrangement;
+3. one two-sided multiplication that moves it to a chosen corner;
+4. one target impossible under row and column permutations, together with an invariant-based
+explanation.
+17
+
+
+=== LECTURE PAGE 27 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Final Reﬂection: What Changed?
+Return to the opening
+At the beginning, matrix multiplication may have looked like many unrelated row–column
+calculations. Complete the statements:
+I now understand Ax as
+I now understand AB as
+Left multiplication a!ects
+Right multiplication a!ects
+One pattern I can now predict without calculating every entry is
+Does matrix multiplication still look ugly, or can you now see why its structure is useful?
+Throughout this lecture, you repeatedly multiplied complete columns or complete rows by
+numbers and added the results.
+In the next sheet, we will isolate this operation, draw it
+geometrically, give it a formal name, and ask what all possible such combinations can generate.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+18
+
+
+=== LECTURE PAGE 28 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 3: One Recipe, Inﬁnite Menu
+Vectors, Linear Combinations, Span and Ax = b
+Name:
+ID/Batch:
+This sheet will help you:
+• recognise the same vector in arrow, ordered-pair, and column form;
+• add and scale vectors, both algebraically and geometrically;
+• recognise the same “scale and add” idea in colours, sounds, and recipes;
+• distinguish one linear combination from the span of a set of vectors;
+• read Ax = b as: Which coe!cients build the target b from the columns of A?
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== LECTURE PAGE 29 ===
+Newton School of Technology
+Mathematics-3
+What is a vector?
+You have already met vectors in school, Lecture 0, and the previous sheets. Before reading another
+deﬁnition, write what comes to mind.
+What is a vector?
+Your Answer:
+Draw the picture you imagine when you hear the word vector.
+In school, you mostly met vectors through force, velocity, and acceleration: quantities with magnitude
+and direction. That is our starting point. In this sheet we will work mainly in R2 and R3. Later, we will
+return to the question “What is a vector?” and broaden the answer.
+Three notations, one vector
+During the college tech fest, a drone carrying the winning team’s certiﬁcates lands 2 units east and 3
+units north of its charging station.
+Mr. Physicist writes
+v = 2ˆi + 3ˆj.
+Mr. Computer Scientist writes
+v = (2, 3).
+Mr. Mathematician writes
+v =
+!2
+3
+"
+.
+Three notations. One vector. Visualize 2ˆi + 3ˆj below.
+2
+
+
+=== LECTURE PAGE 30 ===
+Newton School of Technology
+Mathematics-3
+How did you draw the vector? Describe the steps.
+Your Answer:
+Did you draw the axes ﬁrst?
+↭Yes
+↭No
+What did drawing the axes establish?
+Your Answer:
+It established a frame of reference. In that frame, (2, 3) tells us how far to move along two coordinate
+directions.
+x
+y
+What is this plane mathematically, as a set?
+Your Answer:
+R2 = R →R = {(x, y) | x ↑R, y ↑R}.
+This is the 2D space in which our 2-component vectors live.
+Can you describe R3 in the same way?
+Your Answer:
+Think like a programmer
+In Python, type(3.14) and type("linear algebra") tell us what kind of objects we are handling.
+In mathematics, saying a vector “lives in R2” also tells us what kind of object it is and which
+operations make sense.
+Can we add a vector in R2 to a vector in R3 directly? Why or why not?
+Your Answer:
+Convention
+For geometric drawings, we will usually place a vector’s tail at the origin. Translating a free vector
+parallel to itself does not change its magnitude or direction.
+3
+
+
+=== LECTURE PAGE 31 ===
+Newton School of Technology
+Mathematics-3
+x
+y
+v
+v
+v
+v
+The two moves we keep repeating: add and scale
+Before listing properties, do four small calculations by hand.
+World
+One small calculation
+Movement
+!2
+1
+"
++
+!1
+3
+"
+=
+!
+"
+Colour
+If r =
+
+
+1
+0
+0
+
+and g =
+
+
+0
+1
+0
+
+, then 1
+2r + 1
+2g =
+
+
+
+.
+Sound
+If s1 =
+
+
+2
+↓1
+1
+0
+
+and s2 =
+
+
+1
+1
+↓1
+2
+
+, then s1 + s2 =
+
+
+
+.
+Recipe
+If R =
+
+
+20
+200
+4
+
+and V =
+
+
+30
+80
+3
+
+record the cost, calories and protein of rice and
+vegetables, compute R + V =
+
+
+
+.
+The objects are di!erent, but the mathematical actions are the same: scale, then add objects of the
+same kind. This is the idea behind linear combinations.
+r
+g
+b
+one mix
+s1
+s2
+s1 + s2
+Rice
+Paneer
+Veg
+dish
+Colour mixing
+Audio mixing
+Recipe mixing
+In each picture, one choice of coe”cients gives one output. The span will mean something larger: all
+outputs obtained as the coe”cients vary.
+4
+
+
+=== LECTURE PAGE 32 ===
+Newton School of Technology
+Mathematics-3
+Vector addition geometrically
+x
+y
+u
+v
+u + v
+Figure 1: Head-to-tail addition
+x
+y
+u
+v
+u + v
+Figure 2: Parallelogram law
+Compute
+u =
+!3
+1
+"
+,
+v =
+!2
+3
+"
+algebraically. Then check that the result matches the endpoint in the picture.
+Your Answer:
+Scalar multiplication geometrically
+x
+y
+v
+3v
+If v =
+!1
+1
+"
+, draw 1
+2v and ↓2v on the same axes. What changes when the scalar is negative?
+Your Answer:
+Properties: the same rules in di!erent worlds
+Survey Drone Mission: commutativity
+A drone is stationed at the origin.
+v =
+!2
+1
+"
+,
+w =
+!1
+3
+"
+.
+Engineer A executes v and then w. Engineer B reverses the order.
+5
+
+
+=== LECTURE PAGE 33 ===
+Newton School of Technology
+Mathematics-3
+Engineer A
+x
+y
+Engineer B
+x
+y
+Did the order a!ect the ﬁnal position? Your Answer:
+Property 1: Commutativity of vector addition
+For vectors of the same space,
+v + w = w + v.
+For compatible sound vectors, the same rule holds sample by sample: s1 + s2 = s2 + s1.
+Warehouse Robot: associativity
+v =
+!2
+1
+"
+,
+w =
+!1
+3
+"
+,
+x =
+!↓1
+2
+"
+.
+Compute both:
+(v + w) + x =
+,
+v + (w + x) =
+.
+Did the grouping matter? Your Answer:
+Property 2: Associativity of vector addition
+(u + v) + w = u + (v + w).
+Delivery Drone Battery Upgrade: distributivity over vector addition
+A battery upgrade triples every displacement. Compute and compare
+3(v + w)
+with
+3v + 3w.
+Compute both. Your Answer:
+Now test the same law using the colour vectors
+r =
+
+
+1
+0
+0
+
+,
+g =
+
+
+0
+1
+0
+
+.
+Compute 2(r + g) and 2r + 2g. The setting changed from movement to light. Did the algebra change?
+Your Answer:
+6
+
+
+=== LECTURE PAGE 34 ===
+Newton School of Technology
+Mathematics-3
+Property 3: Distributivity over vector addition
+ω(v + w) = ωv + ωw.
+Digital Map Zoom: distributivity over scalar addition
+A path is represented by v. One copy is scaled by c and another by d. If we add the two copies, can one
+scaling operation give the same result?
+Your Answer:
+Property 4: Distributivity over scalar addition
+(c + d)v = cv + dv.
+For a sound vector s, two copies with gains c and d combine to the same vector as one copy with
+gain c + d.
+The “do nothing” object: additive identity
+A movement command that does nothing is
+0 =
+!0
+0
+"
+.
+What would the corresponding “zero” object look like for a four-sample sound vector? What would it
+look like for an RGB light vector?
+Sound zero:
+RGB zero:
+Property 5: Additive identity
+v + 0 = v.
+The zero vector looks di!erent in di!erent spaces, but its role is always the same: adding it changes
+nothing.
+The “undo” object: additive inverse
+A drone accidentally executes v. What one command returns it to where it started?
+Your Answer:
+If s is a sampled sound vector, what is s + (↓s) mathematically?
+Your Answer:
+Property 6: Additive inverse
+v + (↓v) = 0.
+Image Enlargement: associativity of scalar multiplication
+A blueprint is enlarged by a factor of 2 and then the enlarged copy is enlarged by a factor of 3. What
+single factor gives the same result?
+Your Answer:
+7
+
+
+=== LECTURE PAGE 35 ===
+Newton School of Technology
+Mathematics-3
+Property 7: Associativity of scalar multiplication
+c(dv) = (cd)v.
+These rules are not special to arrows. They describe the algebraic behaviour we want vectors to have. For
+now, we stay concrete in R2 and R3. Later, we will ask what other kinds of objects obey the same rules.
+Linear combination: one choice of coe”cients
+Look at these three expressions before reading the deﬁnition.
+Colour:
+0.2r + 0.5g + 0.3b,
+Sound:
+1
+2s1 + s2,
+Recipe:
+1 R + 2 P + 1
+2V.
+In each expression, what do the numbers do? What does addition do?
+Your Answer:
+Now return to geometry. An RC car knows only two basic movement vectors:
+v =
+!1
+0
+"
+,
+w =
+!0
+1
+"
+.
+Its parking spot is at
+!3
+4
+"
+.
+How can the car reach the spot using scaled copies of v and w?
+Your Answer:
+What if the target is
+!a
+b
+"
+?
+Your Answer:
+Deﬁnition: Linear combination
+A linear combination of v1, . . . , vk is any vector of the form
+c1v1 + c2v2 + · · · + ckvk,
+where c1, . . . , ck ↑R.
+The name is new; the operation is not. In Sheet 2, the entries of the vector on the right told you how
+much of each column to use. That was already a linear combination. Here we simply name the idea.
+8
+
+
+=== LECTURE PAGE 36 ===
+Newton School of Technology
+Mathematics-3
+Do not confuse these two ideas
+A linear combination means: choose one set of coe”cients and get one output.
+0.2r + 0.5g + 0.3b
+is one colour,
+1
+2s1 + s2
+is one mixed sound,
+R + 2P + 1
+2V
+is one dish proﬁle.
+The span means: let the coe”cients vary over all real numbers and collect every output you can
+obtain.
+span{r, g, b},
+span{s1, s2},
+span{R, P, V }.
+World
+One linear combination
+Span
+Colour
+one chosen mix of base colours
+all mathematically reachable colour
+vectors from those bases
+Sound
+one chosen audio mix
+all mathematically reachable audio
+mixes from those clips
+Recipe
+one chosen dish proﬁle
+all mathematically reachable pro-
+ﬁles from those ingredient vectors
+Three quick transfers
+(a) Colour. With
+r =
+
+
+1
+0
+0
+
+,
+g =
+
+
+0
+1
+0
+
+,
+b =
+
+
+0
+0
+1
+
+,
+write
+
+
+2
+1
+0
+
+as a linear combination of r, g, b.
+Your Answer:
+(b) Sound. Let
+s1 =
+
+
+2
+↓1
+1
+0
+
+,
+s2 =
+
+
+1
+1
+↓1
+2
+
+.
+Find coe”cients that produce
+
+
+3
+0
+0
+2
+
+
+from s1 and s2.
+Your Answer:
+9
+
+
+=== LECTURE PAGE 37 ===
+Newton School of Technology
+Mathematics-3
+(c) Recipe. Suppose
+R =
+
+
+20
+200
+4
+
+,
+P =
+
+
+60
+250
+18
+
+,
+V =
+
+
+30
+80
+3
+
+.
+Interpret R + 2P + V in words, then compute it.
+Your Answer:
+Practice with vectors
+For each set of vectors, write a general linear combination.
+(a) v1 =
+!
+1
+1
+"
+,
+v2 =
+!
+1
+↓1
+"
+Your Answer:
+(b) v1 =
+!1
+2
+"
+,
+v2 =
+!2
+4
+"
+Your Answer:
+(c) v1 =
+!0
+1
+"
+,
+v2 =
+!↓1
+0
+"
+Your Answer:
+(d) v1 =
+
+
+1
+1
+1
+
+,
+v2 =
+
+
+1
+↓1
+1
+
+,
+v3 =
+
+
+1
+0
+1
+
+
+Your Answer:
+Determine whether
+
+
+1
+2
+3
+
+
+is a linear combination of
+
+
+1
+1
+1
+
+
+and
+
+
+↓1
+0
+1
+
+.
+If yes, ﬁnd the coe”cients.
+Your Answer:
+10
+
+
+=== LECTURE PAGE 38 ===
+Newton School of Technology
+Mathematics-3
+Span: the set of all linear combinations
+Before continuing, state the di!erence in your own words:
+A linear combination of v1, v2 is:
+The span of v1, v2 is:
+Keep this distinction ﬁxed in your mind: one linear combination gives one vector; the span is a
+set of vectors. Now we make it precise.
+A Curious Monkey and an Inﬁnite Keyboard
+Imagine a monkey with unlimited time pressing keys at random.
+The Inﬁnite Monkey thought experiment says that, eventually,
+every ﬁnite piece of text would appear.
+Now give the monkey the RC-car joystick. It can choose any real
+amount of the two movement vectors v and w.
+As those two coe”cients vary, what region can the car reach?
+Your Answer:
+The collection of all vectors obtained from all possible linear combinations is the span. Notice the
+di!erence:
+• 2v ↓3w is a linear combination.
+• span{v, w} is the set of all linear combinations c1v + c2w.
+Deﬁnition: Span
+span{v1, . . . , vk} = {c1v1 + · · · + ckvk | c1, . . . , ck ↑R} .
+Span is the set of everything reachable by scaling and adding the given vectors.
+Return to the RC-car vectors v =
+!1
+0
+"
+and w =
+!0
+1
+"
+. What is their span?
+Your Answer:
+11
+
+
+=== LECTURE PAGE 39 ===
+Newton School of Technology
+Mathematics-3
+The same question in three worlds
+r
+g
+b
+one mix
+s1
+s2
+s1 + s2
+Rice
+Paneer
+Veg
+dish
+one colour vs many colours
+one mix vs many mixes
+one dish vs many dishes
+(a) What does span{r, g, b} mean if r, g, b are the three RGB coordinate vectors?
+Your Answer:
+(b) What does span{s1, s2} mean for two compatible sampled sounds?
+Your Answer:
+(c) What does the span of the three ingredient-proﬁle vectors R, P, V mean mathematically?
+Your Answer:
+Physical Note:
+Real colour intensities and recipe amounts are usually restricted, for example to nonnegative or
+bounded values. Mathematical span allows all real coe!cients. The analogy helps us see the
+structure, but the mathematical set is larger than the physically meaningful one.
+Solving Ax = b: build the target
+Now return to Sheet 2. Write a matrix by columns:
+A =
+
+
+|
+|
+|
+a1
+a2
+· · ·
+an
+|
+|
+|
+
+,
+x =
+
+
+x1
+x2
+...
+xn
+
+.
+Then
+Ax = x1a1 + x2a2 + · · · + xnan.
+So solving
+Ax = b
+asks:
+Which coe!cients combine the columns of A to produce the target b?
+12
+
+
+=== LECTURE PAGE 40 ===
+Newton School of Technology
+Mathematics-3
+A colour target ﬁrst
+Two base-light proﬁles are
+c1 =
+
+
+1
+0
+1
+
+,
+c2 =
+
+
+0
+1
+1
+
+.
+Find x1, x2 so that
+x1c1 + x2c2 =
+
+
+1
+2
+3
+
+.
+Your Answer:
+Now stack the two colour vectors as columns:
+
+
+1
+0
+0
+1
+1
+1
+
+
+!x1
+x2
+"
+=
+
+
+1
+2
+3
+
+.
+The colour-recipe question and the matrix equation ask the same thing in two languages.
+Return to ordinary simultaneous equations
+Solve
+2x + y = 7,
+x ↓y = 2.
+Before solving, read the same system in matrix form and then as a column combination.
+!2
+1
+1
+↓1
+"
+)
+*+
+,
+A
+!x
+y
+"
+)*+,
+x
+=
+!7
+2
+"
+)*+,
+b
+.
+Column-combination reading:
+x
+!2
+1
+"
++ y
+! 1
+↓1
+"
+=
+!7
+2
+"
+.
+In words, what are we trying to ﬁnd?
+Your Answer:
+Substitution
+Elimination
+13
+
+
+=== LECTURE PAGE 41 ===
+Newton School of Technology
+Mathematics-3
+Substitution
+Elimination
+Now solve the following system using substitution and elimination:
+x1 + 2x2 + 3x3 + 4x4 + 5x5 = 15,
+2x1 + x2 + 4x3 + 3x4 + x5 = 11,
+3x1 + 2x2 + x3 + 5x4 + 2x5 = 13,
+x1 + 4x2 + 2x3 + x4 + 3x5 = 11,
+5x1 + x2 + 3x3 + 2x4 + x5 = 12.
+Solution:
+14
+
+
+=== LECTURE PAGE 42 ===
+Newton School of Technology
+Mathematics-3
+Continue your solution:
+Reﬂection
+The large system was deliberately uncomfortable. Use that discomfort as information.
+(a) What became di”cult as the number of variables grew?
+Your Answer:
+(b) What does a solution vector x tell you about the columns of A and the target b?
+Your Answer:
+(c) Complete the sentence: A linear combination is one choice of coe!cients; the span is
+.
+(d) Use one intuitive example to explain the same distinction. Choose one:
+• one colour mix versus all colour mixes,
+• one audio mix versus all audio mixes,
+• one recipe versus all possible recipes.
+Your Answer:
+In the next sheets, we will build a systematic method for solving such systems. Keep this meaning with
+you:
+Ax = b
+↔↗
+Can the target b be built from the columns of A?
+15
+
+
+=== LECTURE PAGE 43 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 4: Same Solution, Simpler System
+Gaussian Elimination: Change the Equations, Not the Answer
+Name:
+ID/Batch:
+This sheet will teach you:
+• Gaussian Elimination
+• Row operations
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== LECTURE PAGE 44 ===
+Newton School of Technology
+Mathematics-3
+Quick Recap: What problem did Sheet 3 leave us with?
+In Sheet 3, we learned to read
+Ax = b
+as a question about a target:
+Which coe!cients combine the columns of A to produce the
+target b?
+For a small system, guessing or substitution may be manageable. For a larger system, we need a method
+that is systematic, repeatable, and suitable for computation.
+Consider
+x + y + z = 6,
+2x + 3y + z = 14,
+x + 2y + 3z = 14.
+How would you begin if nobody had taught you Gaussian elimination?
+Your Answer:
+A useful question
+Do we really need to solve the equations exactly as they were given, or can we replace them by
+easier equations that carry the same solution information?
+That question is the beginning of Gaussian elimination.
+Warm-up: the rope activity, revisited
+In the classroom activity, two taut ropes represented two lines:
+x + y = 5
+2x →y = 1 .
+Their meeting point represents the solution of the system.
+x
+y
+(2, 3)
+x + y = 5
+2x →y = 1
+The point (2, 3) is not special because we already know its coordinates. It is special because it satisﬁes
+both equations at the same time.
+2
+
+
+=== LECTURE PAGE 45 ===
+Newton School of Technology
+Mathematics-3
+Move 1: exchange the order
+Suppose we write the black equation (2x →y = 1) ﬁrst and the orange equation (x + y = 5) second.
+Did the two geometric lines change?
+↭Yes
+↭No
+Did their common point change?
+↭Yes
+↭No
+Algebraically, this is
+What changed?
+Only the order in which we store the equations changed. The system carries the same
+information.
+Move 2: rewrite one equation at a di!erent scale
+The orange equation is
+x + y = 5.
+Multiply the whole equation by 2:
+2x + 2y = 10.
+Does 2x + 2y = 10 draw a new line, or the same line?
+Your Answer:
+Why must the scaling number be nonzero if we want to preserve exactly the same equation information?
+Your Answer:
+Geometry
+Check geometrically:
+x
+y
+Algebra
+What does this mean algebraically?
+Your Answer:
+3
+
+
+=== LECTURE PAGE 46 ===
+Newton School of Technology
+Mathematics-3
+Has the intersection point changed?
+↭Yes
+↭No
+The missing third move: can two ropes manufacture an easier rope?
+Here is the key change from the old activity. We will not ask you to make a rope parallel to an axis.
+That would already tell you what we want.
+Instead, ask:
+Can the two equations manufacture a new
+equation that is easier to use?
+Look again:
+R1 :
+x + y = 5,
+R2 :
+2x →y = 1.
+What happens if you add the two true statements?
+Your Answer:
+You should obtain
+3x = 6
+=↑
+x = 2.
+Why this is useful
+We did not ask for an axis-parallel line ﬁrst. The axis-parallel line appeared because one
+variable cancelled. Once one coordinate is isolated, the intersection is easier to read.
+Geometrically
+Try it geometrically:
+x
+y
+Algebra
+What does this mean algebraically?
+Your Answer:
+4
+
+
+=== LECTURE PAGE 47 ===
+Newton School of Technology
+Mathematics-3
+The three valid moves
+Move
+Row notation
+What it means
+Exchange
+Scale
+Replace
+.
+A move that is not valid
+Changing only the constant on one side, such as
+x + y = 5
+→↓
+x + y = 7,
+shifts the line and changes the solution set. That is not a row operation.
+Complete the sentence:
+Gaussian elimination is not about changing the
+. It is about changing
+the
+until the solution becomes easier to read.
+Colour Mystery: create a sensor that is blind to one ingredient
+Now we move from two lines in R2 to three unknown recipe amounts.
+Three premixed colour bottles have channel proﬁles
+C1 =
+
+
+1
+1
+0
+
+,
+C2 =
+
+
+1
+0
+1
+
+,
+C3 =
+
+
+0
+1
+1
+
+.
+The target has channel report
+b =
+
+
+5
+4
+3
+
+.
+Let x1, x2, x3 be the unknown amounts of C1, C2, C3.
+C1 = (1, 1, 0)
+C2 = (1, 0, 1)
+C3 = (0, 1, 1)
+Target (5, 4, 3)
+The matrix equation is
+
+
+
+
+
+
+x1
+x2
+x3
+
+=
+
+
+5
+4
+3
+
+.
+Read by rows, the laboratory reports are
+Red: x1 + x2 = 5,
+Green: x1 + x3 = 4,
+Blue: x2 + x3 = 3.
+5
+
+
+=== LECTURE PAGE 48 ===
+Newton School of Technology
+Mathematics-3
+The challenge
+Can you combine two reports to create a new report that does not see x1 at all? Do not
+solve the full system yet.
+Which two reports contain x1 with the same coe!cient?
+Your Answer:
+What happens if you calculate Green →Red?
+Your Answer:
+The new report is
+→x2 + x3 = →1.
+Why is it blind to x1?
+Your Answer:
+A zero has meaning
+The zero coe!cient of x1 is not cosmetic. It says: this new report no longer depends on x1.
+Now combine the new report with the Blue report so that x2 also disappears.
+Your Answer:
+You should reach
+2x3 = 2.
+Hence x3 =
+, then x2 =
+, then x1 =
+.
+The same colour puzzle as row operations
+Start from the augmented matrix:
+
+
+1
+1
+0
+5
+1
+0
+1
+4
+0
+1
+1
+3
+
+.
+The two report-combining moves were
+R2 ↓R2 →R1,
+then
+R3 ↓R3 + R2.
+So
+
+
+1
+1
+0
+5
+1
+0
+1
+4
+0
+1
+1
+3
+
+→↓
+
+
+1
+1
+0
+5
+0
+→1
+1
+→1
+0
+1
+1
+3
+
+→↓
+
+
+1
+1
+0
+5
+0
+→1
+1
+→1
+0
+0
+2
+2
+
+.
+What pattern is appearing?
+Your Answer:
+The purpose of elimination
+We create zeros so that later equations involve fewer unknowns. Eventually the system becomes
+triangular, and the unknowns can be recovered from the bottom upward.
+6
+
+
+=== LECTURE PAGE 49 ===
+Newton School of Technology
+Mathematics-3
+What is happening geometrically in three dimensions?
+With unknowns (x1, x2, x3), each linear equation
+ax1 + bx2 + cx3 = d
+represents a plane in R3.
+Our three colour reports are therefore three planes. Their common point is
+(x1, x2, x3) = (3, 2, 1).
+x1
+x2
+x3
+(3, 2, 1)
+When we replace one row by a combination of rows, the new plane still passes through the old common
+solution. For two nonparallel planes, every linear combination of their equations contains their line of
+intersection.
+Geometric picture of row replacement
+In 2D, the replacement line can be thought of as turning through the same intersection point.
+In 3D, the replacement plane can be thought of as changing while preserving the common
+intersection information.
+Why does the solution stay the same after row replacement? Use the picture to explain.
+Your Answer:
+Now name the algorithm: Gaussian elimination
+We have already discovered the ingredients. Now we package them into an algorithm.
+Gaussian elimination
+Gaussian elimination uses elementary row operations to transform a system into row echelon
+form, where the equations become progressively simpler from top to bottom.
+8.1
+Pivot and row echelon form
+A pivot position is the position of the ﬁrst nonzero entry in a nonzero row after the matrix has been
+organised in echelon form.
+A matrix is in row echelon form when:
+1. all zero rows, if any, are at the bottom;
+7
+
+
+=== LECTURE PAGE 50 ===
+Newton School of Technology
+Mathematics-3
+2. the pivot in each lower nonzero row lies to the right of the pivot above it;
+3. every entry below a pivot is zero.
+
+
+↔
+↔
+↔
+↔
+0
+↔
+↔
+↔
+0
+0
+↔
+↔
+0
+0
+0
+0
+
+
+Why the staircase matters
+Moving downward, each equation depends on fewer unknowns. The ﬁnal nonzero row is the easiest
+equation. Then we work upward by back substitution.
+Recipe for a Perfect Matrix - (using Gaussian Elimination)
+1. Find the ﬁrst non-zero entry in the leftmost column. This is your
+pivot.
+2. If needed, swap rows to bring the pivot into position.
+3. Use the pivot row to create zeros below the pivot.
+4. Move to the next column and repeat the process.
+5. Continue until all pivots form a staircase pattern.
+Remember: Use only the three valid row operations and never change
+the solution of the system!
+Solved Example
+Apply Gaussian Elimination to the following matrix:
+A =
+
+
+1
+1
+1
+2
+3
+1
+1
+2
+3
+
+
+Solution:
+
+
+1
+1
+1
+2
+3
+1
+1
+2
+3
+
+
+R2→R2↑2R1
+R3→R3↑R1
+→→→→→→→→↓
+
+
+1
+1
+1
+0
+1
+→1
+0
+1
+2
+
+R3→R3↑R2
+→→→→→→→→↓
+
+
+1
+1
+1
+0
+1
+→1
+0
+0
+3
+
+=↑
+row echelon form
+This above form after application of gaussian elimination is the row echleon form.
+8
+
+
+=== LECTURE PAGE 51 ===
+Newton School of Technology
+Mathematics-3
+Try it Yourself: Apply Gaussian Elimination to the following matrices:
+(a) A =
+
+
+1
+2
+1
+2
+5
+1
+1
+3
+4
+
+
+Your Answer:
+(b) B =
+
+
+1
+1
+2
+5
+2
+3
+1
+8
+1
+2
+3
+9
+
+
+Your Answer:
+8.2
+Solving Ax = b using Gaussian Elimination
+Some of you might have already learnt this method during your school days. But now you have the
+clarity how and why it works. Let us try to ﬁnd solution of system of linear equations using guassian
+Elimination.
+Consider the system:
+x + y + z = 6
+2x + 3y + z = 14
+x + 2y + 3z = 14
+9
+
+
+=== LECTURE PAGE 52 ===
+Newton School of Technology
+Mathematics-3
+Step 1: Writing the Augmented matrix.
+
+
+1
+1
+1
+6
+2
+3
+1
+14
+1
+2
+3
+14
+
+
+Step 2: Eliminate enteries below pivot in column 1.
+R2 ↓R2 →2R1,
+R3 ↓R3 →R1
+
+
+1
+1
+1
+6
+0
+1
+→1
+2
+0
+1
+2
+8
+
+
+Step 3: Perform the same elimination process for pivot in column 2
+R3 ↓R3 →R2
+
+
+1
+1
+1
+6
+0
+1
+→1
+2
+0
+0
+3
+6
+
+
+Step 4: Back Substitution to get the solutions!
+z = 6
+3 =↑
+z = 2
+y →z = 2 =↑
+y = 4
+x + y + z = 6 =↑
+x = 0
+Final Answer:
+
+
+x
+y
+z
+
+=
+
+
+0
+4
+2
+
+
+Method audit
+At no stage did we change the answer. We repeatedly changed the representation of the same
+solution problem until the answer became easy to read.
+Challenge I: Global MasterChef Mystery
+CONFIDENTIAL KITCHEN BRIEF – NEW SOUS CHEFS
+A ﬁnished cake sits before you. Its recipe card has vanished. Three premix jars are in the pantry.
+You know what each premix contains, and the kitchen laboratory has measured the total Flour,
+Sugar, and Cocoa in the ﬁnished cake.
+Mission: Recover the secret recipe without opening the cake.
+The three premixes are
+P1 =
+
+
+1
+1
+0
+
+,
+P2 =
+
+
+1
+0
+1
+
+,
+P3 =
+
+
+0
+1
+1
+
+,
+where the coordinates mean
+
+
+Flour
+Sugar
+Cocoa
+
+.
+The laboratory report for the cake is
+
+
+5
+4
+3
+
+.
+10
+
+
+=== LECTURE PAGE 53 ===
+Newton School of Technology
+Mathematics-3
+Let x1, x2, x3 be the amounts of P1, P2, P3.
+(a) Write the three laboratory equations.
+Your Answer:
+(b) Combine reports until one new report talks about only one premix.
+Your Answer:
+(c) Recover the recipe.
+Your Answer:
+(d) Explain in one sentence why this is the same mathematics as the RGB puzzle.
+Your Answer:
+Chef’s note
+We did not remove Flour, Sugar, or Cocoa from the cake. We subtracted one fact about the
+cake from another fact about the cake. Gaussian elimination manipulates information, not the
+physical object.
+Transfer Challenge II: balancing a chemical reaction
+When propane burns,
+x1C3H8 + x2O2 →↓x3CO2 + x4H2O.
+Atoms are neither created nor destroyed. Balance Carbon, Hydrogen, and Oxygen to form a system of
+linear equations.
+If the chemist chooses x1 = 1, determine x2, x3, x4 using elimination.
+Your Answer:
+11
+
+
+=== LECTURE PAGE 54 ===
+Newton School of Technology
+Mathematics-3
+Transfer Challenge III: tra”c ﬂow
+A tra!c engineer is studying the movement of vehicles through a network of one-way streets in downtown
+Baltimore. Since vehicles are neither created nor destroyed at an intersection, the total ﬂow entering each
+intersection must equal the total ﬂow leaving it.
+A tra!c sensor installed on the road between intersections C and D records a ﬂow of 200 vehicles per hour,
+i.e., x5 = 200. Determine the remaining tra!c ﬂows using Gaussian elimination. Show the augmented
+matrix and all row operations used. Do not solve the system by direct substitution.
+Your Answer:
+12
+
+
+=== LECTURE PAGE 55 ===
+Newton School of Technology
+Mathematics-3
+11.1
+Visualizing Elimination:
+Consider the two linear equations:
+x →2y = 1
+3x + 2y = 11
+Now, apply gaussian elimination to the system:
+Your Answer:
+Activity!
+Create a system of two linear equations with two variables that have no solution. Give the graphical
+visualization:
+Your Answer:
+x
+y
+No Solution – Before Elimination
+x
+y
+No Solution – After Elimination
+13
+
+
+=== LECTURE PAGE 56 ===
+Newton School of Technology
+Mathematics-3
+Now, create a system of two linear equations with two variables that have iniﬁnitely many solutions. Give
+the graphical visualization:
+Your Answer:
+x
+y
+↗Solution – Before Elimination
+x
+y
+↗Solution – After Elimination
+Rank: First Level of Understanding
+The marking of pivots is more useful than you think! The number of pivots in a matrix actually contribute
+to a new concept.
+Deﬁnition
+The rank of coe!cent matrix A is equal to the number of pivots after the gaussian elimination.
+Apply Gaussian elimination, identify the pivots and then determine the rank of matrix
+A =
+
+
+1
+2
+1
+2
+5
+1
+1
+3
+4
+
+
+Your Solution:
+Final reﬂection
+Complete these in your own words.
+1. Why do we want zeros below pivots?
+Your Answer:
+14
+
+
+=== LECTURE PAGE 57 ===
+Newton School of Technology
+Mathematics-3
+2. Why is Rj ↘Rj + kRi legal?
+Your Answer:
+3. What is the geometric meaning of elimination for two lines?
+Your Answer:
+4. What is the geometric meaning of elimination for planes in three variables?
+Your Answer:
+5. Finish the sentence:
+Gaussian elimination keeps the
+ﬁxed and changes
+the
+until the solution is easier to read.
+Sheet 4 takeaway:
+Same solution. Simpler system. Zeros with meaning.
+15
+
+
+=== LECTURE PAGE 58 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 5: PREP ONCE, SERVE MANY
+Elementary Matrices • LU • Repeated Solves
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• turn an elementary row operation into an elementary matrix;
+• explain LU decomposition as saved Gaussian elimination;
+• solve repeated systems Ax = b by forward and back substitution;
+• explain why factor-once, solve-many is useful in computation.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== LECTURE PAGE 59 ===
+Newton School of Technology
+Mathematics-3
+Flashback: what did Gaussian elimination really do?
+FLASHBACK FROM SHEET 4
+In Sheet 4, we did not treat row operations as random tricks. We used them to rewrite
+the same system in an easier form. The equations changed, but the common solution
+set did not.
+Consider
+x + y = 5,
+2x + 3y = 12.
+Apply
+R2 →R2 ↑2R1.
+Complete the new second equation:
+x +
+y =
+.
+Equation move
+What stayed invariant?
+R2 →R2 ↑2R1
+PREDICT
+Suppose tomorrow you must perform exactly the same row operation on a di!erent matrix.
+Must the instruction remain a sentence, or could the operation itself become a reusable
+mathematical object?
+Your prediction:
+R2 →R2 ↑2R1
+?
+store the move
+CLICK
+Today we turn a procedure into an object.
+Elementary matrices: storing one row move
+Start from the blank template
+If we want to record only the row operation, the cleanest starting matrix is the identity:
+I2 =
+!1
+0
+0
+1
+"
+.
+Perform the same operation
+R2 →R2 ↑2R1
+on I2:
+!1
+0
+0
+1
+"
+↑→E1 =
+
+
+
+.
+2
+
+
+=== LECTURE PAGE 60 ===
+Newton School of Technology
+Mathematics-3
+PREDICT
+Before multiplying anything: if E1 acts on a matrix A from the left, which row of A should
+change?
+↭R1
+↭R2
+↭both rows
+Now use
+A =
+!3
+1
+7
+4
+"
+.
+Do the same task in two ways.
+Route A: do the row operation
+Route B: multiply by E1
+'3 1
+7 4
+(
+R2→R2↑2R1
+↑↑↑↑↑↑↑→
+
+
+
+
+E1A =
+
+
+
+
+Do both routes lead to same destination?
+↭Yes
+↭No
+Deﬁnition
+An elementary matrix is obtained by performing exactly one elementary row operation
+on an identity matrix.
+When an elementary matrix multiplies another matrix on the left, it performs that same
+row operation.
+OPEN THE MACHINE
+instruction
+↑→
+stored operation
+R2 →R2 ↑2R1
+E1
+The visible action is a row move. The hidden mechanism can now be represented by a
+matrix.
+3
+
+
+=== LECTURE PAGE 61 ===
+Newton School of Technology
+Mathematics-3
+Build the other two row-operation matrices
+Start from I2 each time.
+Row operation
+Elementary matrix
+Predict the e!ect on A
+R1 ↓R2
+S =
+
+
+
+
+R2 →3R2
+D =
+
+
+
+
+R2 →R2 + 4R1
+T =
+
+
+
+
+PREDICT LEFT OR RIGHT?
+We want to perform a row operation on A using an elementary matrix E. Which expression
+should we use?
+↭EA
+↭AE
+Connect your choice to what you discovered about left multiplication in Sheet 2.
+Your Answer:
+The undo button: inverse elementary matrices
+Suppose
+E1
+stores
+R2 →R2 ↑2R1.
+What row operation would undo it?
+R2 →
+.
+Apply that reverse move to I2 and write the matrix:
+E↑1
+1
+=
+
+
+
+.
+Check:
+E↑1
+1 E1 =
+
+
+
+= I2.
+CLICK
+Elementary matrix = stored row move. Inverse elementary matrix = stored
+undo move.
+4
+
+
+=== LECTURE PAGE 62 ===
+Newton School of Technology
+Mathematics-3
+This idea is the key to LU decomposition: elimination sends A toward an easier matrix U;
+inverse elementary matrices let us reconstruct the path back to A.
+The same kitchen, a new order
+FLASHBACK FROM SHEETS 2 AND 3
+In the kitchen model, a matrix turns an ingredient recipe into a property vector:
+(properties ↔ingredients)(ingredients ↔1) = (properties ↔1).
+Sheet 3 asked whether a target b could be built from the columns of A. Today the target
+will change repeatedly while the kitchen matrix stays ﬁxed.
+For clean hand calculations, use this small training kitchen:
+A =
+
+
+2
+1
+1
+4
+3
+3
+8
+7
+9
+
+.
+Interpret the columns as three ingredients and the rows as three measured properties. The exact
+units are not important here; the structure is.
+Three customers request three di!erent target orders (dishes):
+b1 =
+
+
+3
+7
+15
+
+,
+b2 =
+
+
+2
+6
+16
+
+,
+b3 =
+
+
+5
+11
+25
+
+.
+For each customer we must solve
+Axi = bi.
+PREDICT
+Across all three orders, what changes and what stays ﬁxed?
+Stays ﬁxed:
+Changes:
+If we run Gaussian elimination from scratch for every bi, which part of the work will be
+repeated?
+Your Answer:
+CLICK
+The elimination structure belongs mainly to A. If A repeats, we should try to save that
+work.
+5
+
+
+=== LECTURE PAGE 63 ===
+Newton School of Technology
+Mathematics-3
+Saving Gaussian elimination: build U once
+Reduce the training matrix to upper triangular form.
+A =
+
+
+2
+1
+1
+4
+3
+3
+8
+7
+9
+
+
+Step 1: eliminate below the ﬁrst pivot
+Choose the two row operations:
+R2 →
+,
+R3 →
+.
+After both moves:
+
+
+2
+1
+1
+
+.
+Step 2: eliminate below the second pivot
+Choose the next operation:
+R3 →
+.
+You should arrive at
+U =
+
+
+2
+1
+1
+0
+1
+1
+0
+0
+2
+
+.
+PREDICT
+Did we use a row swap anywhere?
+↭Yes
+↭No
+Keep this answer visible. It will matter when we write A = LU.
+Step 3: store each elimination move
+Let E1, E2, E3 store the three row-addition operations, in the same order in which you performed
+them.
+6
+
+
+=== LECTURE PAGE 64 ===
+Newton School of Technology
+Mathematics-3
+Row move
+Elementary matrix
+Inverse elementary matrix
+R2 →R2 ↑2R1
+E1 =
+
+
+
+
+E↑1
+1
+=
+
+
+
+
+R3 →R3 ↑4R1
+E2 =
+
+
+
+
+E↑1
+2
+=
+
+
+
+
+R3 →R3 ↑3R2
+E3 =
+
+
+
+
+E↑1
+3
+=
+
+
+
+
+Step 4: compress the whole elimination path
+Because the stored row moves send A to U,
+E3E2E1A = U.
+Undo the operations one at a time. Fill the blanks:
+E3E2E1A = U
+E2E1A =
+U
+E1A =
+U
+A =
+U
+Deﬁne
+L = E↑1
+1 E↑1
+2 E↑1
+3 .
+Now multiply those inverse elementary matrices and obtain
+L =
+
+
+1
+0
+0
+1
+0
+1
+
+.
+Check by multiplication:
+LU =
+
+
+
+= A.
+7
+
+
+=== LECTURE PAGE 65 ===
+Newton School of Technology
+Mathematics-3
+What L and U remember
+• U is the easier upper-triangular matrix created by elimination.
+• L stores the elimination multipliers needed to rebuild A from U.
+• Together, L and U are a compressed record of Gaussian elimination.
+CLICK
+Gaussian elimination was a procedure. LU stores its reusable
+structure.
+Factor once, solve many
+Return to the training kitchen. We now have
+A = LU,
+with
+L =
+
+
+1
+0
+0
+2
+1
+0
+4
+3
+1
+
+,
+U =
+
+
+2
+1
+1
+0
+1
+1
+0
+0
+2
+
+.
+To solve
+Ax = b,
+write
+LUx = b.
+Introduce
+y = Ux.
+Then solve two triangular systems:
+Ly = b
+then
+Ux = y .
+b
+solve Ly = b
+y
+solve Ux = y
+x
+Order 1: guided solve
+For
+b1 =
+
+
+3
+7
+15
+
+,
+ﬁrst solve
+
+
+1
+0
+0
+2
+1
+0
+4
+3
+1
+
+
+
+
+y1
+y2
+y3
+
+=
+
+
+3
+7
+15
+
+.
+Forward substitution:
+y1 =
+,
+y2 =
+,
+y3 =
+.
+8
+
+
+=== LECTURE PAGE 66 ===
+Newton School of Technology
+Mathematics-3
+Then solve Ux = y
+
+
+2
+1
+1
+0
+1
+1
+0
+0
+2
+
+
+
+
+x1
+x2
+x3
+
+=
+
+
+
+.
+Back substitution:
+x3 =
+,
+x2 =
+,
+x1 =
+.
+Verify:
+Ax1 =
+
+
+
+
+?= b1.
+Order 2: you drive
+Now
+b2 =
+
+
+2
+6
+16
+
+.
+Do not refactor A. Reuse the same L and U.
+Forward: solve Ly = b2
+Back: solve Ux = y
+Your ﬁnal recipe:
+x2 =
+
+
+
+.
+Order 3: speed round
+For
+b3 =
+
+
+5
+11
+25
+
+,
+9
+
+
+=== LECTURE PAGE 67 ===
+Newton School of Technology
+Mathematics-3
+complete only the essential chain:
+b3 ↑→y3 =
+
+
+
+↑→x3 =
+
+
+
+.
+CLICK
+Same A. Same factorisation. New b. Only the triangular
+solves repeat.
+Why do we use LU decomposition?
+Imagine a huge mountain covered with dense forest. On this mountain, there are hundreds of
+scenic spots. Each spot represents a di!erent right-hand side b in the system
+Ax = b
+The mountain itself never changes. Only the destination changes.
+Without LU Decomposition (Gaussian Elimination Every Time)
+Suppose someone asks you to reach Spot A. You begin at the base
+and have no established path. So you cut through thick forest, climb
+over rocks, avoid cli!s, and eventually reach Spot A. The next day,
+someone asks you to reach Spot B. What do you do? You start all
+over again. You cut through the forest again, clear bushes again,
+and navigate around obstacles again. Every journey repeats almost
+all of the hard work. This repeated e!ort is exactly what happens
+when we perform Gaussian elimination every time we solve Ax = b.
+The elimination process is like carving a temporary route through
+the mountain from scratch.
+With LU Decomposition
+Now imagine that, instead of repeatedly hacking through the forest,
+you spend one weekend constructing a sturdy staircase that climbs
+the mountain. Building the staircase takes e!or but you do it only
+once. Now someone says, “I want to reach Spot A.” You simply climb
+the staircase until you’re approximately at the required elevation,
+then take a short trail to the destination. The next person wants
+Spot B. Again, you use the same staircase and leave it only near
+the end. The di”cult part i.e. the climb, never has to be repeated.
+Only the ﬁnal short walk changes.
+Here
+• Building the staircase =↗Computing the LU decomposition.
+• Climbing to the appropriate base camp =↗Solving Ly = b (forward substitution).
+• Taking the local trail to the ﬁnal viewpoint =↗Solving Ux = y (back substitution).
+10
+
+
+=== LECTURE PAGE 68 ===
+Newton School of Technology
+Mathematics-3
+Why computers care
+For a large dense n ↔n matrix, the rough computational picture is:
+factorisation ↘O(n3),
+each triangular solve ↘O(n2).
+The exact constants and algorithms matter in practice, but the strategic idea is already visible.
+PREDICT
+A ﬁxed matrix A will be used with 1000 di!erent right-hand sides b1, . . . , b1000.
+Which plan is structurally wiser?
+↭A. redo full elimination independently 1000 times;
+↭B. factor A once, then reuse the factors for all 1000 solves.
+Why?
+OPEN THE MACHINE
+A command such as solve(A,b) looks like one button. Numerical linear algebra libraries
+open that button into factorisation, pivoting, triangular solves, and careful numerical
+decisions.
+This is the Lecture 0 promise again: do not remain satisﬁed with the dial; open the
+casing.
+Practice: from row move to reusable solver
+1. Store the row operation
+For
+R3 →R3 + 5R1,
+construct the 3 ↔3 elementary matrix E and its inverse E↑1.
+Your Answer:
+11
+
+
+=== LECTURE PAGE 69 ===
+Newton School of Technology
+Mathematics-3
+2. Factor a clean matrix
+Without row swaps, ﬁnd L and U for
+B =
+
+
+2
+1
+0
+4
+3
+1
+2
+2
+3
+
+.
+Record the elimination multipliers explicitly.
+Your Answer:
+3. Reuse the factors
+Using your factors from Question 2, solve
+Bx =
+
+
+3
+8
+7
+
+
+and
+Bx =
+
+
+1
+3
+5
+
+.
+Circle the work that was reused between the two solves.
+Your Answer:
+12
+
+
+=== LECTURE PAGE 70 ===
+Newton School of Technology
+Mathematics-3
+Do not confuse the tool with the next question
+LU is a powerful computational organisation of elimination. But a deeper question remains:
+For which targets b does Ax = b have a solution at all?
+Do not answer that with a slogan about LU. In the next sheet, we will step back and ask a
+simpler question: what kind of outputs can A actually produce?
+PREDICT : QUESTION FOR SHEET 6
+If one column of A can already be built from the others, is it contributing genuinely new
+output information?
+Your prediction:
+Summary of the sheet
+Complete each sentence in your own words.
+REFLECT
+1. An elementary matrix is
+2. LU decomposition saves
+3. P appears when
+4. Repeated right-hand sides are cheaper because
+FACTOR ONCE.
+SOLVE MANY.
+The recipe changed. The kitchen did not.
+13
+
+
+=== LECTURE PAGE 71 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 6: NEW SIGNAL OR ECHO?
+Linear Independence • Column Space • Rank
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• tell when a new vector adds new reach and when it is only repeating what you already had;
+• ﬁnd how many genuinely new directions of information a matrix carries;
+• describe every output that a matrix can make;
+• decide whether a target b can be reached by solving Ax = b.
+control settings x
+A
+output Ax
+We will keep opening this same machine.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== LECTURE PAGE 72 ===
+Newton School of Technology
+Mathematics-3
+Flashback: two dials, but how much freedom?
+In Sheet 3, a choice of coe!cients gave one linear combination. Let us bring those coe!cient dials
+back for two very small experiments.
+DO A
+v1 =
+)︄
+[︄1
+1
+]︄
+⌊︄,
+v2 =
+)︄
+[︄1
+→1
+]︄
+⌊︄.
+Set c1 = 2 and c2 = 1.
+c1v1 + c2v2 =
+)︄
+[︄
+]︄
+⌊︄.
+Now try to reach
+b =
+)︄
+[︄4
+→2
+]︄
+⌊︄.
+Find one pair (c1, c2) that works:
+)︄
+[︄c1
+c2
+]︄
+⌊︄=
+)︄
+[︄
+]︄
+⌊︄
+DO B
+w1 =
+)︄
+[︄1
+2
+]︄
+⌊︄,
+w2 =
+)︄
+[︄2
+4
+]︄
+⌊︄.
+Set c1 = 2 and c2 = →1.
+c1w1 + c2w2 =
+)︄
+[︄
+]︄
+⌊︄.
+Can you reach
+b =
+)︄
+[︄1
+0
+]︄
+⌊︄?
+↭Yes
+↭No
+Why?
+x
+y
+v1
+v2
+two genuinely di"erent directions
+x
+y
+w1
+w2
+two dials, but only one direction
+PREDICT
+Both machines have two columns. Do they have the same amount of freedom?
+Complete in your own words:
+The number of columns does not always tell us
+2
+
+
+=== LECTURE PAGE 73 ===
+Newton School of Technology
+Mathematics-3
+Three audio tracks appear on the screen
+A digital audio clip can be represented by a long list of sampled values. We will use only four samples
+so that we can do the mathematics by hand.
+Track 1: Instrument
+Track 2: Voice
+Track 3: Mix
+s1 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+s2 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+0
+1
+1
+0
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+s3 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+1
+2
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+1. Compute the sum of the ﬁrst two tracks.
+s1 + s2 =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+2. Compare your answer with s3. What do you notice?
+3. Suppose Track 3 is deleted. Which audio outputs become impossible to make that
+were possible before?
+PREDICT
+The computer displays three ﬁles. Does that mean we have three genuinely new directions of
+audio information?
+↭Yes
+↭No
+Explain without using a new technical word yet:
+A new column can be present without adding new capability.
+3
+
+
+=== LECTURE PAGE 74 ===
+Newton School of Technology
+Mathematics-3
+Can nonzero controls produce zero output?
+Keep the same three tracks.
+A mixing board chooses three coe!cients:
+c1s1 + c2s2 + c3s3.
+PREDICT
+Can you turn the three knobs to values that are not all zero, yet make the total audio vector
+equal to the zero vector?
+c1s1 + c2s2 + c3s3 = 0.
+Try one setting:
+(c1, c2, c3) = (
+,
+,
+).
+DO
+Use the relationship you discovered on the previous page.
+s3 =
+so
+s1 +
+s2 +
+s3 = 0.
+What does this say about Track 3?
+We now have language for exactly what happened.
+Deﬁnition
+A set of vectors {v1, . . . , vn} is linearly dependent if there is a choice of coe!cients, not all
+zero, such that
+c1v1 + · · · + cnvn = 0.
+If the equation
+c1v1 + · · · + cnvn = 0
+has only
+c1 = · · · = cn = 0,
+then the vectors are linearly independent.
+CHECKPOINT
+Say it without symbols:
+Dependent means one or more columns are carrying information that can already be built from
+the others.
+Independent means no column can be rebuilt from the others.
+4
+
+
+=== LECTURE PAGE 75 ===
+Newton School of Technology
+Mathematics-3
+How do we test this when the relationship is hidden?
+For the audio example, the redundancy was easy to spot. For a larger matrix it may not be obvious.
+Put the vectors into the columns of a matrix:
+A =
+)︄
+⌋︄⌋︄[︄
+|
+|
+|
+v1
+v2
+· · ·
+vn
+|
+|
+|
+]︄
+⌈︄⌈︄⌊︄,
+c =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+c1
+c2
+...
+cn
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Then
+Ac = 0
+is exactly the same question as
+c1v1 + · · · + cnvn = 0.
+Use the elimination skill you already have. For our three audio tracks,
+A =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Row-reduce A enough to see whether every coe!cient in Ac = 0 is forced to be zero.
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+R3→R3↑R1
+→→→→→→→→→→→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+R4→R4+R1
+→→→→→→→→→→→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+R3→R3↑R2
+→→→→→→→→→→→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Which coe!cient is free?
+Give one nonzero solution of Ac = 0:
+c =
+)︄
+⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌊︄.
+CHECKPOINT
+For a homogeneous system Ac = 0:
+• a pivot in every column forces only the zero coe!cient vector;
+• a free variable allows a nonzero coe!cient vector and exposes redundancy.
+5
+
+
+=== LECTURE PAGE 76 ===
+Newton School of Technology
+Mathematics-3
+Three columns do not always give three directions
+For each set below, ﬁrst predict how many genuinely independent directions are present. Then use
+the relationships among the columns to check.
+Machine A
+Machine B
+Machine C
+a1 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+b1 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+c1 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+a2 =
+)︄
+⌋︄⌋︄[︄
+2
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+b2 =
+)︄
+⌋︄⌋︄[︄
+0
+1
+0
+]︄
+⌈︄⌈︄⌊︄
+c2 =
+)︄
+⌋︄⌋︄[︄
+0
+1
+0
+]︄
+⌈︄⌈︄⌊︄
+a3 =
+)︄
+⌋︄⌋︄[︄
+→1
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+b3 =
+)︄
+⌋︄⌋︄[︄
+1
+1
+0
+]︄
+⌈︄⌈︄⌊︄
+c3 =
+)︄
+⌋︄⌋︄[︄
+0
+0
+1
+]︄
+⌈︄⌈︄⌊︄
+x
+y
+z
+line
+x
+y
+z
+plane
+x
+y
+z
+3D space
+Independent directions:
+Independent directions:
+Independent directions:
+DO
+Write one relationship that explains the redundancy in Machine A:
+Write one relationship that explains the redundancy in Machine B:
+Why does the same kind of relationship fail in Machine C?
+PREDICT
+Suppose we want one number attached to a matrix that reports how many genuinely independent
+column directions it carries.
+What should that number be for A, B, C?
+A :
+B :
+C :
+6
+
+
+=== LECTURE PAGE 77 ===
+Newton School of Technology
+Mathematics-3
+Give that count a name
+NOW WE CAN NAME IT
+The number of genuinely independent column directions in a matrix is called its rank.
+rank(A) = maximum number of linearly independent columns of A
+Gaussian elimination gives us a fast way to ﬁnd the same number:
+rank(A) = number of pivots in a row-echelon form of A.
+Return to the audio machine
+A =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+→1
+0
+→1
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+→↑
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+1
+0
+1
+0
+1
+1
+0
+0
+0
+0
+0
+0
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+DO
+Number of columns in the original audio matrix:
+Number of pivots after elimination:
+Therefore
+rank(A) =
+In one sentence: the computer stores three channels, but only
+of them carry genuinely
+independent directions of information.
+RANK CAN HEAR THE ROOM.
+More recorded channels do not automatically mean more independent information.
+CHECKPOINT
+Important: a picture can help us guess the number of independent directions. Row reduction
+gives an exact algebraic check.
+7
+
+
+=== LECTURE PAGE 78 ===
+Newton School of Technology
+Mathematics-3
+One output versus everything the machine can make
+Write the matrix by its columns:
+A =
+)︄
+⌋︄⌋︄[︄
+|
+|
+|
+a1
+a2
+· · ·
+an
+|
+|
+|
+]︄
+⌈︄⌈︄⌊︄.
+For one ﬁxed coe!cient vector
+x =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+x1
+x2
+...
+xn
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+,
+we already know from Sheet 3 that
+Ax = x1a1 + x2a2 + · · · + xnan.
+Case 1: one chosen coe!cient vector.
+Ax gives
+Case 2: let x vary over every possible real coe!cient vector.
+The collection of all outputs is
+{Ax : x ↓Rn} = span{a1, . . . , an}.
+In words, this is
+NOW WE CAN NAME IT
+That entire set of reachable outputs has a name:
+C(A) = {Ax : x ↓Rn} = span{columns of A}
+It is called the column space of A.
+CHECKPOINT Do not mix these up
+One Ax -
+one output vector; one linear combination of the columns.
+C(A) -
+the set of all output vectors obtainable as x varies.
+PREDICT
+If a new column is already a linear combination of the old columns, does the column space get
+larger?
+↭Yes
+↭No
+Why?
+8
+
+
+=== LECTURE PAGE 79 ===
+Newton School of Technology
+Mathematics-3
+Same mathematics, new world: a broken controller
+A game character lives in a 3D world. Only two movement buttons still work:
+A =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄.
+Column 1 moves East/West. Column 2 moves North/South. There is no Up/Down button.
+x
+y
+z
+Button 1
+Button 2
+b1
+b2
+reachable ﬂoor
+DO
+Without row reduction, answer from the meaning of the columns.
+1. Can you reach
+b1 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+0
+]︄
+⌈︄⌈︄⌊︄?
+If yes, give one control vector x:
+x =
+)︄
+[︄
+]︄
+⌊︄.
+2. Can you reach
+b2 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+3
+]︄
+⌈︄⌈︄⌊︄?
+↭Yes
+↭No
+Explain using the column space, not the picture alone:
+CHECKPOINT
+For this controller,
+C(A) =
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+⌋︄⌋︄[︄
+x
+y
+0
+]︄
+⌈︄⌈︄⌊︄: x, y ↓R
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+The controller has rank 2, and its reachable outputs form a two-direction ﬂat set inside R3.
+9
+
+
+=== LECTURE PAGE 80 ===
+Newton School of Technology
+Mathematics-3
+Can the target be reached?
+The equation
+Ax = b
+asks whether some control setting x produces the target b.
+From the previous page, complete the statement:
+Ax = b has a solution exactly when b is
+NOW WE CAN NAME IT
+Ax = b is solvable ↔↗b ↓C(A).
+Can rank detect this without a picture?
+Adding the target as one more column gives the augmented matrix
+[A | b].
+For the broken controller,
+A =
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+1
+0
+0
+]︄
+⌈︄⌈︄⌊︄,
+rank(A) = 2.
+DO Reachable target
+b1 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+0
+]︄
+⌈︄⌈︄⌊︄,
+[A | b1] =
+)︄
+⌋︄⌋︄[︄
+1
+0
+5
+0
+1
+4
+0
+0
+0
+]︄
+⌈︄⌈︄⌊︄.
+rank([A | b1]) =
+Did adding b1 create a new independent di-
+rection?
+↭Yes
+↭No
+DO Unreachable target
+b2 =
+)︄
+⌋︄⌋︄[︄
+5
+4
+3
+]︄
+⌈︄⌈︄⌊︄,
+[A | b2] =
+)︄
+⌋︄⌋︄[︄
+1
+0
+5
+0
+1
+4
+0
+0
+3
+]︄
+⌈︄⌈︄⌊︄.
+rank([A | b2]) =
+Did adding b2 create a new independent di-
+rection?
+↭Yes
+↭No
+PREDICT
+Complete the rule before reading the next page:
+Ax = b is solvable ↔↗rank(A)
+rank([A | b]).
+10
+
+
+=== LECTURE PAGE 81 ===
+Newton School of Technology
+Mathematics-3
+One test, three possible outcomes
+NOW WE CAN NAME IT
+The rank test for solvability is
+Ax = b is solvable ↔↗rank(A) = rank([A | b]).
+Why? Because a reachable target was already built from the old columns, so adding it cannot
+create a new independent direction.
+Now suppose A has n columns, so x has n variables.
+Outcome
+Meaning
+Rank condition
+Solution does not
+exist
+Solution exists
+CHECKPOINT
+Do not memorize the three lines as unrelated rules. Ask two questions in order:
+Is the target reachable? Compare rank(A) and rank([A | b]).
+Read the system before calculating. For
+A =
+)︄
+[︄1
+2
+2
+4
+]︄
+⌊︄,
+we already know the second column repeats the ﬁrst direction.
+Before choosing b, predict: if a target is reachable, will the recipe be unique or will there be many
+recipes?
+Three systems. Three outcomes.
+For each system:
+1. predict the outcome;
+2. row-reduce enough to ﬁnd rank(A) and rank([A | b]);
+3. classify the system.
+11
+
+
+=== LECTURE PAGE 82 ===
+Newton School of Technology
+Mathematics-3
+DO : System A
+/︂
+x1 + x2 = 4
+x1 →x2 = 2
+rank(A) =
+rank([A|b]) =
+Solve:
+DO : System B
+/︂
+x1 + 2x2 = 3
+2x1 + 4x2 = 6
+rank(A) =
+rank([A|b]) =
+Solve:
+DO : System C
+/︂
+x1 + 2x2 = 3
+2x1 + 4x2 = 7
+rank(A) =
+rank([A|b]) =
+Solve:
+CHECKPOINT
+For Systems B and C the matrix A is the same. Only b changed.
+What changed about the target’s relationship with the column space?
+Compress the lecture into four questions
+What can the machine
+make?
+C(A) = {Ax} is the set of all reachable outputs.
+Does a column add
+something new?
+Test whether the columns are independent or whether one is redundant.
+How
+much
+indepen-
+dent information?
+rank(A) counts independent column directions; elimination ﬁnds it by pivots.
+Can we reach b?
+Ax = b is solvable exactly when b ↓C(A), equivalently when rank(A) =
+rank([A|b]).
+MORE CHANNELS ↘= MORE INFORMATION.
+What matters is whether a column adds a genuinely new direction.
+12
+
+
+=== LECTURE PAGE 83 ===
+Newton School of Technology
+Mathematics-3
+One last puzzle
+Return to the audio machine, where s3 = s1 + s2, and compare
+x1 =
+)︄
+⌋︄⌋︄[︄
+2
+1
+0
+]︄
+⌈︄⌈︄⌊︄,
+x2 =
+)︄
+⌋︄⌋︄[︄
+1
+0
+1
+]︄
+⌈︄⌈︄⌊︄.
+DO
+1. Expand both outputs and check
+Ax1
+=
+Ax2.
+2. Compute
+x1 →x2 =
+)︄
+⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌊︄.
+3. Predict without multiplying entry-by-entry:
+A(x1 →x2) =
+)︄
+⌋︄⌋︄⌋︄⌋︄⌋︄[︄
+]︄
+⌈︄⌈︄⌈︄⌈︄⌈︄⌊︄
+.
+Why must this happen?
+PREDICT
+The control setting changed, but the output did not.
+What kinds of nonzero input changes can a matrix fail to see?
+That is where we open the machine next.
+13
+
+
+=== LECTURE PAGE 84 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 7: SAME OUTPUT, DIFFERENT INPUTS?
+Null Space • Particular Solution • Complete Solution • Subspaces
+Name:
+ID/Batch:
+What can the machine not see?
+By the end of this sheet, you should be able to:
+• where the input and output vectors of an m →n matrix live;
+• why N(A) lives on the input side while C(A) lives on the output side;
+• why two di!erent inputs can produce the same output;
+• why every solution of Ax = b is one working input plus an invisible input change;
+• why N(A) and C(A) behave like smaller linear worlds inside their host spaces.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== LECTURE PAGE 85 ===
+Newton School of Technology
+Mathematics-3
+We were too much INTO the Matrix
+A light movie pun, but a serious mathematical point: for a long time, our attention was mostly inside
+the rectangular box.
+Level 2 is already familiar to you
+Write
+A = [ a1 a2 · · · an ],
+x =
+)︄
+[︄[︄[︄[︄[︄]︄
+x1
+x2
+...
+xn
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Then
+Ax = x1a1 + x2a2 + · · · + xnan.
+e
+Now zoom out one more time
+input vector x
+A
+MATRIX MACHINE
+output vector Ax
+PREDICT
+If the matrix is hungry for vectors, where do those input vectors come from? After multiplication,
+where can the output vectors live?
+Every vector needs a home
+Start with one concrete matrix:
+A =
+⌉︄
+1
+2
+0
+0
+1
+3
+{︄
+.
+It has 2 rows and 3 columns.
+What kind of vector can multiply A on the right?
+x =
+)︄
+[︄[︄]︄
+x1
+x2
+x3
+⌊︄
+⌋︄⌋︄⌈︄.
+2
+
+
+=== LECTURE PAGE 86 ===
+Newton School of Technology
+Mathematics-3
+How many entries does the input have?
+So every possible input has a home in R
+.
+Now multiply symbolically:
+Ax =
+⌉︄
+x1 + 2x2
+x2 + 3x3
+{︄
+.
+How many entries does the output have?
+So every output has a home in R
+.
+INPUT HOME
+R3
+all 3-entry vectors
+A
+2 →3
+OUTPUT HOME
+R2
+all 2-entry vectors
+NOW WE CAN NAME IT
+For an m →n matrix:
+columns n ↑input home Rn
+rows m ↑output home Rm.
+MATRIX SIZE TELLS US THE TWO HOMES.
+DO Muscle memory - no multiplication
+Matrix size
+Input home
+Output home
+2 →2
+3 →2
+2 →4
+4 →3
+Two di!erent questions on two sides of the machine
+Right-side question: What can the machine make?
+Out of all vectors living in Rm, which ones can this particular matrix actually produce?
+You already met this set:
+C(A) = all reachable outputs.
+It lives inside the output space.
+Left-side question: What can the machine not see?
+Could a nonzero input enter the machine and produce the zero output?
+nonzero x
+A
+0
+THE MACHINE SAW NOTHING
+3
+
+
+=== LECTURE PAGE 87 ===
+Newton School of Technology
+Mathematics-3
+Before naming anything: draw both sides
+For each machine, we will keep the two copies of R2 separate. One is the input world; the other is
+the output world.
+Example 1 - Identity machine
+A =
+⌉︄
+1
+0
+0
+1
+{︄
+.
+INPUT SPACE R2
+A
+OUTPUT SPACE R2
+1. What nonzero input does this machine fail to see?
+2. Which outputs are reachable?
+Example 2: Linearly Dependent column vectors
+A =
+⌉︄
+1
+2
+2
+4
+{︄
+.
+INPUT SPACE R2
+A
+OUTPUT SPACE R2
+CHECKPOINT
+Both pictures use R2, but they have di!erent roles. The purple line is made of inputs. The green
+line is made of outputs. Do not merge the two worlds in your head.
+Example 3 - Reachable output versus invisible input
+A =
+⌉︄
+1
+1
+0
+0
+{︄
+.
+4
+
+
+=== LECTURE PAGE 88 ===
+Newton School of Technology
+Mathematics-3
+DO
+Solve only the small equations you need.
+Input side: Ax = 0 gives
+x1 + x2 = 0.
+So the invisible inputs lie along
+span
+}︄⌉︄
+1
+↓1
+{︄⟨︄
+.
+Output side: both columns lie on the x-axis, so the reachable outputs lie along
+span
+}︄⌉︄
+1
+0
+{︄⟨︄
+.
+INPUT SPACE R2
+A
+OUTPUT SPACE R2
+Take
+b1 =
+⌉︄
+3
+0
+{︄
+,
+b2 =
+⌉︄
+3
+1
+{︄
+.
+PREDICT
+Without solving Ax = b:
+1. Which target can the machine reach?
+2. Why?
+3. For the reachable target, could di!erent input recipes produce the same output? What clue on
+the input side makes you suspect this?
+Example 4 - An invisible axis, a reachable plane
+A =
+)︄
+[︄[︄]︄
+1
+0
+0
+0
+1
+0
+0
+0
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+5
+
+
+=== LECTURE PAGE 89 ===
+Newton School of Technology
+Mathematics-3
+x
+y
+z
+INPUT SPACE R3
+A
+x
+y
+z
+OUTPUT SPACE R3
+DO
+For
+x =
+)︄
+[︄[︄]︄
+x
+y
+z
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+)︄
+[︄[︄]︄
+x
+y
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+1. Which part of the input can change without a!ecting the output?
+2. Give one nonzero invisible input:
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+3. Which outputs are impossible?
+CHECKPOINT
+This machine keeps the ﬁrst two coordinates and completely ignores the third. The input space
+contains a whole invisible direction.
+Example 5 - An invisible plane, a reachable axis
+A =
+)︄
+[︄[︄]︄
+1
+0
+0
+0
+0
+0
+0
+0
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+x
+y
+z
+INPUT SPACE R3
+A
+x
+y
+z
+OUTPUT SPACE R3
+6
+
+
+=== LECTURE PAGE 90 ===
+Newton School of Technology
+Mathematics-3
+DO
+For
+x =
+)︄
+[︄[︄]︄
+x
+y
+z
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+)︄
+[︄[︄]︄
+x
+0
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+1. Which two coordinates can change freely without changing the output?
+2. Describe all invisible input changes in words.
+3. Describe all reachable outputs in words.
+PREDICT (do not formalise this yet)
+Compare Examples 4 and 5.
+When more input directions disappear, what seems to happen to the number of output directions
+that survive?
+Keep the observation. We will return to it later.
+Return to the audio machine: same output, di!erent inputs
+Now return to a world already alive from Sheet 6. The columns of
+A =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+↓1
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+= [ s1 s2 s3 ]
+are three sampled audio tracks:
+s1 =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+0
+1
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+s2 =
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+1
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+s3 =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+1
+2
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Track 1
+Track 2
+Track 3
+Two control settings are
+x1 =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄,
+x2 =
+)︄
+[︄[︄]︄
+1
+0
+1
+⌊︄
+⌋︄⌋︄⌈︄.
+7
+
+
+=== LECTURE PAGE 91 ===
+Newton School of Technology
+Mathematics-3
+DO
+1. Expand both mixes using the columns of A.
+Ax1 =
+)︄
+[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+Ax2 =
+)︄
+[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+2. What do you notice?
+PREDICT
+The output machine hears exactly the same thing. Were the controls the same?
+↭Yes
+↭No
+Compute the input change:
+x1 ↓x2 =
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+What must happen to this change when it passes through A?
+The machine cannot see the di!erence
+From
+Ax1 = Ax2
+↔↑
+Ax1 ↓Ax2 = 0,
+↔↑
+A(x1 ↓x2) = 0.
+For our audio controls,
+x1 ↓x2 =
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄↗= 0.
+nonzero input change
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄
+A
+0 output
+NOW WE CAN NAME IT
+The null space of A is the set of all input vectors that A sends to zero:
+N(A) = {x : Ax = 0}.
+If A has n columns, then
+N(A) ↘Rn.
+The null space lives on the input side.
+8
+
+
+=== LECTURE PAGE 92 ===
+Newton School of Technology
+Mathematics-3
+Host-space muscle memory:
+1. If A is 4 →3, then N(A) lives in
+.
+2. If B is 2 →5, then N(B) lives in
+.
+3. Where does C(A) live for a 4 →3 matrix?
+.
+4. Circle the correct side:
+N(A):
+INPUT / OUTPUT
+C(A):
+INPUT / OUTPUT
+An invisible input is also a column relation
+Consider
+Ax = 0
+means
+x1a1 + x2a2 + · · · + xnan = 0.
+PREDICT
+The zero input x = 0 always works. Does that alone prove that the columns are dependent?
+↭Yes
+↭No
+What extra fact would make the coe"cient relation nontrivial?
+NOW WE CAN NAME IT
+The precise connection is
+N(A) contains a nonzero vector ↔↑the columns of A are linearly dependent.
+And
+N(A) = {0} ↔↑the columns of A are linearly independent.
+For the audio machine, s3 = s1 + s2 becomes s1 + s2 ↓s3 = 0. So
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄≃N(A).
+free variable appears
+nonzero null direction
+nontrivial column relation
+columns are dependent
+These are not four discon-
+nected facts.
+They are four views of the
+same phenomenon.
+9
+
+
+=== LECTURE PAGE 93 ===
+Newton School of Technology
+Mathematics-3
+How do we ﬁnd all invisible input changes?
+This is not a new algorithm. We already know how to solve a homogeneous system.
+For the audio matrix,
+Ax = 0.
+Row reduction gives
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+0
+1
+0
+1
+1
+0
+0
+0
+0
+0
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+x = 0.
+DO
+The equations are
+x1 + x3 = 0,
+x2 + x3 = 0.
+Choose x3 = ↓t. Then
+x1 =
+,
+x2 =
+,
+x3 =
+.
+Hence
+x = t
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+x
+y
+z
+t > 0
+t < 0
+N(A)
+t is not just “an arbitrary parameter.”
+t = 2: move twice as far in the invisible
+direction.
+t = ↓3: move three times in the opposite
+invisible direction.
+CHECKPOINT
+Free variables measure freedom in the input. Parameterising them describes directions
+along which the input can move while the output remains zero.
+The machine can miss more than one direction
+Consider
+B =
+⌉︄
+1
+2
+3
+2
+4
+6
+{︄
+.
+Its row-reduced system Bx = 0 gives one equation:
+x1 + 2x2 + 3x3 = 0.
+10
+
+
+=== LECTURE PAGE 94 ===
+Newton School of Technology
+Mathematics-3
+DO
+Let
+x2 = s,
+x3 = t.
+Then
+x1 =
+.
+Write the input as
+x = s
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄+ t
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+x
+y
+z
+N(B): an invisible plane in the input space R3
+Complete the observations:
+One free variable gave us one independent invisible
+.
+Two free variables give us two independent invisible
+.
+These two directions are enough to move anywhere inside the invisible
+.
+Two questions. Two sides. One matrix.
+INPUT SPACE Rn
+N(A)
+invisible changes
+A
+MACHINE
+OUTPUT SPACE Rm
+C(A)
+reachable outputs
+CHECKPOINT
+Question 1 - OUTPUT SIDE: Can the machine reach target b?
+b ≃C(A)?
+Question 2 - INPUT SIDE: If it reaches b, can we change the input without changing the
+output?
+N(A) contains a nonzero vector?
+11
+
+
+=== LECTURE PAGE 95 ===
+Newton School of Technology
+Mathematics-3
+Find one working input
+Return to the audio target b, one easy input is xp, where
+b =
+)︄
+[︄[︄[︄[︄[︄]︄
+2
+1
+3
+↓2
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+xp =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+Verify using columns that Axp = b.
+NOW WE CAN NAME IT (Particular solution)
+A particular solution is any one chosen working input satisfying
+Axp = b.
+Particular does not mean special or unique. It simply means one working solution
+that we have chosen.
+One working input + one invisible change
+We know Axp = b and every xn ≃N(A) satisﬁes Axn = 0.
+PREDICT
+What happens if we change the working input by an invisible input change?
+A(xp + xn) = ?
+Predict ﬁrst:
+Now calculate:
+A(xp + xn) = Axp + Axn =
++
+=
+.
+NOW WE CAN NAME IT
+ONE WORKING INPUT + AN INVISIBLE CHANGE = ANOTHER WORKING
+INPUT.
+x = xp + xn,
+xn ≃N(A).
+For our audio system,
+xp =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄,
+N(A) =
+⟩︄
+/︄
+/︄
+\︄
+/︄
+/︄
+/︂
+t
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄: t ≃R
+\︂
+/︄
+/︄
+⎛
+/︄
+/︄
+⎞
+.
+So every candidate generated by this rule looks like
+x =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄+ t
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄.
+Test the rule.
+12
+
+
+=== LECTURE PAGE 96 ===
+Newton School of Technology
+Mathematics-3
+For t = 1
+x =
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+For t = 2
+x =
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+See the geometry in the smallest possible example
+Let
+A =
+⎡
+1
+1
+⎤
+.
+Then the invisible inputs satisfy
+Ax = 0
+↔↑
+x + y = 0.
+For target b = 5, the working inputs satisfy x + y = 5.
+Choose
+xp =
+⌉︄
+5
+0
+{︄
+.
+x
+y
+x
+y
+CHECKPOINT
+The complete solution is a shifted copy of the null space. The null space passes through the
+origin. The solution set Ax = b usually does not.
+Now we can ﬁnish the Ax = b mind-map
+Sheet 6 answered the ﬁrst question:
+Ax = b has a solution ↔↑b ≃C(A).
+Now null space answers the next question.
+PREDICT
+Suppose a solution exists.
+Case 1: N(A) = {0}. How many vectors are in xp + N(A)?
+13
+
+
+=== LECTURE PAGE 97 ===
+Newton School of Technology
+Mathematics-3
+Case 2: N(A) contains a nonzero vector xn. What happens to
+xp + txn
+as t runs through all real numbers?
+Ax = b
+b ≃C(A)?
+No solution
+N(A) = {0}?
+Unique solution
+Inﬁnitely many
+No
+Yes
+Yes
+No
+NOW WE CAN NAME IT
+If a solution exists, then
+N(A) = {0} ↔↑the solution is unique.
+If N(A) contains any nonzero vector, then every xp +txn is another solution, so there are inﬁnitely
+many solutions.
+CHECKPOINT
+The two questions are di!erent:
+1. Existence: Can the target be reached?
+2. Uniqueness: If I get there, is there only one way to get there?
+DO
+Why can a linear system never have exactly 2, exactly 5, or exactly 100 solutions?
+Application: one nutrition target, many possible meals
+We now use the same mathematics in a context where variation is useful.
+Suppose the input vector records servings of four foods:
+x =
+)︄
+[︄[︄[︄[︄[︄]︄
+xPB
+xB
+xM
+xS
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+where PB = peanut butter, B = one slice of bread, M = milk, and S = a peanut-butter sandwich
+made from one PB serving and two bread slices.
+14
+
+
+=== LECTURE PAGE 98 ===
+Newton School of Technology
+Mathematics-3
+The matrix records three tracked nutrition totals per serving:
+A =
+PB
+Bread
+Milk
+Sandwich
+Protein
+8
+3
+8
+14
+Carbs
+7
+12
+12
+31
+Fat
+15
+1
+5
+17
+The numbers are a simpliﬁed classroom model, measured in grams.
+The required nutrition target is
+b =
+)︄
+[︄[︄]︄
+22
+43
+22
+⌊︄
+⌋︄⌋︄⌈︄.
+DIET PLAN x
+servings of PB, bread, milk, sandwich
+NUTRITION
+MACHINE A
+TARGET b
+protein, carbs, fat
+DO Step 1 - One working meal
+Check that xp works. In words, this means one milk serving and one sandwich.
+xp =
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+Axp =
+)︄
+[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+= b.
+PREDICT
+The sandwich column is visibly
+aS = aPB + 2aB.
+What change in food quantities should leave all three tracked totals unchanged?
+Null space = room to vary while preserving what matters
+From
+aS = aPB + 2aB,
+we get
+aPB + 2aB ↓aS = 0.
+So one null direction is
+xn =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Verify: Axn = 0.
+15
+
+
+=== LECTURE PAGE 99 ===
+Newton School of Technology
+Mathematics-3
+Therefore the complete mathematical family is
+x =
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
++ t
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+t ≃R.
+Meal A
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+Meal B
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+same machine A
+same target b
+di!erence =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+≃N(A)
+CHECKPOINT
+A null-space vector is a way of changing the food quantities while leaving every tracked
+nutrition total unchanged.
+Across all four scenarios, the null space answers the same structural question:
+What can we change at the input without changing what this machine can see at the
+output?
+A smaller linear world appears inside the input space
+We have discovered N(A) sitting inside the input space Rn. Is it merely an arbitrary collection of
+vectors?
+Let u, v ≃N(A). Then
+Au = 0,
+Av = 0.
+DO Test the behaviour
+Zero:
+A0 =
+.
+Therefore 0 ≃N(A).
+Addition:
+A(u + v) = Au + Av =
+.
+Therefore u + v ≃N(A).
+Scaling: for any c ≃R,
+A(cu) = cAu =
+.
+Therefore cu ≃N(A).
+16
+
+
+=== LECTURE PAGE 100 ===
+Newton School of Technology
+Mathematics-3
+NOW WE CAN NAME IT Subspace
+For now, inside coordinate spaces such as Rn, call a subset S a subspace if
+1. 0 ≃S;
+2. u, v ≃S ↑u + v ≃S;
+3. u ≃S, c ≃R ↑cu ≃S.
+A subspace is a smaller linear world living inside a larger host space.
+CHECKPOINT
+We just proved:
+N(A) is a subspace of the INPUT SPACE Rn.
+The reachable outputs also form a smaller linear world
+Now look at the output side. Suppose y1, y2 ≃C(A). That means the machine can make them, so
+there are inputs x1, x2 such that
+Ax1 = y1,
+Ax2 = y2.
+Addition:
+y1 + y2 = Ax1 + Ax2 = A(
+).
+So the machine can also produce y1 + y2.
+Scaling:
+cy1 = cAx1 = A(
+).
+So the machine can also produce cy1.
+Zero:
+A0 = 0,
+so zero is reachable.
+CHECKPOINT
+Therefore
+C(A) is a subspace of the OUTPUT SPACE Rm.
+INPUT SIDE Rn
+OUTPUT SIDE Rm
+N(A)
+C(A)
+invisible inputs / input changes
+reachable outputs
+Ax = 0
+Ax for all possible x
+subspace of input space
+subspace of output space
+helps answer multiplicity
+answers reachability / existence
+DO
+Finish the sentence without looking above:
+The null space lives on the
+side. The column space lives on the
+side.
+17
+
+
+=== LECTURE PAGE 101 ===
+Newton School of Technology
+Mathematics-3
+Quick subspace tests
+For a NO, identify one condition that fails. For a YES, brieﬂy explain why all three conditions hold.
+Set
+Subspace?
+Evidence
+W1 = {(x, y) : y = 2x}
+Yes / No
+W2 = {(x, y) : y = 2x + 1}
+Yes / No
+W3 = {(x, y) : x ⇐0}
+Yes / No
+W4 = {(x, y, z) : x2 + y2 + z2 = 4}
+Yes / No
+W5 = {(x, y, z) : x + y + z = 0}
+Yes / No
+CHECKPOINT
+Compare the two lines
+x + y = 0
+and
+x + y = 5.
+Both are lines. Only the ﬁrst is a subspace of R2.
+This also explains why a nonhomogeneous solution set Ax = b with b ↗= 0 is usually a shifted
+copy of N(A), not itself a subspace.
+Do not jump ahead yet. We are still working inside familiar coordinate homes R2, R3, Rn.
+Later we will ask a more abstract question: what can a vector space itself be?
+SAME OUTPUT, DIFFERENT INPUTS.
+The di!erence between those inputs lives in the null space.
+We started inside the matrix. Now we are beginning to see the worlds on both sides of
+it.
+18
+
+
+=== LECTURE PAGE 102 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 8: FOUR SPACES, ONE MATRIX
+Complete Solution • Basis • Dimension • Fundamental Subspaces
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• ﬁnd a complete solution step by step;
+• ﬁnd bases for N(A) and C(A) and interpret their dimensions;
+• understand rank as dim C(A) and nullity as dim N(A);
+• discover a solvability condition using a vector perpendicular to the column space;
+• understand why the row space matters;
+• locate and interpret all four fundamental subspaces of a matrix;
+• read the four spaces of a small network incidence matrix.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== LECTURE PAGE 103 ===
+Newton School of Technology
+Mathematics-3
+First: make the complete solution a procedure
+We already know the meaning:
+one working input + any invisible input change = another working input.
+Recipe to cook the Complete Solution
+Step 1:
+Apply Gaussian Elimination.
+Step 2:
+Find the null space: xn.
+Step 3:
+Find the particular solution (xP) by substituting free vari-
+ables as zero.
+Step 4:
+Add them. xC = xP + xn
+CHECKPOINT
+We solve Ax = 0 ﬁrst because it tells us the directions in which the input can change without
+changing the output.
+PREDICT
+Suppose N(A) = {0} and we ﬁnd one working input xp for a reachable target b.
+How many solutions can there be?
+Example 1 - Complete solution of the diet system
+We return to the same simpliﬁed nutrition model from Sheet 7.
+A =
+PB
+Bread
+Milk
+Sandwich
+Protein
+8
+3
+8
+14
+Carbs
+7
+12
+12
+31
+Fat
+15
+1
+5
+17
+b =
+)︄
+[︄[︄]︄
+22
+43
+22
+⌊︄
+⌋︄⌋︄⌈︄.
+The input x records four food quantities. The output records the three nutrition totals.
+Step 1 - Solve Ax = 0
+Row echelon form gives
+REF(A) =
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Therefore, the equations are,
+2
+
+
+=== LECTURE PAGE 104 ===
+Newton School of Technology
+Mathematics-3
+Let x4 = t. Complete the null-space vector:
+xn = t
+)︄
+[︄[︄[︄[︄]︄
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+DO
+Fill the three missing entries, then check Axn = 0.
+Diet system: one working plan, then all plans
+Step 2 - Find one particular solution
+For the augmented system, the same elimination gives
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+So, the equations are,
+Set the free variable x4 = 0. Then one working diet is
+xp =
+)︄
+[︄[︄[︄[︄]︄
+1
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Step 3 - Add the null-space change
+From Step 1,
+N(A) =
+⌉︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+t
+)︄
+[︄[︄[︄[︄]︄
+→1
+→2
+0
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+: t ↑R
+⟩︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+Therefore
+x =
+)︄
+[︄[︄[︄[︄]︄
+1
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
++ t
+)︄
+[︄[︄[︄[︄]︄
+→1
+→2
+0
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+t ↑R.
+CHECKPOINT
+The null vector means: decrease PB by 1 serving and bread by 2 servings while increasing the
+sandwich by 1 serving. In this simpliﬁed model, all three tracked nutrition totals stay unchanged.
+3
+
+
+=== LECTURE PAGE 105 ===
+Newton School of Technology
+Mathematics-3
+Example 2 - You complete the full solution
+Consider
+A =
+/︂
+1
+1
+1
+1
+2
+3
+\︂
+,
+b =
+/︂
+3
+5
+\︂
+.
+The input space is R3 and the output space is R2.
+DO Step 1 - Null space
+Row reduce A and solve Ax = 0.
+Your Answer:
+DO Step 2 - One working input
+Find one xp satisfying Axp = b.
+Your Answer:
+DO Step 3 - Complete solution
+x = xp + xn =
+Your Answer:
+What does the complete solution look like?
+For the previous 2 ↓3 system, the input lives in R3.
+You should ﬁnd
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+1
+→2
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+So the null space is a line through the origin in the input space.
+4
+
+
+=== LECTURE PAGE 106 ===
+Newton School of Technology
+Mathematics-3
+A convenient particular solution is
+xp =
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Therefore all solutions lie on the parallel line
+x =
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
++ t
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+x
+y
+z
+N(A)
+line through the origin
+x
+y
+z
+xp
+all solutions
+shifted parallel line
+CHECKPOINT
+The null space gives the direction of the solution family. The particular solution tells us where
+the family sits.
+How do we describe a whole space e!ciently?
+A line, plane, or higher-dimensional space contains inﬁnitely many vectors. We do not want to list
+them all.
+We want a small set of vectors that:
+1. can build every vector in the space;
+2. contains no redundant direction.
+PREDICT
+For R2, which set is enough to build every vector without redundancy?
+⎛/︂
+1
+0
+\︂
+,
+/︂
+0
+1
+\︂⎞
+.
+Can either vector be removed and still build all of R2?
+↭Yes
+↭No
+5
+
+
+=== LECTURE PAGE 107 ===
+Newton School of Technology
+Mathematics-3
+NOW WE CAN NAME IT
+A basis of a Euclidean vector space is a set of vectors that is
+linearly independent and spanning.
+The dimension is the number of vectors in a basis.
+Space
+One basis
+Dimension
+R
+R2
+R3
+A line pass-
+ing through 0
+one nonzero direction vector
+A plane pass-
+ing through 0
+in R3
+two independent directions in the plane
+CHECKPOINT
+A basis is not “the most important vectors.” It is a nonredundant set that can build the entire
+space.
+Basis of the null space and column space
+Return to the diet matrix.
+A =
+)︄
+[︄[︄]︄
+8
+3
+8
+14
+7
+12
+12
+31
+15
+1
+5
+17
+⌊︄
+⌋︄⌋︄⌈︄.
+We already found
+N(A) = span
+⌉︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+There is one independent null direction.
+NOW WE CAN NAME IT
+The nullity of A is
+nullity(A) = dim N(A).
+For the diet matrix,
+nullity(A) = 1.
+Now look at the columns of A. The REF has pivots in columns 1, 2, and 3. Therefore a basis for the
+column space is given by the corresponding original columns:
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+8
+7
+15
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+3
+12
+1
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+8
+12
+5
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+6
+
+
+=== LECTURE PAGE 108 ===
+Newton School of Technology
+Mathematics-3
+NOTE
+When ﬁnding a basis for C(A) using elimination, take the pivot columns from the original
+matrix, not from the REF.
+NOW WE CAN NAME IT
+This gives a third interpretation of rank:
+rank(A) = number of pivots = maximum number of independent columns = dim(C(A)).
+For the diet matrix, rank(A) = 3.
+How many input directions survive, and how many disappear?
+Suppose A has n columns. The input space has dimension n.
+Some independent input directions are visible through the matrix. Some directions disappear into the
+null space.
+For the diet matrix:
+A is 3 ↓4,
+n = 4,
+rank(A) = 3,
+nullity(A) = 1.
+Notice:
+4 = 3 + 1.
+PREDICT
+For the matrix
+B =
+/︂
+1
+1
+1
+1
+2
+3
+\︂
+,
+you found rank = 2 and one free variable.
+Complete:
+number of columns =
+= rank(B) + nullity(B) =
++
+.
+NOW WE CAN NAME IT
+For an m ↓n matrix,
+n = rank(A) + nullity(A).
+This is the rank-nullity relation for the input home.
+CHECKPOINT
+Do not confuse:
+nullity(A) = dim(N(A))
+with the size of the matrix. A matrix itself is not said to have “dimension = nullity.”
+A new solvability test appears during elimination
+Consider
+A =
+/︂
+1
+2
+2
+4
+\︂
+,
+b =
+/︂
+b1
+b2
+\︂
+.
+7
+
+
+=== LECTURE PAGE 109 ===
+Newton School of Technology
+Mathematics-3
+Do not choose numbers for b1, b2. Keep the target general.
+DO
+Eliminate the second row:
+/︂
+1
+2
+b1
+2
+4
+b2
+\︂
+R2→2R1
+→→→→→↔
+/︂
+1
+2
+b1
+0
+0
+\︂
+.
+For the system to be solvable, what must be true?
+Your Answer:
+The condition is
+b2 →2b1 = 0.
+Rewrite it as
+⎡
+→2
+1
+⎤/︂
+b1
+b2
+\︂
+= 0.
+PREDICT
+The vector
+y =
+/︂
+→2
+1
+\︂
+is perpendicular to every solvable target b. What line do all solvable targets lie on?
+The solvable targets form exactly the column space
+The columns of
+A =
+/︂
+1
+2
+2
+4
+\︂
+are multiples of
+/︂
+\︂
+.
+Therefore
+C(A) = span
+⎛/︂
+\︂⎞
+.
+The elimination condition
+b2 = 2b1
+describes the same line.
+8
+
+
+=== LECTURE PAGE 110 ===
+Newton School of Technology
+Mathematics-3
+b1
+b2
+y = (→2, 1)
+C(A): reachable targets
+b is solvable exactly when it lies on line perpendicular to C(A).
+Now check:
+AT y =
+/︂
+1
+2
+2
+4
+\︂/︂
+→2
+1
+\︂
+=
+/︂
+\︂
+.
+So y ↑N(AT ). It is often called the left null space of A.
+What lives opposite the column space?
+If y ↑N(AT ) and Ax is any reachable output, then
+yT (Ax) = (AT y)T x = 0T x = 0.
+So every vector in N(AT ) is perpendicular to every reachable output.
+NOW WE CAN NAME IT
+The vectors in N(AT ) live in the output home. They are perpendicular to every vector in the
+column space.
+Therefore
+Ax = b is solvable
+↗↘b is perpendicular to every vector in N(AT ).
+For this 2 ↓2 example, N(AT ) = span{
+⎡
+→2
+1
+⎤T } and the vectors perpendicular to that line are
+exactly C(A).
+Example 4 - A 2 ↓3 matrix: all outputs reachable, many inputs
+Consider
+A =
+/︂
+1
+0
+1
+0
+1
+1
+\︂
+.
+9
+
+
+=== LECTURE PAGE 111 ===
+Newton School of Technology
+Mathematics-3
+DO
+1. Find N(A).
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+2. Find a basis for C(A).
+Basis for C(A) =
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+,
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+3. What is rank(A)?
+4. What is nullity(A)?
+5. Is every b ↑R2 reachable? Explain.
+You should ﬁnd
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+,
+C(A) = R2.
+Therefore every target in the output plane is reachable, but each reachable target has inﬁnitely many
+input solutions.
+INPUT HOME
+R3
+null line inside input
+A
+OUTPUT HOME
+R2
+full output plane
+x
+Ax
+Home
+Visible / reachable part
+Invisible / forbidden direction
+Input Rn
+Row space C(AT )
+Null space N(A)
+Output Rm
+Column space C(A)
+Left null space N(AT )
+Why should we care about the rows?
+So far, the columns told us what outputs can be built. What information is stored in the rows?
+For
+A =
+/︂
+1
+0
+1
+0
+1
+1
+\︂
+,
+x =
+)︄
+[︄[︄]︄
+x1
+x2
+x3
+⌊︄
+⌋︄⌋︄⌈︄,
+we have
+Ax =
+/︂
+x1 + x3
+x2 + x3
+\︂
+.
+Each row creates one output number:
+[1 0 1]
+⎣⎦⎢⎥
+r1
+x = x1 + x3,
+[0 1 1]
+⎣⎦⎢⎥
+r2
+x = x2 + x3.
+10
+
+
+=== LECTURE PAGE 112 ===
+Newton School of Technology
+Mathematics-3
+PREDICT
+Take the null vector
+z =
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄.
+What does each row report when it sees z?
+[1 0 1]z =
+,
+[0 1 1]z =
+.
+The rows describe the input directions that the machine actually measures. A null-space direction is
+invisible to every row.
+NOW WE CAN NAME IT
+The row space of A is the span of the rows of A.
+It lives in the input space Rn.
+Row(A) = C(AT ).
+CHECKPOINT
+Column space answers: What outputs can be made?
+Row space answers: Which directions of the input are being measured by the rows?
+Row space and null space share the input home
+For the same matrix,
+Row(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+1
+0
+1
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+is a plane in R3, while
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+is a line in R3.
+Check that the null vector is perpendicular to both row directions:
+)︄
+[︄[︄]︄
+1
+0
+1
+⌊︄
+⌋︄⌋︄⌈︄·
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄= 0,
+)︄
+[︄[︄]︄
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌈︄·
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄= 0.
+CHECKPOINT
+The row space and null space point in perpendicular directions inside the input space.
+CHECKPOINT
+We now have two spaces in the input home and two spaces on the output home.
+11
+
+
+=== LECTURE PAGE 113 ===
+Newton School of Technology
+Mathematics-3
+The four fundamental subspaces of a matrix
+For an m ↓n matrix A:
+Let r = rank(A).
+dim C(A) = r,
+dim C(AT ) = r,
+dim N(A) = n →r,
+dim N(AT ) = m →r.
+CHECKPOINT
+The row space and column space have the same dimension: the rank.
+One matrix, all four spaces
+Use
+A =
+)︄
+[︄[︄]︄
+1
+0
+1
+0
+1
+1
+2
+1
+3
+⌊︄
+⌋︄⌋︄⌈︄,
+rank(A) =
+Complete the table.
+12
+
+
+=== LECTURE PAGE 114 ===
+Newton School of Technology
+Mathematics-3
+Space
+Host
+One basis
+Dimension
+C(A)
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+N(A)
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+C(AT )
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+N(AT )
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+DO
+1. Which space decides whether b is reachable?
+2.
+Which space decides whether two di!erent inputs can give the same reachable b?
+3. Which two spaces have dimension equal to rank?
+Application - one matrix for a small network
+The same matrix idea appears in water pipes, roads, and electrical networks.
+We use 4 nodes and 5 directed edges:
+e1 : v1 ↔v2,
+e2 : v2 ↔v3,
+e3 : v3 ↔v4,
+e4 : v4 ↔v1,
+e5 : v3 ↔v1.
+v1
+v2
+v3
+v4
+e1
+e2
+e3
+e4
+e5
+We store this network in the incidence matrix
+B =
+)︄
+[︄[︄[︄[︄]︄
+→1
+0
+0
+1
+1
+1
+→1
+0
+0
+0
+0
+1
+→1
+0
+→1
+0
+0
+1
+→1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+13
+
+
+=== LECTURE PAGE 115 ===
+Newton School of Technology
+Mathematics-3
+Each column is one edge. We put →1 where the edge leaves a node and +1 where it enters a node.
+CHECKPOINT
+B is 4 ↓5.
+Input home: 5 edge values.
+Output home: 4 node values.
+Network: null space and column space
+Let
+f =
+)︄
+[︄[︄[︄[︄[︄[︄[︄]︄
+f1
+f2
+f3
+f4
+f5
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+represent directed edge ﬂows. Then Bf gives the net ﬂow balance at the four nodes.
+Null space N(B)
+Solving Bf = 0 gives
+N(B) = span
+⌉︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+)︄
+[︄[︄[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+DO
+Mark the edges used by each null vector on the network diagram from the previous page.
+What do you notice about the ﬂow at every node?
+Interpretation: these are ﬂow patterns that circulate through closed routes and create no net accumu-
+lation at any node.
+Column space C(B)
+A basis can be chosen as
+⌉︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+So
+rank(B) =
+Every vector in C(B) has node entries whose total is zero.
+PREDICT
+Why must the four entries of Bf always add to zero?
+14
+
+
+=== LECTURE PAGE 116 ===
+Newton School of Technology
+Mathematics-3
+For water: total injection must balance total withdrawal.
+For current: total current entering/leaving the network must balance.
+For tra"c: sources and sinks determine the net change at intersections.
+The four spaces explain four di"erent network questions
+For the 4 ↓5 incidence matrix B:
+rank(B) =
+,
+nullity(B) =
+,
+dim N(BT ) =
+Space
+Lives in
+Network meaning
+Dim.
+N(B)
+balanced loop-ﬂow changes that cause no net node
+imbalance
+C(BT )
+edge di!erences produced from node values
+C(B)
+reachable node source/sink patterns; entries sum to
+zero
+N(BT )
+common node shift that creates no edge di!erence
+CHECKPOINT
+One small network has hidden structure in both homes:
+• some edge-ﬂow changes are invisible at the nodes;
+• some node shifts are invisible on the edges;
+• only certain node-balance patterns are possible;
+• only certain edge-di!erence patterns can come from node values.
+PREDICT
+The graph has 4 nodes but the incidence matrix has rank 3. What repeated pattern in the rows
+explains why one row is redundant?
+DO
+Complete these statements.
+1. rank(A) = dim
+= dim
+.
+2. nullity(A) = dim
+.
+3. Ax = b is solvable when b ↑
+.
+4. If a solution exists and N(A) = {0}, the solution is
+.
+5. If a solution exists and N(A) contains a nonzero vector, there are
+solutions.
+FOUR SPACES, ONE MATRIX
+A matrix is not only a table of numbers. It comes with structure in the input home and in the
+output home.
+The complete solution of Ax = b sits inside that structure.
+15
+
+

@@ -1,0 +1,1087 @@
+=== PAGE 84 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 7: SAME OUTPUT, DIFFERENT INPUTS?
+Null Space • Particular Solution • Complete Solution • Subspaces
+Name:
+ID/Batch:
+What can the machine not see?
+By the end of this sheet, you should be able to:
+• where the input and output vectors of an m →n matrix live;
+• why N(A) lives on the input side while C(A) lives on the output side;
+• why two di!erent inputs can produce the same output;
+• why every solution of Ax = b is one working input plus an invisible input change;
+• why N(A) and C(A) behave like smaller linear worlds inside their host spaces.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== PAGE 85 ===
+Newton School of Technology
+Mathematics-3
+We were too much INTO the Matrix
+A light movie pun, but a serious mathematical point: for a long time, our attention was mostly inside
+the rectangular box.
+Level 2 is already familiar to you
+Write
+A = [ a1 a2 · · · an ],
+x =
+)︄
+[︄[︄[︄[︄[︄]︄
+x1
+x2
+...
+xn
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Then
+Ax = x1a1 + x2a2 + · · · + xnan.
+e
+Now zoom out one more time
+input vector x
+A
+MATRIX MACHINE
+output vector Ax
+PREDICT
+If the matrix is hungry for vectors, where do those input vectors come from? After multiplication,
+where can the output vectors live?
+Every vector needs a home
+Start with one concrete matrix:
+A =
+⌉︄
+1
+2
+0
+0
+1
+3
+{︄
+.
+It has 2 rows and 3 columns.
+What kind of vector can multiply A on the right?
+x =
+)︄
+[︄[︄]︄
+x1
+x2
+x3
+⌊︄
+⌋︄⌋︄⌈︄.
+2
+
+
+=== PAGE 86 ===
+Newton School of Technology
+Mathematics-3
+How many entries does the input have?
+So every possible input has a home in R
+.
+Now multiply symbolically:
+Ax =
+⌉︄
+x1 + 2x2
+x2 + 3x3
+{︄
+.
+How many entries does the output have?
+So every output has a home in R
+.
+INPUT HOME
+R3
+all 3-entry vectors
+A
+2 →3
+OUTPUT HOME
+R2
+all 2-entry vectors
+NOW WE CAN NAME IT
+For an m →n matrix:
+columns n ↑input home Rn
+rows m ↑output home Rm.
+MATRIX SIZE TELLS US THE TWO HOMES.
+DO Muscle memory - no multiplication
+Matrix size
+Input home
+Output home
+2 →2
+3 →2
+2 →4
+4 →3
+Two di!erent questions on two sides of the machine
+Right-side question: What can the machine make?
+Out of all vectors living in Rm, which ones can this particular matrix actually produce?
+You already met this set:
+C(A) = all reachable outputs.
+It lives inside the output space.
+Left-side question: What can the machine not see?
+Could a nonzero input enter the machine and produce the zero output?
+nonzero x
+A
+0
+THE MACHINE SAW NOTHING
+3
+
+
+=== PAGE 87 ===
+Newton School of Technology
+Mathematics-3
+Before naming anything: draw both sides
+For each machine, we will keep the two copies of R2 separate. One is the input world; the other is
+the output world.
+Example 1 - Identity machine
+A =
+⌉︄
+1
+0
+0
+1
+{︄
+.
+INPUT SPACE R2
+A
+OUTPUT SPACE R2
+1. What nonzero input does this machine fail to see?
+2. Which outputs are reachable?
+Example 2: Linearly Dependent column vectors
+A =
+⌉︄
+1
+2
+2
+4
+{︄
+.
+INPUT SPACE R2
+A
+OUTPUT SPACE R2
+CHECKPOINT
+Both pictures use R2, but they have di!erent roles. The purple line is made of inputs. The green
+line is made of outputs. Do not merge the two worlds in your head.
+Example 3 - Reachable output versus invisible input
+A =
+⌉︄
+1
+1
+0
+0
+{︄
+.
+4
+
+
+=== PAGE 88 ===
+Newton School of Technology
+Mathematics-3
+DO
+Solve only the small equations you need.
+Input side: Ax = 0 gives
+x1 + x2 = 0.
+So the invisible inputs lie along
+span
+}︄⌉︄
+1
+↓1
+{︄⟨︄
+.
+Output side: both columns lie on the x-axis, so the reachable outputs lie along
+span
+}︄⌉︄
+1
+0
+{︄⟨︄
+.
+INPUT SPACE R2
+A
+OUTPUT SPACE R2
+Take
+b1 =
+⌉︄
+3
+0
+{︄
+,
+b2 =
+⌉︄
+3
+1
+{︄
+.
+PREDICT
+Without solving Ax = b:
+1. Which target can the machine reach?
+2. Why?
+3. For the reachable target, could di!erent input recipes produce the same output? What clue on
+the input side makes you suspect this?
+Example 4 - An invisible axis, a reachable plane
+A =
+)︄
+[︄[︄]︄
+1
+0
+0
+0
+1
+0
+0
+0
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+5
+
+
+=== PAGE 89 ===
+Newton School of Technology
+Mathematics-3
+x
+y
+z
+INPUT SPACE R3
+A
+x
+y
+z
+OUTPUT SPACE R3
+DO
+For
+x =
+)︄
+[︄[︄]︄
+x
+y
+z
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+)︄
+[︄[︄]︄
+x
+y
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+1. Which part of the input can change without a!ecting the output?
+2. Give one nonzero invisible input:
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+3. Which outputs are impossible?
+CHECKPOINT
+This machine keeps the ﬁrst two coordinates and completely ignores the third. The input space
+contains a whole invisible direction.
+Example 5 - An invisible plane, a reachable axis
+A =
+)︄
+[︄[︄]︄
+1
+0
+0
+0
+0
+0
+0
+0
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+x
+y
+z
+INPUT SPACE R3
+A
+x
+y
+z
+OUTPUT SPACE R3
+6
+
+
+=== PAGE 90 ===
+Newton School of Technology
+Mathematics-3
+DO
+For
+x =
+)︄
+[︄[︄]︄
+x
+y
+z
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+)︄
+[︄[︄]︄
+x
+0
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+1. Which two coordinates can change freely without changing the output?
+2. Describe all invisible input changes in words.
+3. Describe all reachable outputs in words.
+PREDICT (do not formalise this yet)
+Compare Examples 4 and 5.
+When more input directions disappear, what seems to happen to the number of output directions
+that survive?
+Keep the observation. We will return to it later.
+Return to the audio machine: same output, di!erent inputs
+Now return to a world already alive from Sheet 6. The columns of
+A =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+0
+1
+0
+1
+1
+1
+1
+2
+↓1
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+= [ s1 s2 s3 ]
+are three sampled audio tracks:
+s1 =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+0
+1
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+s2 =
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+1
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+s3 =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+1
+2
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Track 1
+Track 2
+Track 3
+Two control settings are
+x1 =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄,
+x2 =
+)︄
+[︄[︄]︄
+1
+0
+1
+⌊︄
+⌋︄⌋︄⌈︄.
+7
+
+
+=== PAGE 91 ===
+Newton School of Technology
+Mathematics-3
+DO
+1. Expand both mixes using the columns of A.
+Ax1 =
+)︄
+[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+Ax2 =
+)︄
+[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+2. What do you notice?
+PREDICT
+The output machine hears exactly the same thing. Were the controls the same?
+↭Yes
+↭No
+Compute the input change:
+x1 ↓x2 =
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+What must happen to this change when it passes through A?
+The machine cannot see the di!erence
+From
+Ax1 = Ax2
+↔↑
+Ax1 ↓Ax2 = 0,
+↔↑
+A(x1 ↓x2) = 0.
+For our audio controls,
+x1 ↓x2 =
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄↗= 0.
+nonzero input change
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄
+A
+0 output
+NOW WE CAN NAME IT
+The null space of A is the set of all input vectors that A sends to zero:
+N(A) = {x : Ax = 0}.
+If A has n columns, then
+N(A) ↘Rn.
+The null space lives on the input side.
+8
+
+
+=== PAGE 92 ===
+Newton School of Technology
+Mathematics-3
+Host-space muscle memory:
+1. If A is 4 →3, then N(A) lives in
+.
+2. If B is 2 →5, then N(B) lives in
+.
+3. Where does C(A) live for a 4 →3 matrix?
+.
+4. Circle the correct side:
+N(A):
+INPUT / OUTPUT
+C(A):
+INPUT / OUTPUT
+An invisible input is also a column relation
+Consider
+Ax = 0
+means
+x1a1 + x2a2 + · · · + xnan = 0.
+PREDICT
+The zero input x = 0 always works. Does that alone prove that the columns are dependent?
+↭Yes
+↭No
+What extra fact would make the coe"cient relation nontrivial?
+NOW WE CAN NAME IT
+The precise connection is
+N(A) contains a nonzero vector ↔↑the columns of A are linearly dependent.
+And
+N(A) = {0} ↔↑the columns of A are linearly independent.
+For the audio machine, s3 = s1 + s2 becomes s1 + s2 ↓s3 = 0. So
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄≃N(A).
+free variable appears
+nonzero null direction
+nontrivial column relation
+columns are dependent
+These are not four discon-
+nected facts.
+They are four views of the
+same phenomenon.
+9
+
+
+=== PAGE 93 ===
+Newton School of Technology
+Mathematics-3
+How do we ﬁnd all invisible input changes?
+This is not a new algorithm. We already know how to solve a homogeneous system.
+For the audio matrix,
+Ax = 0.
+Row reduction gives
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+0
+1
+0
+1
+1
+0
+0
+0
+0
+0
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+x = 0.
+DO
+The equations are
+x1 + x3 = 0,
+x2 + x3 = 0.
+Choose x3 = ↓t. Then
+x1 =
+,
+x2 =
+,
+x3 =
+.
+Hence
+x = t
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+x
+y
+z
+t > 0
+t < 0
+N(A)
+t is not just “an arbitrary parameter.”
+t = 2: move twice as far in the invisible
+direction.
+t = ↓3: move three times in the opposite
+invisible direction.
+CHECKPOINT
+Free variables measure freedom in the input. Parameterising them describes directions
+along which the input can move while the output remains zero.
+The machine can miss more than one direction
+Consider
+B =
+⌉︄
+1
+2
+3
+2
+4
+6
+{︄
+.
+Its row-reduced system Bx = 0 gives one equation:
+x1 + 2x2 + 3x3 = 0.
+10
+
+
+=== PAGE 94 ===
+Newton School of Technology
+Mathematics-3
+DO
+Let
+x2 = s,
+x3 = t.
+Then
+x1 =
+.
+Write the input as
+x = s
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄+ t
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄.
+x
+y
+z
+N(B): an invisible plane in the input space R3
+Complete the observations:
+One free variable gave us one independent invisible
+.
+Two free variables give us two independent invisible
+.
+These two directions are enough to move anywhere inside the invisible
+.
+Two questions. Two sides. One matrix.
+INPUT SPACE Rn
+N(A)
+invisible changes
+A
+MACHINE
+OUTPUT SPACE Rm
+C(A)
+reachable outputs
+CHECKPOINT
+Question 1 - OUTPUT SIDE: Can the machine reach target b?
+b ≃C(A)?
+Question 2 - INPUT SIDE: If it reaches b, can we change the input without changing the
+output?
+N(A) contains a nonzero vector?
+11
+
+
+=== PAGE 95 ===
+Newton School of Technology
+Mathematics-3
+Find one working input
+Return to the audio target b, one easy input is xp, where
+b =
+)︄
+[︄[︄[︄[︄[︄]︄
+2
+1
+3
+↓2
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+xp =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄.
+Verify using columns that Axp = b.
+NOW WE CAN NAME IT (Particular solution)
+A particular solution is any one chosen working input satisfying
+Axp = b.
+Particular does not mean special or unique. It simply means one working solution
+that we have chosen.
+One working input + one invisible change
+We know Axp = b and every xn ≃N(A) satisﬁes Axn = 0.
+PREDICT
+What happens if we change the working input by an invisible input change?
+A(xp + xn) = ?
+Predict ﬁrst:
+Now calculate:
+A(xp + xn) = Axp + Axn =
++
+=
+.
+NOW WE CAN NAME IT
+ONE WORKING INPUT + AN INVISIBLE CHANGE = ANOTHER WORKING
+INPUT.
+x = xp + xn,
+xn ≃N(A).
+For our audio system,
+xp =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄,
+N(A) =
+⟩︄
+/︄
+/︄
+\︄
+/︄
+/︄
+/︂
+t
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄: t ≃R
+\︂
+/︄
+/︄
+⎛
+/︄
+/︄
+⎞
+.
+So every candidate generated by this rule looks like
+x =
+)︄
+[︄[︄]︄
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌈︄+ t
+)︄
+[︄[︄]︄
+1
+1
+↓1
+⌊︄
+⌋︄⌋︄⌈︄.
+Test the rule.
+12
+
+
+=== PAGE 96 ===
+Newton School of Technology
+Mathematics-3
+For t = 1
+x =
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+For t = 2
+x =
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+Ax =
+See the geometry in the smallest possible example
+Let
+A =
+⎡
+1
+1
+⎤
+.
+Then the invisible inputs satisfy
+Ax = 0
+↔↑
+x + y = 0.
+For target b = 5, the working inputs satisfy x + y = 5.
+Choose
+xp =
+⌉︄
+5
+0
+{︄
+.
+x
+y
+x
+y
+CHECKPOINT
+The complete solution is a shifted copy of the null space. The null space passes through the
+origin. The solution set Ax = b usually does not.
+Now we can ﬁnish the Ax = b mind-map
+Sheet 6 answered the ﬁrst question:
+Ax = b has a solution ↔↑b ≃C(A).
+Now null space answers the next question.
+PREDICT
+Suppose a solution exists.
+Case 1: N(A) = {0}. How many vectors are in xp + N(A)?
+13
+
+
+=== PAGE 97 ===
+Newton School of Technology
+Mathematics-3
+Case 2: N(A) contains a nonzero vector xn. What happens to
+xp + txn
+as t runs through all real numbers?
+Ax = b
+b ≃C(A)?
+No solution
+N(A) = {0}?
+Unique solution
+Inﬁnitely many
+No
+Yes
+Yes
+No
+NOW WE CAN NAME IT
+If a solution exists, then
+N(A) = {0} ↔↑the solution is unique.
+If N(A) contains any nonzero vector, then every xp +txn is another solution, so there are inﬁnitely
+many solutions.
+CHECKPOINT
+The two questions are di!erent:
+1. Existence: Can the target be reached?
+2. Uniqueness: If I get there, is there only one way to get there?
+DO
+Why can a linear system never have exactly 2, exactly 5, or exactly 100 solutions?
+Application: one nutrition target, many possible meals
+We now use the same mathematics in a context where variation is useful.
+Suppose the input vector records servings of four foods:
+x =
+)︄
+[︄[︄[︄[︄[︄]︄
+xPB
+xB
+xM
+xS
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+where PB = peanut butter, B = one slice of bread, M = milk, and S = a peanut-butter sandwich
+made from one PB serving and two bread slices.
+14
+
+
+=== PAGE 98 ===
+Newton School of Technology
+Mathematics-3
+The matrix records three tracked nutrition totals per serving:
+A =
+PB
+Bread
+Milk
+Sandwich
+Protein
+8
+3
+8
+14
+Carbs
+7
+12
+12
+31
+Fat
+15
+1
+5
+17
+The numbers are a simpliﬁed classroom model, measured in grams.
+The required nutrition target is
+b =
+)︄
+[︄[︄]︄
+22
+43
+22
+⌊︄
+⌋︄⌋︄⌈︄.
+DIET PLAN x
+servings of PB, bread, milk, sandwich
+NUTRITION
+MACHINE A
+TARGET b
+protein, carbs, fat
+DO Step 1 - One working meal
+Check that xp works. In words, this means one milk serving and one sandwich.
+xp =
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+Axp =
+)︄
+[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+= b.
+PREDICT
+The sandwich column is visibly
+aS = aPB + 2aB.
+What change in food quantities should leave all three tracked totals unchanged?
+Null space = room to vary while preserving what matters
+From
+aS = aPB + 2aB,
+we get
+aPB + 2aB ↓aS = 0.
+So one null direction is
+xn =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Verify: Axn = 0.
+15
+
+
+=== PAGE 99 ===
+Newton School of Technology
+Mathematics-3
+Therefore the complete mathematical family is
+x =
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
++ t
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+t ≃R.
+Meal A
+)︄
+[︄[︄[︄[︄[︄]︄
+0
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+Meal B
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+same machine A
+same target b
+di!erence =
+)︄
+[︄[︄[︄[︄[︄]︄
+1
+2
+0
+↓1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+≃N(A)
+CHECKPOINT
+A null-space vector is a way of changing the food quantities while leaving every tracked
+nutrition total unchanged.
+Across all four scenarios, the null space answers the same structural question:
+What can we change at the input without changing what this machine can see at the
+output?
+A smaller linear world appears inside the input space
+We have discovered N(A) sitting inside the input space Rn. Is it merely an arbitrary collection of
+vectors?
+Let u, v ≃N(A). Then
+Au = 0,
+Av = 0.
+DO Test the behaviour
+Zero:
+A0 =
+.
+Therefore 0 ≃N(A).
+Addition:
+A(u + v) = Au + Av =
+.
+Therefore u + v ≃N(A).
+Scaling: for any c ≃R,
+A(cu) = cAu =
+.
+Therefore cu ≃N(A).
+16
+
+
+=== PAGE 100 ===
+Newton School of Technology
+Mathematics-3
+NOW WE CAN NAME IT Subspace
+For now, inside coordinate spaces such as Rn, call a subset S a subspace if
+1. 0 ≃S;
+2. u, v ≃S ↑u + v ≃S;
+3. u ≃S, c ≃R ↑cu ≃S.
+A subspace is a smaller linear world living inside a larger host space.
+CHECKPOINT
+We just proved:
+N(A) is a subspace of the INPUT SPACE Rn.
+The reachable outputs also form a smaller linear world
+Now look at the output side. Suppose y1, y2 ≃C(A). That means the machine can make them, so
+there are inputs x1, x2 such that
+Ax1 = y1,
+Ax2 = y2.
+Addition:
+y1 + y2 = Ax1 + Ax2 = A(
+).
+So the machine can also produce y1 + y2.
+Scaling:
+cy1 = cAx1 = A(
+).
+So the machine can also produce cy1.
+Zero:
+A0 = 0,
+so zero is reachable.
+CHECKPOINT
+Therefore
+C(A) is a subspace of the OUTPUT SPACE Rm.
+INPUT SIDE Rn
+OUTPUT SIDE Rm
+N(A)
+C(A)
+invisible inputs / input changes
+reachable outputs
+Ax = 0
+Ax for all possible x
+subspace of input space
+subspace of output space
+helps answer multiplicity
+answers reachability / existence
+DO
+Finish the sentence without looking above:
+The null space lives on the
+side. The column space lives on the
+side.
+17
+
+
+=== PAGE 101 ===
+Newton School of Technology
+Mathematics-3
+Quick subspace tests
+For a NO, identify one condition that fails. For a YES, brieﬂy explain why all three conditions hold.
+Set
+Subspace?
+Evidence
+W1 = {(x, y) : y = 2x}
+Yes / No
+W2 = {(x, y) : y = 2x + 1}
+Yes / No
+W3 = {(x, y) : x ⇐0}
+Yes / No
+W4 = {(x, y, z) : x2 + y2 + z2 = 4}
+Yes / No
+W5 = {(x, y, z) : x + y + z = 0}
+Yes / No
+CHECKPOINT
+Compare the two lines
+x + y = 0
+and
+x + y = 5.
+Both are lines. Only the ﬁrst is a subspace of R2.
+This also explains why a nonhomogeneous solution set Ax = b with b ↗= 0 is usually a shifted
+copy of N(A), not itself a subspace.
+Do not jump ahead yet. We are still working inside familiar coordinate homes R2, R3, Rn.
+Later we will ask a more abstract question: what can a vector space itself be?
+SAME OUTPUT, DIFFERENT INPUTS.
+The di!erence between those inputs lives in the null space.
+We started inside the matrix. Now we are beginning to see the worlds on both sides of
+it.
+18
+
+

@@ -1,0 +1,870 @@
+=== PAGE 28 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 3: One Recipe, Inﬁnite Menu
+Vectors, Linear Combinations, Span and Ax = b
+Name:
+ID/Batch:
+This sheet will help you:
+• recognise the same vector in arrow, ordered-pair, and column form;
+• add and scale vectors, both algebraically and geometrically;
+• recognise the same “scale and add” idea in colours, sounds, and recipes;
+• distinguish one linear combination from the span of a set of vectors;
+• read Ax = b as: Which coe!cients build the target b from the columns of A?
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== PAGE 29 ===
+Newton School of Technology
+Mathematics-3
+What is a vector?
+You have already met vectors in school, Lecture 0, and the previous sheets. Before reading another
+deﬁnition, write what comes to mind.
+What is a vector?
+Your Answer:
+Draw the picture you imagine when you hear the word vector.
+In school, you mostly met vectors through force, velocity, and acceleration: quantities with magnitude
+and direction. That is our starting point. In this sheet we will work mainly in R2 and R3. Later, we will
+return to the question “What is a vector?” and broaden the answer.
+Three notations, one vector
+During the college tech fest, a drone carrying the winning team’s certiﬁcates lands 2 units east and 3
+units north of its charging station.
+Mr. Physicist writes
+v = 2ˆi + 3ˆj.
+Mr. Computer Scientist writes
+v = (2, 3).
+Mr. Mathematician writes
+v =
+!2
+3
+"
+.
+Three notations. One vector. Visualize 2ˆi + 3ˆj below.
+2
+
+
+=== PAGE 30 ===
+Newton School of Technology
+Mathematics-3
+How did you draw the vector? Describe the steps.
+Your Answer:
+Did you draw the axes ﬁrst?
+↭Yes
+↭No
+What did drawing the axes establish?
+Your Answer:
+It established a frame of reference. In that frame, (2, 3) tells us how far to move along two coordinate
+directions.
+x
+y
+What is this plane mathematically, as a set?
+Your Answer:
+R2 = R →R = {(x, y) | x ↑R, y ↑R}.
+This is the 2D space in which our 2-component vectors live.
+Can you describe R3 in the same way?
+Your Answer:
+Think like a programmer
+In Python, type(3.14) and type("linear algebra") tell us what kind of objects we are handling.
+In mathematics, saying a vector “lives in R2” also tells us what kind of object it is and which
+operations make sense.
+Can we add a vector in R2 to a vector in R3 directly? Why or why not?
+Your Answer:
+Convention
+For geometric drawings, we will usually place a vector’s tail at the origin. Translating a free vector
+parallel to itself does not change its magnitude or direction.
+3
+
+
+=== PAGE 31 ===
+Newton School of Technology
+Mathematics-3
+x
+y
+v
+v
+v
+v
+The two moves we keep repeating: add and scale
+Before listing properties, do four small calculations by hand.
+World
+One small calculation
+Movement
+!2
+1
+"
++
+!1
+3
+"
+=
+!
+"
+Colour
+If r =
+
+
+1
+0
+0
+
+and g =
+
+
+0
+1
+0
+
+, then 1
+2r + 1
+2g =
+
+
+
+.
+Sound
+If s1 =
+
+
+2
+↓1
+1
+0
+
+and s2 =
+
+
+1
+1
+↓1
+2
+
+, then s1 + s2 =
+
+
+
+.
+Recipe
+If R =
+
+
+20
+200
+4
+
+and V =
+
+
+30
+80
+3
+
+record the cost, calories and protein of rice and
+vegetables, compute R + V =
+
+
+
+.
+The objects are di!erent, but the mathematical actions are the same: scale, then add objects of the
+same kind. This is the idea behind linear combinations.
+r
+g
+b
+one mix
+s1
+s2
+s1 + s2
+Rice
+Paneer
+Veg
+dish
+Colour mixing
+Audio mixing
+Recipe mixing
+In each picture, one choice of coe”cients gives one output. The span will mean something larger: all
+outputs obtained as the coe”cients vary.
+4
+
+
+=== PAGE 32 ===
+Newton School of Technology
+Mathematics-3
+Vector addition geometrically
+x
+y
+u
+v
+u + v
+Figure 1: Head-to-tail addition
+x
+y
+u
+v
+u + v
+Figure 2: Parallelogram law
+Compute
+u =
+!3
+1
+"
+,
+v =
+!2
+3
+"
+algebraically. Then check that the result matches the endpoint in the picture.
+Your Answer:
+Scalar multiplication geometrically
+x
+y
+v
+3v
+If v =
+!1
+1
+"
+, draw 1
+2v and ↓2v on the same axes. What changes when the scalar is negative?
+Your Answer:
+Properties: the same rules in di!erent worlds
+Survey Drone Mission: commutativity
+A drone is stationed at the origin.
+v =
+!2
+1
+"
+,
+w =
+!1
+3
+"
+.
+Engineer A executes v and then w. Engineer B reverses the order.
+5
+
+
+=== PAGE 33 ===
+Newton School of Technology
+Mathematics-3
+Engineer A
+x
+y
+Engineer B
+x
+y
+Did the order a!ect the ﬁnal position? Your Answer:
+Property 1: Commutativity of vector addition
+For vectors of the same space,
+v + w = w + v.
+For compatible sound vectors, the same rule holds sample by sample: s1 + s2 = s2 + s1.
+Warehouse Robot: associativity
+v =
+!2
+1
+"
+,
+w =
+!1
+3
+"
+,
+x =
+!↓1
+2
+"
+.
+Compute both:
+(v + w) + x =
+,
+v + (w + x) =
+.
+Did the grouping matter? Your Answer:
+Property 2: Associativity of vector addition
+(u + v) + w = u + (v + w).
+Delivery Drone Battery Upgrade: distributivity over vector addition
+A battery upgrade triples every displacement. Compute and compare
+3(v + w)
+with
+3v + 3w.
+Compute both. Your Answer:
+Now test the same law using the colour vectors
+r =
+
+
+1
+0
+0
+
+,
+g =
+
+
+0
+1
+0
+
+.
+Compute 2(r + g) and 2r + 2g. The setting changed from movement to light. Did the algebra change?
+Your Answer:
+6
+
+
+=== PAGE 34 ===
+Newton School of Technology
+Mathematics-3
+Property 3: Distributivity over vector addition
+ω(v + w) = ωv + ωw.
+Digital Map Zoom: distributivity over scalar addition
+A path is represented by v. One copy is scaled by c and another by d. If we add the two copies, can one
+scaling operation give the same result?
+Your Answer:
+Property 4: Distributivity over scalar addition
+(c + d)v = cv + dv.
+For a sound vector s, two copies with gains c and d combine to the same vector as one copy with
+gain c + d.
+The “do nothing” object: additive identity
+A movement command that does nothing is
+0 =
+!0
+0
+"
+.
+What would the corresponding “zero” object look like for a four-sample sound vector? What would it
+look like for an RGB light vector?
+Sound zero:
+RGB zero:
+Property 5: Additive identity
+v + 0 = v.
+The zero vector looks di!erent in di!erent spaces, but its role is always the same: adding it changes
+nothing.
+The “undo” object: additive inverse
+A drone accidentally executes v. What one command returns it to where it started?
+Your Answer:
+If s is a sampled sound vector, what is s + (↓s) mathematically?
+Your Answer:
+Property 6: Additive inverse
+v + (↓v) = 0.
+Image Enlargement: associativity of scalar multiplication
+A blueprint is enlarged by a factor of 2 and then the enlarged copy is enlarged by a factor of 3. What
+single factor gives the same result?
+Your Answer:
+7
+
+
+=== PAGE 35 ===
+Newton School of Technology
+Mathematics-3
+Property 7: Associativity of scalar multiplication
+c(dv) = (cd)v.
+These rules are not special to arrows. They describe the algebraic behaviour we want vectors to have. For
+now, we stay concrete in R2 and R3. Later, we will ask what other kinds of objects obey the same rules.
+Linear combination: one choice of coe”cients
+Look at these three expressions before reading the deﬁnition.
+Colour:
+0.2r + 0.5g + 0.3b,
+Sound:
+1
+2s1 + s2,
+Recipe:
+1 R + 2 P + 1
+2V.
+In each expression, what do the numbers do? What does addition do?
+Your Answer:
+Now return to geometry. An RC car knows only two basic movement vectors:
+v =
+!1
+0
+"
+,
+w =
+!0
+1
+"
+.
+Its parking spot is at
+!3
+4
+"
+.
+How can the car reach the spot using scaled copies of v and w?
+Your Answer:
+What if the target is
+!a
+b
+"
+?
+Your Answer:
+Deﬁnition: Linear combination
+A linear combination of v1, . . . , vk is any vector of the form
+c1v1 + c2v2 + · · · + ckvk,
+where c1, . . . , ck ↑R.
+The name is new; the operation is not. In Sheet 2, the entries of the vector on the right told you how
+much of each column to use. That was already a linear combination. Here we simply name the idea.
+8
+
+
+=== PAGE 36 ===
+Newton School of Technology
+Mathematics-3
+Do not confuse these two ideas
+A linear combination means: choose one set of coe”cients and get one output.
+0.2r + 0.5g + 0.3b
+is one colour,
+1
+2s1 + s2
+is one mixed sound,
+R + 2P + 1
+2V
+is one dish proﬁle.
+The span means: let the coe”cients vary over all real numbers and collect every output you can
+obtain.
+span{r, g, b},
+span{s1, s2},
+span{R, P, V }.
+World
+One linear combination
+Span
+Colour
+one chosen mix of base colours
+all mathematically reachable colour
+vectors from those bases
+Sound
+one chosen audio mix
+all mathematically reachable audio
+mixes from those clips
+Recipe
+one chosen dish proﬁle
+all mathematically reachable pro-
+ﬁles from those ingredient vectors
+Three quick transfers
+(a) Colour. With
+r =
+
+
+1
+0
+0
+
+,
+g =
+
+
+0
+1
+0
+
+,
+b =
+
+
+0
+0
+1
+
+,
+write
+
+
+2
+1
+0
+
+as a linear combination of r, g, b.
+Your Answer:
+(b) Sound. Let
+s1 =
+
+
+2
+↓1
+1
+0
+
+,
+s2 =
+
+
+1
+1
+↓1
+2
+
+.
+Find coe”cients that produce
+
+
+3
+0
+0
+2
+
+
+from s1 and s2.
+Your Answer:
+9
+
+
+=== PAGE 37 ===
+Newton School of Technology
+Mathematics-3
+(c) Recipe. Suppose
+R =
+
+
+20
+200
+4
+
+,
+P =
+
+
+60
+250
+18
+
+,
+V =
+
+
+30
+80
+3
+
+.
+Interpret R + 2P + V in words, then compute it.
+Your Answer:
+Practice with vectors
+For each set of vectors, write a general linear combination.
+(a) v1 =
+!
+1
+1
+"
+,
+v2 =
+!
+1
+↓1
+"
+Your Answer:
+(b) v1 =
+!1
+2
+"
+,
+v2 =
+!2
+4
+"
+Your Answer:
+(c) v1 =
+!0
+1
+"
+,
+v2 =
+!↓1
+0
+"
+Your Answer:
+(d) v1 =
+
+
+1
+1
+1
+
+,
+v2 =
+
+
+1
+↓1
+1
+
+,
+v3 =
+
+
+1
+0
+1
+
+
+Your Answer:
+Determine whether
+
+
+1
+2
+3
+
+
+is a linear combination of
+
+
+1
+1
+1
+
+
+and
+
+
+↓1
+0
+1
+
+.
+If yes, ﬁnd the coe”cients.
+Your Answer:
+10
+
+
+=== PAGE 38 ===
+Newton School of Technology
+Mathematics-3
+Span: the set of all linear combinations
+Before continuing, state the di!erence in your own words:
+A linear combination of v1, v2 is:
+The span of v1, v2 is:
+Keep this distinction ﬁxed in your mind: one linear combination gives one vector; the span is a
+set of vectors. Now we make it precise.
+A Curious Monkey and an Inﬁnite Keyboard
+Imagine a monkey with unlimited time pressing keys at random.
+The Inﬁnite Monkey thought experiment says that, eventually,
+every ﬁnite piece of text would appear.
+Now give the monkey the RC-car joystick. It can choose any real
+amount of the two movement vectors v and w.
+As those two coe”cients vary, what region can the car reach?
+Your Answer:
+The collection of all vectors obtained from all possible linear combinations is the span. Notice the
+di!erence:
+• 2v ↓3w is a linear combination.
+• span{v, w} is the set of all linear combinations c1v + c2w.
+Deﬁnition: Span
+span{v1, . . . , vk} = {c1v1 + · · · + ckvk | c1, . . . , ck ↑R} .
+Span is the set of everything reachable by scaling and adding the given vectors.
+Return to the RC-car vectors v =
+!1
+0
+"
+and w =
+!0
+1
+"
+. What is their span?
+Your Answer:
+11
+
+
+=== PAGE 39 ===
+Newton School of Technology
+Mathematics-3
+The same question in three worlds
+r
+g
+b
+one mix
+s1
+s2
+s1 + s2
+Rice
+Paneer
+Veg
+dish
+one colour vs many colours
+one mix vs many mixes
+one dish vs many dishes
+(a) What does span{r, g, b} mean if r, g, b are the three RGB coordinate vectors?
+Your Answer:
+(b) What does span{s1, s2} mean for two compatible sampled sounds?
+Your Answer:
+(c) What does the span of the three ingredient-proﬁle vectors R, P, V mean mathematically?
+Your Answer:
+Physical Note:
+Real colour intensities and recipe amounts are usually restricted, for example to nonnegative or
+bounded values. Mathematical span allows all real coe!cients. The analogy helps us see the
+structure, but the mathematical set is larger than the physically meaningful one.
+Solving Ax = b: build the target
+Now return to Sheet 2. Write a matrix by columns:
+A =
+
+
+|
+|
+|
+a1
+a2
+· · ·
+an
+|
+|
+|
+
+,
+x =
+
+
+x1
+x2
+...
+xn
+
+.
+Then
+Ax = x1a1 + x2a2 + · · · + xnan.
+So solving
+Ax = b
+asks:
+Which coe!cients combine the columns of A to produce the target b?
+12
+
+
+=== PAGE 40 ===
+Newton School of Technology
+Mathematics-3
+A colour target ﬁrst
+Two base-light proﬁles are
+c1 =
+
+
+1
+0
+1
+
+,
+c2 =
+
+
+0
+1
+1
+
+.
+Find x1, x2 so that
+x1c1 + x2c2 =
+
+
+1
+2
+3
+
+.
+Your Answer:
+Now stack the two colour vectors as columns:
+
+
+1
+0
+0
+1
+1
+1
+
+
+!x1
+x2
+"
+=
+
+
+1
+2
+3
+
+.
+The colour-recipe question and the matrix equation ask the same thing in two languages.
+Return to ordinary simultaneous equations
+Solve
+2x + y = 7,
+x ↓y = 2.
+Before solving, read the same system in matrix form and then as a column combination.
+!2
+1
+1
+↓1
+"
+)
+*+
+,
+A
+!x
+y
+"
+)*+,
+x
+=
+!7
+2
+"
+)*+,
+b
+.
+Column-combination reading:
+x
+!2
+1
+"
++ y
+! 1
+↓1
+"
+=
+!7
+2
+"
+.
+In words, what are we trying to ﬁnd?
+Your Answer:
+Substitution
+Elimination
+13
+
+
+=== PAGE 41 ===
+Newton School of Technology
+Mathematics-3
+Substitution
+Elimination
+Now solve the following system using substitution and elimination:
+x1 + 2x2 + 3x3 + 4x4 + 5x5 = 15,
+2x1 + x2 + 4x3 + 3x4 + x5 = 11,
+3x1 + 2x2 + x3 + 5x4 + 2x5 = 13,
+x1 + 4x2 + 2x3 + x4 + 3x5 = 11,
+5x1 + x2 + 3x3 + 2x4 + x5 = 12.
+Solution:
+14
+
+
+=== PAGE 42 ===
+Newton School of Technology
+Mathematics-3
+Continue your solution:
+Reﬂection
+The large system was deliberately uncomfortable. Use that discomfort as information.
+(a) What became di”cult as the number of variables grew?
+Your Answer:
+(b) What does a solution vector x tell you about the columns of A and the target b?
+Your Answer:
+(c) Complete the sentence: A linear combination is one choice of coe!cients; the span is
+.
+(d) Use one intuitive example to explain the same distinction. Choose one:
+• one colour mix versus all colour mixes,
+• one audio mix versus all audio mixes,
+• one recipe versus all possible recipes.
+Your Answer:
+In the next sheets, we will build a systematic method for solving such systems. Keep this meaning with
+you:
+Ax = b
+↔↗
+Can the target b be built from the columns of A?
+15
+
+

@@ -1,0 +1,364 @@
+=== LAB PAGE 31 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 8
+Name:
+ID/Batch:
+Easy
+Q.1) State True/False. Justify your answer.
+(a) If m = n then the row space of A equals the column space of A.
+(b) The matrices A and →A share the same four subspaces.
+(c) If A and B share the same four subspaces then A is a multiple of B.
+(d) A and AT have the same number of pivots.
+(e) If the row space equals the column space then AT = A.
+(f) If B is any echelon form of A, then the pivot columns of B form a basis for the
+column space of A.
+(g) The dimensions of the row space and the column space of an m ↑n matrix A are
+equal, even if A is not square.
+Q.2) Find the basis of column space and null space of the following matrix. Further determine
+the rank and nullity.
+)︄
+[︄
+1
+2
+3
+1
+2
+3
+2
+5
+8
+]︄
+⌊︄
+a)
+)︄
+⌋︄⌋︄[︄
+1
+2
+→1
+3
+2
+5
+1
+4
+3
+7
+0
+7
+4
+9
+→1
+10
+]︄
+⌈︄⌈︄⌊︄
+b)
+Q.3) Answer each part and explain your reasoning.
+(a) If A is a 7 ↑5 matrix, what is the largest possible rank of A? If A is a 5 ↑7 matrix,
+what is the largest possible rank of A?
+(b) If A is a 4 ↑3 matrix, what is the maximum possible dimension of the row space
+of A? If A is a 3 ↑4 matrix, what is the maximum possible dimension of the row
+space of A?
+(c) If the null space of a 5 ↑6 matrix A is 4-dimensional, what is the dimension of the
+row space of A?
+(d) If the null space of a 7 ↑6 matrix A is 5-dimensional, what is the dimension of the
+column space of A?
+Q.4) In each part, use the information in the table to ﬁnd the dimension of the row space of A,
+column space of A, null space of A, and left null space of A.
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+Size of A
+3 ↑3
+3 ↑3
+3 ↑3
+5 ↑9
+9 ↑5
+4 ↑4
+rank(A)
+3
+2
+1
+2
+2
+0
+1
+
+
+=== LAB PAGE 32 ===
+Newton School of Technology
+Mathematics-3
+Q.5) Find the complete solution x = xp + xn of Ax = b for
+A =
+)︄
+[︄
+1
+3
+3
+2
+2
+6
+9
+7
+→1
+→3
+3
+4
+]︄
+⌊︄,
+b =
+)︄
+[︄
+1
+5
+5
+]︄
+⌊︄.
+State the rank, the nullity, and the number of free variables, and check that no. of
+columns = rank(A) + nullity(A).
+Medium
+Q.6) Matrix B is the row echelon form of matrix A. Without calculations, list rank A and
+dim(N(A)). Then ﬁnd bases for C(A), C(AT ), and N(A).
+A =
+)︄
+⌋︄⌋︄[︄
+2
+→3
+6
+2
+5
+→2
+3
+→3
+→3
+→4
+4
+→6
+9
+5
+9
+→2
+3
+3
+→4
+1
+]︄
+⌈︄⌈︄⌊︄,
+B =
+)︄
+⌋︄⌋︄[︄
+2
+→3
+6
+2
+5
+0
+0
+3
+→1
+1
+0
+0
+0
+1
+3
+0
+0
+0
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+Q.7) Given A = LU, without computing A, ﬁnd bases for the four fundamental subspaces:
+A =
+)︄
+[︄
+1
+0
+0
+6
+1
+0
+9
+8
+1
+]︄
+⌊︄
+)︄
+[︄
+1
+2
+3
+4
+0
+1
+2
+3
+0
+0
+1
+2
+]︄
+⌊︄.
+Q.8) Find the dimension and construct a basis for the four subspaces associated with each of
+the matrices
+A =
+⌉︄0
+1
+4
+0
+0
+2
+8
+0
+{︄
+and
+U =
+⌉︄0
+1
+4
+0
+0
+0
+0
+0
+{︄
+.
+Which of the four subspaces are the same for A and U, and which are di!erent? Explain
+why.
+Q.9) Under what conditions on b1, b2, b3 is the following system solvable? Augment b as a
+fourth column and perform elimination. Find all solutions when that condition holds.
+x + 2y →2z = b1
+2x + 5y →4z = b2
+4x + 9y →8z = b3
+Then ﬁnd a vector y spanning N(AT) and verify that your solvability condition is exactly
+the statement yTb = 0.
+Q.10) If V is the subspace spanned by (1, 1, 1) and (2, 1, 0), ﬁnd a matrix A that has V as its
+row space. Find a matrix B that has V as its null space.
+Q.11) Answer each part, with an explanation.
+(a) Suppose a 4 ↑7 matrix A has four pivot columns. Is C(A) = R4? Is N(A) = R3?
+(b) Suppose a 5↑6 matrix A has four pivot columns. What is dim(N(A))? Is C(A) = R4?
+Why or why not?
+2
+
+
+=== LAB PAGE 33 ===
+Newton School of Technology
+Mathematics-3
+Q.12) Are there values of r and s for which
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+0
+r →2
+2
+0
+s →1
+r + 2
+0
+0
+3
+]︄
+⌈︄⌈︄⌊︄
+has rank 1? Rank 2? If so, ﬁnd those values.
+Hard
+Q.13) If the product of two matrices is the zero matrix, AB = 0, show that the column space of
+B is contained in the null space of A. (Also the row space of A is contained in the left
+null space of B.) Why can’t A and B be 3 ↑3 matrices of rank 2?
+Q.14) Construct a matrix with the required property, or explain why this is impossible.
+(a) Column space contains (1, 1, 0) and (0, 0, 1); row space contains (1, 2) and (2, 5).
+(b) Column space has basis (1, 1, 3); null space has basis (3, 1, 1).
+(c) Dimension of null space = 1+ dimension of left null space.
+(d) Left null space contains (1, 0, 0, 0); row space contains (0, 0, 0, 1).
+(e) Row space = column space, but null space ↓= left null space.
+Q.15) Suppose A is an m ↑n matrix of rank r. Under what conditions on those numbers does
+(a) A have a two-sided inverse, AA→1 = A→1A = I?
+(b) Ax = b have inﬁnitely many solutions for every b?
+Q.16) A is an m ↑n matrix of rank r. Suppose there are right sides b for which Ax = b has no
+solution. What are all the inequalities (< or ↔) that must be true between m, n, and r?
+How do you know that ATy = 0 has solutions other than y = 0?
+Q.17) The graph below has 3 nodes and 3 edges. Write down its 3 ↑3 incidence matrix A,
+using one row per edge: put →1 in the column of the node the edge leaves and +1 in the
+column of the node it enters. (Note that this is the transpose of the convention used in
+the lecture sheet, where one column stood for one edge.)
+1
+2
+3
+e1
+e2
+e3
+(a) Find a solution to Ax = 0 and describe all other vectors in the null space of A.
+What do the entries of x measure here?
+(b) Find a solution to ATy = 0 and describe all other vectors in the null space of AT.
+What do the entries of y measure here?
+(c) Show directly from the columns of A that every b in the column space satisﬁes
+b1 +b2 →b3 = 0. Then derive the same condition from the three equations of Ax = b.
+3
+
+
+=== LAB PAGE 34 ===
+Newton School of Technology
+Mathematics-3
+Challenge
+Q.18) Six pipes, one water grid
+A campus water grid has 5 junctions v1, . . . , v5 joined by 6 pipes. Each pipe has been
+given a reference direction (the arrows below); a ﬂow fi is positive when water runs
+along the arrow and negative when it runs against it.
+e1 : v1 ↗v2,
+e2 : v2 ↗v3,
+e3 : v3 ↗v1,
+e4 : v3 ↗v4,
+e5 : v4 ↗v5,
+e6 : v5 ↗v3.
+v1
+v2
+v3
+v4
+v5
+e1
+e2
+e3
+e4
+e5
+e6
+Store the grid in the incidence matrix B with one row per junction, one column per pipe,
+as in the lecture sheet: →1 where a pipe leaves a junction, +1 where it enters. Then
+Bf is the vector of net inﬂows at the ﬁve junctions: positive means water accumulates
+there (a consumer draws it o!), negative means water is supplied there.
+(a) Write down B. What is its size? Which space is the input home and which is the
+output home, and what does a vector in each one physically represent?
+(b) Reduce B and ﬁnd rank(B). Pick out 4 pipes that connect all ﬁve junctions without
+closing a loop (a spanning tree), and use it to explain why a connected graph on n
+nodes has rank(B) = n →1.
+(c) Find a basis for N(B) and mark each basis vector on the diagram. What does each
+one do physically? Verify that
+nullity(B) = (number of pipes) →(number of junctions) + 1,
+and say why this counts the independent loops in the grid.
+(d) Find a basis for N(BT). Since BT turns junction pressures into pipe pressure-drops,
+state in one sentence what this space says about pressure.
+(e) Which demand vectors d ↘R5 can the grid actually meet, i.e. for which d is Bf = d
+solvable? Use your basis from (d) to compress the answer into a single scalar equation,
+and conﬁrm that
+d = (10, 0, →4, 0, →6)
+passes the test.
+Find the complete solution f = fp + fn for this d by setting
+f3 = f6 = 0. How many ﬂow patterns meet this demand? Interpret the negative
+entries of fp.
+(f) A vector w ↘R6 of pressure drops comes from junction pressures p exactly when
+w = BTp is solvable, i.e. when w ↘C(BT) — the row space. Using your loop basis
+from (c), show that this happens precisely when the entries of w sum to zero around
+each loop. Which physical law is this?
+(g) Pipe e3 is shut for maintenance, forcing f3 = 0. Delete column e3 from B to get B↑.
+(i) Give rank(B↑), nullity(B↑) and dim N(B↑T).
+(ii) Can the demand d of part (e) still be met? If so, how many ﬂow patterns meet
+it now?
+(iii) State which of the four subspaces changed and which did not, and explain each
+answer in one line.
+4
+
+

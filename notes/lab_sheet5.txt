@@ -1,0 +1,540 @@
+=== LAB PAGE 18 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 5
+Name:
+ID/Batch:
+Easy
+Q.1) Fill in the blanks:
+Row Operations
+Elementary Matrix E
+Inverse Elementary E→1
+R2 →R2 ↑R1
+! 1
+0
+↑3
+1
+"
+
+
+1
+0
+0
+0
+1
+0
+0
+0
+1
+3
+
+
+R3 →R3 + 3R2
+
+
+0
+0
+1
+0
+1
+0
+1
+0
+0
+
+
+Q.2) An elementary matrix E and a matrix A are given. Identify the row operation corresponding to E
+and verify that the product EA results from applying the row operation to A.
+(a) E =
+!
+↑6
+0
+0
+1
+"
+,
+A =
+!
+↑1
+↑2
+5
+↑1
+3
+↑6
+↑6
+↑6
+"
+(b) E =
+
+
+1
+0
+0
+0
+1
+0
+0
+↑3
+1
+
+,
+A =
+
+
+1
+4
+2
+5
+3
+6
+
+
+Q.3) Consider a matrix A which After a certain elementary row operation is changed to matrix B.
+A =
+
+
+2
+1
+4
+3
+5
+2
+1
+2
+3
+
+
+B =
+
+
+2
+1
+4
+↑3
+2
+↑10
+1
+2
+3
+
+
+Find the corresponding elementary matrix E and verify EA = B.
+Q.4) Find a matrix E which when multiplied with A =
+
+
+6
+2
+1
+3
+5
+2
+2
+1
+4
+
+reduces it to row echelon form.
+Medium
+Q.5) State whther the following statements are True/False:
+(a) The product of two 3 ↓3 lower triangular matrices is also a lower triangular matrix.
+1
+
+
+=== LAB PAGE 19 ===
+Newton School of Technology
+Mathematics-3
+(b) If A = LU, then L and U are always unique.
+(c) If a 3 ↓3 matrix A has an LU decomposition with three nonzero pivots in U, then Ax = b
+has a unique solution for every b ↔R3.
+Q.6) Find the LU decomposition of following matrices and verify A = LU
+(a) A =
+
+
+4
+5
+3
+6
+8
+7
+2
+1
+1
+
+,
+(b) B =
+
+
+2
+1
+1
+3
+4
+5
+3
+7
+6
+8
+8
+15
+2
+7
+9
+18
+
+
+Q.7) Compute L and U for the symmetric matrix
+A =
+
+
+a
+a
+a
+a
+b
+b
+a
+b
+c
+
+
+Find three conditions on a, b, c to get A = LU with three pivots.
+Q.8) A robotics engineer has forgotten the original matrix A. After three row operations, the matrix
+becomes
+U =
+
+
+2
+1
+3
+0
+4
+5
+0
+0
+6
+
+
+The elementary matrices used were:
+E1 : R2 →R2 ↑R1,
+E2 : R3 →R3 ↑2R1,
+E3 : R3 →R3 + R2
+Without performing Gaussian elimination, recover the original matrix A.
+Q.9) The same three stage lamps are pointed at the white wall. Each lamp’s colour is stored as its red,
+green and blue intensities, and the three lamps are the three columns of
+M =
+
+
+1
+0
+1
+0
+1
+1
+0
+1
+0
+
+
+↗R
+↗G
+↗B
+=
+
+
+|
+|
+|
+Red
+Cyan
+Yellow
+|
+|
+|
+
+.
+Red lamp (1, 0, 0)
+Cyan lamp (0, 1, 1)
+Yellow lamp (1, 1, 0)
+A recipe is a column x of the three dial settings, and Mx is the colour on the wall.
+Rehearsals run every night and the director calls out a di!erent colour each time, but the three
+lamps never change. So instead of repeating Gaussian elimination on M every night, do it once and
+store the work as M = LU.
+Tonight the director asks for amber, b = (4, 3, 1):
+Amber (4, 3, 1)
+(a) Apply Gaussian elimination on M, write LU-decomposition of M.
+(b) The system Mx = b is now L(Ux) = b. Put c = Ux and solve Lc = b by forward substitution
+(top row ﬁrst).
+(c) Solve Ux = c by back substitution (bottom row ﬁrst) to get the recipe.
+2
+
+
+=== LAB PAGE 20 ===
+Newton School of Technology
+Mathematics-3
+(d) Tomorrow the director wants sage green, b↑= (2, 3, 2):
+sage green (2, 3, 2)
+Find its recipe without performing a single new row operation on M.
+(e) What is actually recorded in L, and why does having it let you skip the elimination in part
+(d)? Answer in words.
+(f) Last week the director asked for pure blue, (0, 0, 1). Feed it through the same L and U. You
+still get exactly one recipe. Write it down, and explain what goes wrong.
+Q.10) If A and B have nonzeros in the positions marked by x, which zeros are still zero in their factors L
+and U?
+A =
+
+
+x
+x
+x
+x
+x
+x
+x
+0
+0
+x
+x
+x
+0
+0
+x
+x
+
+
+
+
+x
+x
+x
+0
+x
+x
+0
+x
+x
+0
+x
+x
+0
+x
+x
+x
+
+
+Hard
+Q.11) A logistics company operates four warehouses W1, W2, W3, and W4 to distribute essential supplies
+to multiple cities during a festival season. The relationship between the truckloads dispatched from
+each warehouse and the transportation requirements is modeled by Ax = b, where
+x =
+
+
+x1
+x2
+x3
+x4
+
+
+represents the number of truckloads dispatched from warehouses , W1, W2, W3, W4 respectively. A
+is the transportation constraint matrix.
+The company is considering two delivery plans:
+• Plan 1 (b1): Prioritizes faster delivery to urban areas.
+• Plan 2 (b2): Prioritizes balanced delivery across all regions.
+The transportation constraint matrix is
+A =
+
+
+2
+1
+1
+0
+4
+5
+3
+1
+2
+3
+4
+2
+6
+7
+8
+5
+
+
+The demand vectors for the two plans are
+b1 =
+
+
+4
+13
+11
+26
+
+
+and
+b2 =
+
+
+6
+17
+13
+32
+
+
+The total fuel consumption for delivery is given as
+Fuel Consumption = 8x1 + 6x2 + 9x3 + 5x4
+Which delivery plan is more fuel-e”cient?
+3
+
+
+=== LAB PAGE 21 ===
+Newton School of Technology
+Mathematics-3
+Q.12) A city’s water authority operates three pumping stations that supply water to three major zones
+of the city. Due to di!erences in pipe lengths, elevation, and network connectivity, each pumping
+station contributes a di!erent amount of water to each zone for every unit of pumping e!ort. The
+relationship between the pumping e!orts and the amount of water delivered to the zones is modeled
+by Ax = b where,
+A =
+
+
+4
+2
+1
+2
+5
+2
+1
+2
+4
+
+
+x1, x2, x3 represent the pumping e!ort (in hundreds of cubic metres per hour) at Pumping Stations
+1,2 and 3, respectively, whereas, Each entry of Ax gives the amount of water delivered to one of the
+three city zones.
+The city experiences di!erent water demands throughout the day:
+b1 =
+
+
+7
+8
+13
+
+,
+b2 =
+
+
+10
+16
+13
+
+,
+b3 =
+
+
+7
+9
+7
+
+
+corresponding to morning, afternoon, and evening demand, respectively. Using the LU decomposition,
+determine the pumping e!ort required at each station to satisfy the daily demands.
+Challenge
+Q.13) A chemical manufacturing company produces four specialty cleaning solutions by mixing four
+base chemicals: C1, C2, C3, and C4. Each litre of a base chemical contributes di!erent amounts of
+four important properties of the ﬁnal product: Cleaning Strength, Viscosity, pH Balance, Surface
+Protection. Through laboratory testing, engineers have determined that the relationship between
+the quantities of the base chemicals and the resulting properties is Ax = b where
+A =
+
+
+2
+1
+3
+2
+4
+6
+5
+9
+↑2
+11
+↑3
+15
+8
+↑4
+17
+6
+
+
+x1, x2, x3, x4 denote the number of litres of chemicals C1, C2, C3, and C4, respectively. The matrix
+A describes how each litre of a chemical contributes to the four measurable properties. The vector
+b speciﬁes the desired property values for a particular product.
+The company wants to manufacture three di!erent products: Glass Cleaner, Floor Cleaner, Industrial
+Degreaser.
+b1 =
+
+
+8
+24
+21
+27
+
+,
+b2 =
+
+
+10
+28
+19
+35
+
+,
+b3 =
+
+
+9
+30
+32
+23
+
+
+(a) Complete the following production sheet.
+Base chemical
+Glass Cleaner
+Floor Cleaner
+Industrial Degreaser
+C1
+C2
+C3
+C4
+(b) Suppose the storage tank for Chemical C2 can dispense at most 1 litre per batch. Based on
+your three computed recipes, which products can be manufactured immediately?
+4
+
+
+=== LAB PAGE 22 ===
+Newton School of Technology
+Mathematics-3
+(c) The company currently has enough chemicals to prepare only one product at a time. The total
+chemical used for a single product is calculated as:
+Total Chemical Used = x1 + x2 + x3 + x4
+Determine which product should be manufactured that will have least total chemical consump-
+tion.
+(d) The company has received orders for: 20 batches of Glass Cleaner, 15 batches of Floor Cleaner,
+10 batches of Industrial Degreaser. Using the recipes you computed, determine the total
+quantity of each base chemical required. The warehouse currently contains:
+Chemical
+C1
+C2
+C3
+C4
+Available (in L)
+60
+40
+50
+55
+Determine whether the current inventory is su”cient. If not, calculate the additional quantity
+of each chemical that must be ordered.
+5
+
+

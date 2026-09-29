@@ -1,0 +1,2910 @@
+=== LAB PAGE 1 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 1
+Name:
+ID/Batch:
+Easy
+Q. 1) Write the following system in matrix notation:
+2x + y →z = 4
+x →z = 1
+3x + y + 2z = 6
+Q. 2) Sketch
+x + y = 3
+x →y = 1
+State the number of solutions.
+Q. 3) Convert the following matrix equations back into systems of linear equations.
+(a)
+!2
+1
+3
+3
+1
+1
+" 
+
+x
+y
+z
+
+=
+!5
+4
+"
+(b)
+
+
+4
+0
+→1
+2
+3
+7
+
+
+!
+x
+y
+"
+=
+
+
+4
+1
+10
+
+
+Q. 4) Draw the two pictures in two planes for the equations x →2y = 0, x + y = 6.
+Medium
+Q. 5) Fill in the blanks:
+(a) The intersection of two planes through (0,0,0) is probably a
+but it could be a
+. It can’t be the origin itself.
+(b) The intersection of a plane through (0,0,0) with a line through (0,0,0) is probably a
+but it could be a
+.
+Q. 6) Starting with x + 4y = 7, ﬁnd the equation for the parallel line through x = 0, y = 0. Find the
+equation of another line perpendicular to the ﬁrst at x = 3, y = 1.
+Q. 7) Sketch the following three lines:
+2x + y = 5
+x →y = 1
+3x = 6
+1
+
+
+=== LAB PAGE 2 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+(a) Does this system have a common solution?
+(b) What happens if all the right-hand sides become zero?
+(c) Is there any another non-zero choice of right-hand sides that allows all three lines to intersect
+at the same point? If yes, give one such example.
+Q. 8) For the system
+2x + y = 7
+x →2y = →1
+draw the row picture and the column picture. Explain, in one or two sentences, how these two
+pictures represent the same mathematical problem from di!erent perspectives.
+Q. 9) Without solving the systems algebraically, try to answer whether each system has: exactly one
+solution, inﬁnitely many solutions, or no solution.
+(a) x + y = 3;
+2x + 2y = 6
+(b) x + y = 3;
+2x + 2y = 3
+(c) x + y = 3;
+x →y = 1
+Q. 10) A cafe sells only co!ee and sandwiches. Two co!ees and one sandwich cost |250. One co!ee and
+three sandwiches cost |350.
+(a) Form a system of linear equations.
+(b) Solve using substitution or elimination method.
+(c) Write the corresponding matrix equation.
+(d) Explain the row picture of this system.
+Q. 11) Consider
+x →y = 2
+3x →3y = k
+Find the values of k for which the system has: (a) exactly one solution, (b) inﬁnitely many solutions,
+and (c) no solution.
+Explain your reasoning geometrically.
+Hard
+Q. 12) The following equations are certain to have the solution x = y = 0. Using row picture or column
+picture, determine for which values of a is there a whole line of solution?
+ax + 2y = 0
+2x + ay = 0
+Q. 13) Explain why does the following system
+u + v + w = 2
+u + 2v + 3w = 1
+v + 2w = 0
+have no solutions. What value should replace the last zero on the right side to allow the equations
+to have solution.
+2
+
+
+=== LAB PAGE 3 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Q. 14) Consider the following linear system:
+u
+
+
+1
+1
+0
+
++ v
+
+
+1
+2
+1
+
++ w
+
+
+1
+3
+2
+
+=
+
+
+b1
+b2
+b3
+
+
+Show that the three columns lie in the same plane by expressing the third column as a combination
+of the ﬁrst two.
+Q. 15) In the following equations, the third column (multiplying w) is the same as the right side. The
+column form of the equations immediately gives the solution for (u, v, w)?
+6u + 7v + 8w = 8
+4u + 5v + 9w = 9
+2u →2v + 7w = 7
+Challenge
+Q. 16) Describe the intersection of the three planes u + v + w + z = 6 and u + w + z = 4 and u + w = 2
+(all in four dimensional space.) Is it a line or a point or an empty set? What is the intersection if
+the fourth plane u = →1 is included? Find a fourth equation that leaves us with no solution.
+3
+
+
+=== LAB PAGE 4 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 2
+Name:
+ID/Batch:
+Easy
+Q.1) A startup manufactures three products: laptops, tablets and smart watches. Each column of
+A =
+
+
+2
+1
+0
+1
+3
+2
+0
+2
+4
+
+
+represents the amount of Steel, Plastic and Silicon required to produce one unit of each product.
+The production plan is
+x =
+
+
+1
+2
+1
+
+
+where the entries represent the number of laptops, tablets and smart watches to be produced.
+Compute the total amount of each raw material required given by Ax.
+Q.2) A music recommendation system stores user preferences as u and song characteristics as A
+u =
+%2
+1
+3&
+and
+A =
+
+
+1
+0
+2
+1
+0
+3
+
+
+The row vector s = uA gives the recommendation score assigned to each song. Compute s.
+Q.3) Tiny sound clips consisting of amplitudes of the Bach and MLK audios from the Lecture 0 have
+been stored in the matrix
+S =
+
+
+2
+1
+→1
+1
+1
+→1
+0
+2
+
+=
+
+
+|
+|
+Bach
+MLK
+|
+|
+
+.
+(a) Which recipe should produce both sounds at their original amplitudes?
+↭
+)1
+1
+*
+↭
+)1
+0
+*
+↭
+)0
+1
+*
+(b) Which recipe should reduce Bach to half amplitude while keeping MLK unchanged?
+↭
+)1
+1
+2
+*
+↭
+) 1
+2
+1
+*
+(c) We represent several recipes at once by storing them as columns of another matrix
+R =
+)
+1
+1
+1
+2
+0
+1
+1
+*
+=
+
+
+|
+|
+|
+r1
+r2
+r3
+|
+|
+|
+
+
+Without multiplying, interpret what happens with respect to each recipe column: Sr1, Sr2, Sr3.
+(d) Compute SR.
+1
+
+
+=== LAB PAGE 5 ===
+Newton School of Technology
+Mathematics-3
+Medium
+Q.4) A 5 ↑5 matrix contains zeros everywhere except
+aii = 1
+and
+ai,5 = 2
+for i = 1, . . . , 4. Let
+x =
+
+
+1
+1
+1
+1
+5
+
+
+Compute Ax without constructing the full matrix. Explain your reasoning.
+Q.5) Three stage lamps are pointed at a white wall. Each lamp’s colour is stored as its red, green and
+blue intensities, and the three lamps become the three columns of
+L =
+
+
+1
+0
+1
+0
+1
+1
+0
+1
+0
+
+
+↓R
+↓G
+↓B
+=
+
+
+|
+|
+|
+Red
+Cyan
+Yellow
+|
+|
+|
+
+.
+Each lamp has a dial running from 0 (o!) to 1 (full). A recipe is a column x holding the three dial
+settings, and Lx is the colour that lands on the wall.
+The three lamps — columns of L
+Red lamp (1, 0, 0)
+Cyan lamp (0, 1, 1)
+Yellow lamp (1, 1, 0)
+What the wall shows — columns of LR
+white (1, 1, 1)
+mid grey ( 1
+2 , 1
+2 , 1
+2 )
+pale green ( 1
+2 , 1, 1
+2 )
+(a) Which recipe turns the Red and Cyan lamps on at full power with Yellow switched o!?
+↭
+
+
+1
+1
+0
+
+
+↭
+
+
+1
+0
+1
+
+
+↭
+
+
+0
+1
+1
+
+
+What colour appears on the wall, and why is that colour not one of the three lamps?
+(b) Which recipe dims the Red lamp to half brightness while leaving Cyan at full and Yellow o!?
+↭
+
+
+1
+1
+2
+0
+
+
+↭
+
+
+1
+2
+1
+0
+
+
+2
+
+
+=== LAB PAGE 6 ===
+Newton School of Technology
+Mathematics-3
+(c) Several recipes are stored side by side as the columns of
+R =
+
+
+1
+1
+2
+0
+1
+1
+2
+1
+2
+0
+0
+1
+2
+
+=
+
+
+|
+|
+|
+r1
+r2
+r3
+|
+|
+|
+
+.
+Without multiplying anything out, say what happens for each of Lr1, Lr2, Lr3. In
+particular: what is the relationship between r1 and r2, and what does that force about the two
+colours they produce?
+(d) Look at the second row of L, namely (0, 1, 1). What does this row describe? When you
+compute the second entry of Lr1, what quantity are you calculating? Answer in words, not
+symbols.
+(e) The dials can only add light — they can never remove it. Explain why, no matter how the
+three dials are set, the wall can never show pure blue (0, 0, 1). (Hint: look at the last two rows
+of L and ask which lamps contribute blue.)
+Q.6) A communication system receives signals from six antennas. Their signal strengths are stored in
+x. The system does not process the six signals separately. Instead, it combines them into three
+aggregated channels using matrix A.
+A =
+
+
+1
+0
+0
+1
+0
+0
+0
+1
+0
+0
+1
+0
+0
+0
+1
+0
+0
+1
+
+
+and
+x =
+
+
+2
+4
+6
+8
+10
+12
+
+
+where the entries correspond to Antennas 1,2,. . . ,6.
+Thus, Ax represents the three aggregated channel strengths.
+(a) Without carrying out the matrix multiplication, determine which two antennas contribute to
+the ﬁrst aggregated channel? Which two contribute to the second and third channels?
+(b) An engineer says:
+“If Antenna 4 becomes twice as strong, only one of the three aggregated channels will be
+a!ected.”
+Do you agree? Which channel changes and why?
+(c) Suppose Antenna 2 suddenly stops transmitting. Which aggregated channel(s) will change?
+(d) Another engineer accidentally rearranges the antenna signals as
+x→=
+
+
+2
+6
+4
+8
+10
+12
+
+
+Without multiplying, identify which aggregated channel(s) changes compared with Ax, and
+explain why.
+(e) The system designer wants to modify A so that the ﬁrst aggregated channel combines Antennas
+1 and 5 instead of Antennas 1 and 4. Which row of A must be changed, and what should that
+row become?
+3
+
+
+=== LAB PAGE 7 ===
+Newton School of Technology
+Mathematics-3
+Hard
+Q.7) Let A be the 3 ↑3 matrix of subjects:
+A =
+
+
+⊋
+⊋
+Algebra
+⊋
+Matrix multiplication
+⊋
+Two planes
+⊋
+⊋
+
+
+and B be the 3 ↑3 matrix of predicates
+
+
+meet in a line
+can be parallel
+never meet at a point
+rocks
+combines the columns
+takes rows times columns
+is fun
+explains everything
+never lies
+
+
+and C the 3 ↑1 column of tails
+
+
+, and that is a fact
+, as Strang shows
+, believe it or not
+
+
+Let us deﬁne the operation as below:
+• x ↑y: stick the words together with a space
+• x + y: keep both as alternatives
+• ⊋: nothing at all; it wipes out whatever it touches, so ⊋↑y = ⊋
+(a) Which computations AB or BA is more meaningful? Compute and answer.
+(b) Compute (AB)11 and (BA)11. Use this to explain why AB ↔= BA.
+(c) Compute ((AB)C)31.
+Q.8) A social network contains 10 creators. Matrix A is a 10 × 10 inﬂuence matrix deﬁned as:
+• Every diagonal entry is 0.
+• Every o!-diagonal entry is 1.
+Let
+x =
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+Without performing standard matrix multiplication:
+(a) Compute Ax.
+(b) Compute A2x.
+(c) Predict A3x.
+(d) Derive a formula for Akx
+(e) Interpret your result in terms of repeated information propagation through a social-media
+network.
+4
+
+
+=== LAB PAGE 8 ===
+Newton School of Technology
+Mathematics-3
+Challenge: Can a Matrix Count Routes?
+Q.9) Consider the transportation network:
+A
+B
+C
+D
+E
+Let M be its adjacency matrix, where mij = 1 when one road directly connects i to j, and mij = 0
+otherwise.
+(a) Construct M using the vertex order A, B, C, D, E.
+(b) Compute M 2.
+(c) Examine (M 2)AE. List all walks from A to E using exactly two roads.
+(d) Explain why each term mAkmkE tests whether k can be the middle stop.
+(e) Complete:
+(M 2)ij = number of
+.
+(f) Predict what information is stored in M 3.
+5
+
+
+=== LAB PAGE 9 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 3
+Name:
+ID/Batch:
+Easy
+Q.1) Given two vectors:
+v1 =
+!1
+0
+"
+,
+v2 =
+!0
+1
+"
+(a) Compute 3v1 + 2v2
+(b) 3v1 + 2v2 is a
+while the set of all vectors of the form av1 + bv2 is called their
+.
+Q.2) A linear combination produces
+vector, whereas the span describes
+vectors
+that can be produced.
+Q.3) A drone has two basic movement commands:
+v =
+!2
+1
+"
+,
+w =
+!1
+2
+"
+.
+Without solving for the coe!cients, decide which of the following targets could possibly be reached
+using equal amounts of the two commands:
+!
+3
+3
+"
+,
+!
+3
+6
+"
+,
+!
+6
+3
+"
+Then ﬁnd the coe!cients for the reachable target.
+Q.4) A digital artist creates colours using two basis colours:
+R =
+
+
+255
+0
+0
+
+,
+G =
+
+
+0
+255
+0
+
+.
+(a) A student claims that yellow can be created by adding equal amounts of R and G. Do you
+agree? Write the corresponding linear combination and explain what the coe!cients mean.
+(b) Can a pure blue colour be created using only R and G? (Think about this more!)
+Q.5) A sailboat can move according to
+v =
+!4
+0
+"
+and
+w =
+!0
+3
+"
+.
+Express
+Three students make the following claims:
+1
+
+
+=== LAB PAGE 10 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+A: “The boat can reach every point in the plane.”
+B: “The boat can reach every point whose x-coordinate is a multiple of 4 and y-coordinate is a
+multiple of 3.”
+C: “The boat can reach only points in the ﬁrst quadrant.”
+Which claims are correct if arbitrary real coe!cients are allowed? Explain.
+Medium
+Q.6) Consider the following three systems of two linear equations in two variables.
+• x + y = 5,
+x →y = 1
+• x + 2y = 3,
+2x + 4y = 6
+• x + 2y = 3,
+2x + 4y = 7
+(a) Draw both row picture and column picture of all the three equations.
+(b) For each of the linear system, can the two column vectors be scaled and added to produce the
+right-hand side vector b.
+(c) Fill in the blanks.
+(i) If b can be formed from the columns of A in exactly one way, the system has
+solution.
+(ii) If b can be formed from the columns of A in more than one way, the system has
+solutions.
+(iii) If b cannot be formed from the columns of A, then b lies
+the span of the
+columns of A, and the system has
+solution.
+(iv) In the row picture, a solution corresponds to a point where the two
+.
+(v) In the column picture, a solution corresponds to a way of mixing the columns of A to
+obtain
+.
+Q.7) A rover can move according to
+v1 =
+!2
+1
+"
+,
+v2 =
+!→1
+2
+"
+.
+Without ﬁnding any coe!cients:
+(a) Is their span a line or the entire plane?
+(b) What evidence from the vectors supports your answer?
+(c) Would replacing v2
+!4
+2
+"
+change your answer? Why?
+Q.8) A song is described using three features: Energy, Danceability, Acousticness.
+v1 =
+
+
+1
+2
+0
+
+,
+v2 =
+
+
+2
+1
+1
+
+.
+A recommendation engineer says:
+2
+
+
+=== LAB PAGE 11 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+“By adjusting the two coe!cients, we can create any possible three-feature song
+proﬁle.”
+Do you agree?
+You do not need to ﬁnd coe!cients. Use the structure of the two vectors to justify your answer.
+Q.9) The growth of two species contributes
+v1 =
+
+
+1
+2
+1
+
+,
+v2 =
+
+
+2
+4
+2
+
+.
+(a) Before doing any calculations, what do you notice about v1 and v2 ? What does this immediately
+tell you about their span?
+(b) Can
+
+
+3
+5
+3
+
+
+belong to the span? Justify your answer.
+(c) A student claims that because there are two vectors in R3, their span must be a plane. Is the
+student correct?
+Q.10) Three toy drones occupy positions
+!1
+0
+"
+,
+!0
+1
+"
+,
+!1
+1
+"
+.
+(a) Determine whether
+!
+4
+5
+"
+can be expressed as a linear combination of these vectors in inﬁnitely many ways. Explain why.
+(b) Why did inﬁnitely many representations occur?
+(c) What relationship among the three movement vectors makes this possible?
+(d) If the third vector were removed, would inﬁnitely many representations still be possible?
+Hard
+Q.11) Three sensors record vibration modes
+v1 =
+
+
+1
+0
+1
+
+,
+v2 =
+
+
+0
+1
+1
+
+,
+v3 =
+
+
+1
+1
+2
+
+.
+An engineer says:
+“We have three independent sensor modes in R3, so we can generate every possible
+vibration proﬁle.”
+Do you agree? You are not allowed to calculate a determinant or solve a system. Use the relationship
+among the three vectors to determine:
+(a) whether all three provide genuinely new directions,
+(b) whether their span is a line, plane or all of R3,
+3
+
+
+=== LAB PAGE 12 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+(c) what happens if v3 is removed.
+Q.12) The movement commands available are
+v1 =
+
+
+1
+2
+0
+
+,
+v2 =
+
+
+0
+1
+1
+
+,
+v3 =
+
+
+1
+3
+1
+
+.
+(a) Express
+
+
+4
+11
+3
+
+
+as a linear combination of the given vectors. Are the coe!cients unique?
+(b) A student obtains one set of coe!cients for the target. Another student obtains a di”erent set.
+Both claim their answers are correct.
+Can both students be correct? Explain before calculating anything. What must be true about
+the three movement vectors for this to happen? Now verify by ﬁnding two di”erent coe!cient
+sets.
+Q.13) A chemist can combine three reaction pathways represented by
+v1 =
+
+
+1
+0
+2
+
+,
+v2 =
+
+
+0
+1
+1
+
+,
+v3 =
+
+
+1
+1
+3
+
+.
+Another chemist replaces v3 with
+
+
+1
+1
+4
+
+
+Without solving any system:
+(a) Which set spans a plane?
+(b) Which set can span all of R3.
+(c) What changed structurally between the two sets?
+Challenge
+Q.14) The Inﬁnite Monkey Drone Controller
+Recall the Inﬁnite Monkey Theorem.
+A monkey is given control of a drone whose only movement commands are
+v1 =
+
+
+1
+1
+0
+
+,
+v2 =
+
+
+0
+1
+1
+
+,
+v3 =
+
+
+1
+2
+1
+
+.
+The monkey can choose any real coe!cients, positive or negative, and combine the commands
+indeﬁnitely.
+(a) Describe the set of all locations the drone can reach.
+(b) The monkey accidentally deletes one of the three movement commands. You are told only
+that the drone can still reach exactly the same set of locations as before. Which command
+could the monkey have deleted? Justify your answer without solving a system.
+4
+
+
+=== LAB PAGE 13 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+(c) Suppose instead the monkey deletes v1. What new information would you need to determine
+whether the reachable region changed?
+Reﬂection:
+Which application in this sheet surprised you the most? How does the idea of a linear combination
+appear in di”erent ﬁelds such as robotics, biology, graphics, music recommendation systems, and
+chemistry?
+5
+
+
+=== LAB PAGE 14 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 4
+Name:
+ID/Batch:
+Easy
+Q.1) A robot moving on a factory ﬂoor receives the following navigation commands:
+x + y + z = 9
+2x + y + 3z = 16
+x + 2y + z = 11
+Use Gaussian Elimination to determine the robot’s ﬁnal coordinates (x, y, z).
+Q.2) Apply Gaussian Elimination to obtain the Row Echelon Form of
+A =
+
+
+1
+2
+1
+2
+5
+3
+1
+3
+2
+
+
+How many pivots does the matrix contain?
+Q.3) drone records measurements from four sensors:
+B =
+
+
+1
+2
+1
+0
+2
+4
+2
+1
+1
+2
+1
+1
+
+
+Reduce B to Row Echelon Form and determine its rank.
+Medium
+Q.4) A small online store tracks revenue from three products:
+x + y + z = 120
+2x + 3y + z = 230
+x + 2y + 4z = 270
+where x, y, z represent the number of units sold. Use Gaussian Elimination to determine x, y, z.
+Q.5) A quadcopter has four motors producing thrusts x1, x2, x3, x4.
+The following equilibrium equations are obtained:
+x1 + x2 + x3 + x4 = 40
+x1 →x2 + x3 →x4 = 0
+x1 + x2 →x3 →x4 = 4
+x1 →x2 →x3 + x4 = 8
+1
+
+
+=== LAB PAGE 15 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Solve using Gaussian Elimination.
+Q.6) Find the rank of the rectangular matrix
+A =
+
+
+1
+2
+3
+4
+5
+2
+4
+6
+8
+10
+1
+1
+2
+3
+4
+3
+5
+8
+11
+14
+
+
+Q.7) A chemistry laboratory records concentrations of four compounds in four experiments:
+x + y + z + w = 18
+2x + 3y + z + 2w = 30
+x + 2y + 3z + w = 25
+3x + 4y + 4z + 3w = 48
+Use Gaussian Elimination to solve for all concentrations.
+Q.8) Reduce the following 3 ↑5 matrix to Row Echelon Form and determine its rank.
+A =
+
+
+1
+1
+2
+1
+0
+2
+3
+5
+3
+1
+1
+2
+3
+2
+1
+
+
+Identify the pivot columns.
+Hard
+Q.9) A delivery company operates between ﬁve warehouses. The shipment variables x1, x2, x3, x4, x5
+satisfy
+x1 + x2 + x3 + x4 + x5 = 30
+2x1 + x2 + 3x3 + x4 + x5 = 50
+x1 + 2x2 + x3 + 2x4 + x5 = 40
+3x1 + 2x2 + 4x3 + 3x4 + 2x5 = 70
+x1 + x2 + 2x3 + x4 + 3x5 = 45
+Solve using Gaussian Elimination.
+Q.10) A machine-learning dataset contains measurements from six features across four observations:
+A =
+
+
+1
+2
+3
+4
+5
+6
+2
+4
+6
+8
+10
+12
+1
+1
+2
+3
+4
+5
+3
+5
+8
+11
+14
+17
+
+
+Find the rank.
+2
+
+
+=== LAB PAGE 16 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Q.11) A robotic arm is controlled by four joint parameters.
+x + y + z + w = 12
+2x + 3y + z + 2w = 22
+x + 2y + 3z + w = 20
+3x + 4y + 4z + 3w = 34
+Solve using Gaussian Elimination and verify the solution by substitution.
+Q.12) For the matrix
+A =
+
+
+1
+2
+1
+3
+2
+4
+2
+6
+1
+3
+2
+4
+3
+7
+4
+10
+
+
+(a) Find the Row Echelon Form.
+(b) Determine the rank.
+Challenge Problem: Graph Theory and Matrices
+Recall the graph theoretic application of matrices that we learnt in the second lecture. We shall now
+study one more such application to graph theory that is Incidence matrix
+Example: Incidence Matrix
+We had considered an example graph as follows:
+A
+B
+C
+D
+Now label the edges as
+e1 : A →B
+e2 : A →D
+e3 : B →C
+e4 : B →D
+e5 : C →D
+The incidence matrix records which vertices participate in each edge.
+bij =
+'
+1,
+if vertex i lies on edge ej
+0,
+otherwise
+The incidence matrix becomes
+B =
+e1
+e2
+e3
+e4
+e5
+A
+1
+1
+0
+0
+0
+B
+1
+0
+1
+1
+0
+C
+0
+0
+1
+0
+1
+D
+0
+1
+0
+1
+1
+Observe:
+3
+
+
+=== LAB PAGE 17 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+• Rows correspond to vertices.
+• Columns correspond to edges.
+• Each column contains exactly two ones because every edge connects two vertices.
+Part C
+Consider the following transportation network:
+A
+B
+C
+D
+E
+1. Label the edges and construct the incidence matrix.
+2. Determine the rank of the incidence matrix.
+3. What does the rank tell you about the structure of the network?
+4
+
+
+=== LAB PAGE 18 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 5
+Name:
+ID/Batch:
+Easy
+Q.1) Fill in the blanks:
+Row Operations
+Elementary Matrix E
+Inverse Elementary E→1
+R2 →R2 ↑R1
+! 1
+0
+↑3
+1
+"
+
+
+1
+0
+0
+0
+1
+0
+0
+0
+1
+3
+
+
+R3 →R3 + 3R2
+
+
+0
+0
+1
+0
+1
+0
+1
+0
+0
+
+
+Q.2) An elementary matrix E and a matrix A are given. Identify the row operation corresponding to E
+and verify that the product EA results from applying the row operation to A.
+(a) E =
+!
+↑6
+0
+0
+1
+"
+,
+A =
+!
+↑1
+↑2
+5
+↑1
+3
+↑6
+↑6
+↑6
+"
+(b) E =
+
+
+1
+0
+0
+0
+1
+0
+0
+↑3
+1
+
+,
+A =
+
+
+1
+4
+2
+5
+3
+6
+
+
+Q.3) Consider a matrix A which After a certain elementary row operation is changed to matrix B.
+A =
+
+
+2
+1
+4
+3
+5
+2
+1
+2
+3
+
+
+B =
+
+
+2
+1
+4
+↑3
+2
+↑10
+1
+2
+3
+
+
+Find the corresponding elementary matrix E and verify EA = B.
+Q.4) Find a matrix E which when multiplied with A =
+
+
+6
+2
+1
+3
+5
+2
+2
+1
+4
+
+reduces it to row echelon form.
+Medium
+Q.5) State whther the following statements are True/False:
+(a) The product of two 3 ↓3 lower triangular matrices is also a lower triangular matrix.
+1
+
+
+=== LAB PAGE 19 ===
+Newton School of Technology
+Mathematics-3
+(b) If A = LU, then L and U are always unique.
+(c) If a 3 ↓3 matrix A has an LU decomposition with three nonzero pivots in U, then Ax = b
+has a unique solution for every b ↔R3.
+Q.6) Find the LU decomposition of following matrices and verify A = LU
+(a) A =
+
+
+4
+5
+3
+6
+8
+7
+2
+1
+1
+
+,
+(b) B =
+
+
+2
+1
+1
+3
+4
+5
+3
+7
+6
+8
+8
+15
+2
+7
+9
+18
+
+
+Q.7) Compute L and U for the symmetric matrix
+A =
+
+
+a
+a
+a
+a
+b
+b
+a
+b
+c
+
+
+Find three conditions on a, b, c to get A = LU with three pivots.
+Q.8) A robotics engineer has forgotten the original matrix A. After three row operations, the matrix
+becomes
+U =
+
+
+2
+1
+3
+0
+4
+5
+0
+0
+6
+
+
+The elementary matrices used were:
+E1 : R2 →R2 ↑R1,
+E2 : R3 →R3 ↑2R1,
+E3 : R3 →R3 + R2
+Without performing Gaussian elimination, recover the original matrix A.
+Q.9) The same three stage lamps are pointed at the white wall. Each lamp’s colour is stored as its red,
+green and blue intensities, and the three lamps are the three columns of
+M =
+
+
+1
+0
+1
+0
+1
+1
+0
+1
+0
+
+
+↗R
+↗G
+↗B
+=
+
+
+|
+|
+|
+Red
+Cyan
+Yellow
+|
+|
+|
+
+.
+Red lamp (1, 0, 0)
+Cyan lamp (0, 1, 1)
+Yellow lamp (1, 1, 0)
+A recipe is a column x of the three dial settings, and Mx is the colour on the wall.
+Rehearsals run every night and the director calls out a di!erent colour each time, but the three
+lamps never change. So instead of repeating Gaussian elimination on M every night, do it once and
+store the work as M = LU.
+Tonight the director asks for amber, b = (4, 3, 1):
+Amber (4, 3, 1)
+(a) Apply Gaussian elimination on M, write LU-decomposition of M.
+(b) The system Mx = b is now L(Ux) = b. Put c = Ux and solve Lc = b by forward substitution
+(top row ﬁrst).
+(c) Solve Ux = c by back substitution (bottom row ﬁrst) to get the recipe.
+2
+
+
+=== LAB PAGE 20 ===
+Newton School of Technology
+Mathematics-3
+(d) Tomorrow the director wants sage green, b↑= (2, 3, 2):
+sage green (2, 3, 2)
+Find its recipe without performing a single new row operation on M.
+(e) What is actually recorded in L, and why does having it let you skip the elimination in part
+(d)? Answer in words.
+(f) Last week the director asked for pure blue, (0, 0, 1). Feed it through the same L and U. You
+still get exactly one recipe. Write it down, and explain what goes wrong.
+Q.10) If A and B have nonzeros in the positions marked by x, which zeros are still zero in their factors L
+and U?
+A =
+
+
+x
+x
+x
+x
+x
+x
+x
+0
+0
+x
+x
+x
+0
+0
+x
+x
+
+
+
+
+x
+x
+x
+0
+x
+x
+0
+x
+x
+0
+x
+x
+0
+x
+x
+x
+
+
+Hard
+Q.11) A logistics company operates four warehouses W1, W2, W3, and W4 to distribute essential supplies
+to multiple cities during a festival season. The relationship between the truckloads dispatched from
+each warehouse and the transportation requirements is modeled by Ax = b, where
+x =
+
+
+x1
+x2
+x3
+x4
+
+
+represents the number of truckloads dispatched from warehouses , W1, W2, W3, W4 respectively. A
+is the transportation constraint matrix.
+The company is considering two delivery plans:
+• Plan 1 (b1): Prioritizes faster delivery to urban areas.
+• Plan 2 (b2): Prioritizes balanced delivery across all regions.
+The transportation constraint matrix is
+A =
+
+
+2
+1
+1
+0
+4
+5
+3
+1
+2
+3
+4
+2
+6
+7
+8
+5
+
+
+The demand vectors for the two plans are
+b1 =
+
+
+4
+13
+11
+26
+
+
+and
+b2 =
+
+
+6
+17
+13
+32
+
+
+The total fuel consumption for delivery is given as
+Fuel Consumption = 8x1 + 6x2 + 9x3 + 5x4
+Which delivery plan is more fuel-e”cient?
+3
+
+
+=== LAB PAGE 21 ===
+Newton School of Technology
+Mathematics-3
+Q.12) A city’s water authority operates three pumping stations that supply water to three major zones
+of the city. Due to di!erences in pipe lengths, elevation, and network connectivity, each pumping
+station contributes a di!erent amount of water to each zone for every unit of pumping e!ort. The
+relationship between the pumping e!orts and the amount of water delivered to the zones is modeled
+by Ax = b where,
+A =
+
+
+4
+2
+1
+2
+5
+2
+1
+2
+4
+
+
+x1, x2, x3 represent the pumping e!ort (in hundreds of cubic metres per hour) at Pumping Stations
+1,2 and 3, respectively, whereas, Each entry of Ax gives the amount of water delivered to one of the
+three city zones.
+The city experiences di!erent water demands throughout the day:
+b1 =
+
+
+7
+8
+13
+
+,
+b2 =
+
+
+10
+16
+13
+
+,
+b3 =
+
+
+7
+9
+7
+
+
+corresponding to morning, afternoon, and evening demand, respectively. Using the LU decomposition,
+determine the pumping e!ort required at each station to satisfy the daily demands.
+Challenge
+Q.13) A chemical manufacturing company produces four specialty cleaning solutions by mixing four
+base chemicals: C1, C2, C3, and C4. Each litre of a base chemical contributes di!erent amounts of
+four important properties of the ﬁnal product: Cleaning Strength, Viscosity, pH Balance, Surface
+Protection. Through laboratory testing, engineers have determined that the relationship between
+the quantities of the base chemicals and the resulting properties is Ax = b where
+A =
+
+
+2
+1
+3
+2
+4
+6
+5
+9
+↑2
+11
+↑3
+15
+8
+↑4
+17
+6
+
+
+x1, x2, x3, x4 denote the number of litres of chemicals C1, C2, C3, and C4, respectively. The matrix
+A describes how each litre of a chemical contributes to the four measurable properties. The vector
+b speciﬁes the desired property values for a particular product.
+The company wants to manufacture three di!erent products: Glass Cleaner, Floor Cleaner, Industrial
+Degreaser.
+b1 =
+
+
+8
+24
+21
+27
+
+,
+b2 =
+
+
+10
+28
+19
+35
+
+,
+b3 =
+
+
+9
+30
+32
+23
+
+
+(a) Complete the following production sheet.
+Base chemical
+Glass Cleaner
+Floor Cleaner
+Industrial Degreaser
+C1
+C2
+C3
+C4
+(b) Suppose the storage tank for Chemical C2 can dispense at most 1 litre per batch. Based on
+your three computed recipes, which products can be manufactured immediately?
+4
+
+
+=== LAB PAGE 22 ===
+Newton School of Technology
+Mathematics-3
+(c) The company currently has enough chemicals to prepare only one product at a time. The total
+chemical used for a single product is calculated as:
+Total Chemical Used = x1 + x2 + x3 + x4
+Determine which product should be manufactured that will have least total chemical consump-
+tion.
+(d) The company has received orders for: 20 batches of Glass Cleaner, 15 batches of Floor Cleaner,
+10 batches of Industrial Degreaser. Using the recipes you computed, determine the total
+quantity of each base chemical required. The warehouse currently contains:
+Chemical
+C1
+C2
+C3
+C4
+Available (in L)
+60
+40
+50
+55
+Determine whether the current inventory is su”cient. If not, calculate the additional quantity
+of each chemical that must be ordered.
+5
+
+
+=== LAB PAGE 23 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 6
+Name:
+ID/Batch:
+Easy
+Q.1) Show that the vectors v1 = (1, 2, 3, 4), v2 = (0, 1, 0, →1), and v3 = (1, 3, 3, 3) form a linearly
+dependent set in R4. Express v3 as the linear combination of the other two.
+Q.2) State whether the following statements are True/False:
+(a) A set containing a single vector is linearly independent.
+(b) The columns of any 4 ↑5 matrix are linearly dependent.
+(c) No linearly independent set contains the zero vector.
+(d) Two vectors are linearly dependent if and only if they lie on a line through the origin.
+Q.3) Determine whether b is in the column space of A using the rank condition, and if so, express b as a
+linear combination of the column vectors of A.
+(a) A =
+)︄
+[︄
+1
+1
+2
+1
+0
+1
+2
+1
+3
+]︄
+⌊︄
+,
+b =
+)︄
+[︄
+→1
+0
+2
+]︄
+⌊︄
+(b) A =
+)︄
+[︄
+1
+→1
+1
+→1
+1
+→1
+→1
+→1
+1
+]︄
+⌊︄
+,
+b =
+)︄
+[︄
+2
+0
+0
+]︄
+⌊︄
+Q.4) Determine whether the following vectors are linearly independent or linearly dependent. Further,
+geometrically explain the span of these vectors.
+(a) v1 = (2, →2, 0), v2 = (6, 1, 4), v3 = (2, 0, →4) in R3
+(b) v1 = (→1, 2, 3), v2 = (2, →4, →6), v3 = (→3, 6, 0) in R3
+(c) v1 = (4, 6, 8), v2 = (2, 3, 4), v3 = (→2, →3, →4) in R3
+(d) v1 = (3, 8, 7, →3), v2 = (1, 5, 3, →1), v3 = (2, →1, 2, 6), v4 = (4, 2, 6, 4) in R4
+Medium
+Q.5) Fill in the blanks:
+(a) If A is any 8 by 8 invertible matrix, then its column space is
+.
+(b) If A is an m ↑n matrix, then the columns of A are linearly independent if and only if A has
+pivot columns.
+(c) If the 9 by 12 system Ax= b is solvable for every b, then C(A) =
+.
+(d) C(AB) must
+(contain ↓/ be contained in ↔/ equal =) the column space of (A or
+B) for all 4 ↑4 matrices A and B.
+(e) If A is a 4 ↑3 matrix and Ax = b is not solvable for some b and the solutions are not unique
+when they exist, possible values for the rank of A are
+(list all possibilities).
+1
+
+
+=== LAB PAGE 24 ===
+Newton School of Technology
+Mathematics-3
+Q.6) For which real values of ω do the following vectors form a linearly dependent set in R3?
+v1 = (ω, →1
+2, →1
+2),
+v2 = (→1
+2, ω, →1
+2),
+v3 = (→1
+2, →1
+2, ω)
+Q.7) State whether the following statements are True or False. Give proper counter example if the
+statement is false.
+(a) If C(A) contains only the zero vector, then A is the zero matrix.
+(b) The column space of 2A equals the column space of A.
+(c) The column space of A →I equals the column space of A.
+(d) If the set of vectors {v1, v2, v3} is linearly independent, then {kv1, kv2, kv3} is also linearly
+independent for every nonzero scalar k.
+(e) If v1, . . . , v4 are in R4 and {v1, v2, v3} is linearly independent, then {v1, v2, v3, v4} is also
+linearly dependent.
+(f) If v1, . . . , v4 are in R4 and v3 is not a linear combination of {v1, v2, v4}, then {v1, v2, v3, v4}
+is linearly independent.
+Q.8) Construct a 3 by 3 matrix whose column space contains (1, 1, 0) and (1, 0, 1) but not (1, 1, 1).
+Further, also construct a 3 by 3 matrix whose column space is only a line.
+Q.9) How many pivot columns must a 7 ↑5 matrix have if its columns are linearly independent? Why?
+How many pivot columns must a 5 ↑7 matrix have if its columns span R5? Why?
+Q.10) For what values of h is v3 in span{v1, v2}, and for what values of h is {v1, v2, v3} linearly dependent?
+Justify each answer.
+v1 =
+)︄
+[︄
+2
+→4
+1
+]︄
+⌊︄,
+v2 =
+)︄
+[︄
+→6
+7
+→3
+]︄
+⌊︄,
+v3 =
+)︄
+[︄
+8
+h
+4
+]︄
+⌊︄
+Hard
+Q.11) The columns of AB are combinations of the columns of A. This means: The column space of AB is
+contained in (possibly equal to) the column space of A. Give an example where the column spaces
+of A and AB are not equal.
+Q.12) Determine whether the vectors v1, v2 and v3 are linearly independent or linearly dependent.
+2
+
+
+=== LAB PAGE 25 ===
+Newton School of Technology
+Mathematics-3
+Q.13) For which right-hand sides (ﬁnd a condition on b1, b2, b3) are these systems solvable?
+)︄
+[︄
+1
+4
+2
+2
+8
+4
+→1
+→4
+→2
+]︄
+⌊︄
+)︄
+[︄
+x!
+x2
+x3
+]︄
+⌊︄=
+)︄
+[︄
+b1
+b2
+b3
+]︄
+⌊︄
+Q.14) Your team is building a college robot with four control mechanisms. Their movement e!ects along
+three axes are given by the columns of:
+A =
+)︄
+[︄
+1
+0
+1
+2
+0
+1
+1
+1
+1
+1
+2
+3
+]︄
+⌊︄.
+To save money and simplify the build, you want to eliminate any controls that don’t add new
+movement capabilities.
+(a) How will you determine the redundant control mechanisms?
+(b) Which control mechanisms are redundant?
+(c) What is the smallest number of control mechanisms the team needs to retain to preserve all
+possible movement patterns that the full robot could produce?
+(d) If the team keeps control mechanisms 1 and 2, can it still produce every movement pattern
+that it could produce using all four controls?
+Challenge
+Q.14) In previous labs, the theatre had three lamps, and every colour had exactly one recipe. The theatre
+has now bought a fourth lamp. Written as RGB columns, the four lamps are
+L =
+)︄
+[︄
+1
+0
+1
+1
+0
+1
+1
+1
+0
+1
+0
+1
+]︄
+⌊︄
+↗R
+↗G
+↗B
+=
+)︄
+[︄
+|
+|
+|
+|
+Red
+Cyan
+Yellow
+White
+|
+|
+|
+|
+]︄
+⌊︄
+Red (1, 0, 0)
+Cyan (0, 1, 1)
+Yellow (1, 1, 0)
+White (1, 1, 1)
+A recipe x gives the brightness of each lamp, and Lx is the colour on the wall. The set of all
+colours the rig can make is Col(L).
+(a) Apply Gaussian elimination to L. How many pivots are there, and what is the rank?
+(b) Are the four lamp colours linearly independent? Without calculating, give a one-line reason
+using only the shape of L.
+(c) Find four numbers, not all zero, so that multiplying the four lamp colours by them and adding
+gives (0, 0, 0).
+(d) A student says: “White is the extra lamp, so return White.”
+(i) Using (c), show that the theatre could return Red instead and still make every colour it
+makes now.
+(ii) Using linear independence, show that returning Yellow is not safe: the three lamps left
+over can only make colours whose green and blue amounts are equal.
+(e) Last lecture the three-lamp rig made amber
+b = (4, 3, 1) from the recipe (2, 1, 2). On the new rig this recipe is x = (2, 1, 2, 0).
+(i) Check that Lx = b.
+3
+
+
+=== LAB PAGE 26 ===
+Newton School of Technology
+Mathematics-3
+(ii) Part (c) says Red and Cyan together can be traded for White. Use this trade to write
+down a di!erent recipe that also gives amber, and verify it.
+(iii) If brightness may be any real number, how many recipes give amber?
+(iv) In one sentence: what changed from last lecture to destroy the one-recipe-per-colour rule?
+(f) True or false? Give a reason for each.
+(i) Buying the fourth lamp increased the number of colours the theatre can make.
+(ii) Any four vectors in R3 are linearly dependent.
+(iii) Any three of these four lamps are linearly independent.
+4
+
+
+=== LAB PAGE 27 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 7
+Name:
+ID/Batch:
+Easy
+Q.1) State True/False. Justify your answer.
+(a) The null space of A is the solution set of the equation Ax = 0.
+(b) A square matrix has no free variables.
+(c) An invertible matrix has no free variables.
+(d) The null space of a m →n matrix is a subspace of Rm.
+(e) An m →n matrix has no more than n pivot variables.
+(f) An m →n matrix has no more than m pivot variables.
+(g) The set of all solutions of a system of m homogeneous equations in n unknowns is a subspace
+of Rm.
+Q.2) Find the null space of
+!1
+3
+3
+9
+"
+Q.3) Let
+A =
+
+
+2
+4
+↑2
+1
+↑2
+↑5
+7
+3
+3
+7
+↑8
+6
+
+
+(a) If the column space of A is a subspace of Rk, what is k?
+(b) If the null space of A is a subspace of Rk, what is k?
+Q.4) Find a 2 →2 matrices whose null space is the line 3x ↑5y = 0.
+Q.5) Find the complete solution of
+!2
+6
+1
+3
+" !x1
+x2
+"
+=
+!10
+5
+"
+Medium
+Q.6) Find the complete solution of Ax = b:
+
+
+1
+0
+2
+3
+1
+3
+2
+0
+2
+0
+4
+9
+
+
+
+
+x1
+x2
+x3
+x4
+
+=
+
+
+2
+5
+10
+
+
+(a)
+
+
+1
+↑2
+3
+2
+1
+4
+1
+↑7
+5
+
+
+
+
+x1
+x2
+x3
+
+=
+
+
+2
+7
+↑1
+
+
+(b)
+Q.7) Under what conditions on b1 and b2 does Ax = b have a solution?
+A =
+!1
+2
+0
+3
+2
+4
+0
+7
+"
+and
+b =
+!b1
+b2
+"
+Find the two vectors in the null space of A and the complete solution to Ax = b.
+1
+
+
+=== LAB PAGE 28 ===
+Newton School of Technology
+Mathematics-3
+Q.8) Construct a 2 →2 matrix whose null space equals column space. Further justify why no 3 →3 matrix
+will have a null space that equals its column space.
+Q.9) Find the null space of
+A =
+
+
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+
+
+Q.10) Determine whether the following are subspaces of R3:
+S =
+
+
+
+
+
+x
+y
+z
+
+: xy = 0
+
+
+
+(a)
+S =
+
+
+
+
+
+x
+y
+z
+
+: x ↑y = z
+
+
+
+(b)
+S =
+
+
+
+
+
+x
+y
+z
+
+: x2 + y2 = z2
+
+
+
+(c)
+S =
+
+
+
+
+
+x
+y
+z
+
+: x2 + y2 + z2 > 0
+
+
+
+(d)
+Hard
+Q.11) Assume that the sets include the bounding lines. In each case, give a speciﬁc reason why the set H
+is not a subspace of R2.
+(a)
+(b)
+(c)
+(d)
+Q.12) Construct a matrix whose column space contains (1, 1, 5) and (0, 3, 1) and whose null space contains
+(1, 1, 2).
+Q.13) Construct a matrix whose column space contains (1, 1, 0) and (0, 1, 1) and whose null space contains
+(1, 0, 1) and (0, 0, 1).
+Q.14) Find a 3 →3 matrix whose null space is the x-axis and whose column space is the yz-plane.
+Q.15) Find a 2 →3 matrix A such that the complete solution of the system
+Ax =
+!
+1
+↑1
+"
+is
+x =
+
+
+1
+2
+0
+
++ t
+
+
+1
+3
+1
+
+
+where t ↓R.
+2
+
+
+=== LAB PAGE 29 ===
+Newton School of Technology
+Mathematics-3
+Challenge
+Q.16) Six beams, one molecule
+Six laser beams are aimed at a single molecule sitting at the centre. Beam i pushes the
+molecule with strength Fi ↔0 along a ﬁxed direction ui. Beams 1 and 4 are horizontal;
+beams 2, 3, 5, 6 come in at 45→(see ﬁgure):
+u1 =
+!1
+0
+"
+, u2 =
+/ ↑
+2
+2
+↑
+↑
+2
+2
+
+, u3 =
+/
+↑
+↑
+2
+2
+↑
+↑
+2
+2
+
+, u4 =
+!↑1
+0
+"
+, u5 =
+/
+↑
+↑
+2
+2
+↑
+2
+2
+
+, u6 =
+/ ↑
+2
+2
+↑
+2
+2
+
+.
+A pattern x = (F1, . . . , F6) lists the six strengths. Adding up the six pushes gives the net
+force Ax, where the columns of A are u1, . . . , u6:
+/
+1
+↑
+2
+2
+↑
+↑
+2
+2
+↑1
+↑
+↑
+2
+2
+↑
+2
+2
+0
+↑
+↑
+2
+2
+↑
+↑
+2
+2
+0
+↑
+2
+2
+↑
+2
+2
+
+
+
+
+A
+
+
+F1
+F2
+F3
+F4
+F5
+F6
+
+
+
+x
+=
+!b1
+b2
+"
+
+b
+The molecule is held still when the net force is zero, that is, when Ax = 0. The set of net
+forces that can be made is Col(A).
+Figure 1: each arrow shows the direction in which that beam pushes.
+(a) Apply Gaussian elimination to A and write down R, the row echelon form. How many pivots
+are there? What is the rank? Which of F1, . . . , F6 are pivot variables and which are free?
+(b) Without any calculation, give a one-line reason based only on the shape of A why the six
+directions must be linearly dependent, and why Ax = 0 has a solution other than x = 0.
+(c) Patterns that hold the molecule still, found by eye.
+(i) Check that x = (1, 0, 0, 1, 0, 0) gives Ax = 0: only beams 1 and 4 are on, at equal strength.
+Write down two more patterns of this same “opposite pair” type.
+(ii) Now set all six strengths equal: x = (1, 1, 1, 1, 1, 1). Check that Ax = 0, and write this
+pattern as a sum of the three patterns from part (i).
+(iii) Beam 4 stops working, so F4 = 0. Show the molecule can still be held still: ﬁnd a pattern
+with F4 = 0 and all ﬁve other strengths strictly positive.
+(Hint: beams 3 and 5 both push in the ↑x direction. Use them against beam 1, then add
+an opposite pair to switch on the beams that are still o!.)
+(d) In one sentence, say what N(A) means here physically.
+(e) The molecule now has to be pushed sideways with net force b = (1, 0).
+3
+
+
+=== LAB PAGE 30 ===
+Newton School of Technology
+Mathematics-3
+(i) Write down the obvious one-beam recipe xp with Axp = b, and check it.
+(ii) Using the free variables from part (a), write the complete solution of Ax = (1, 0) in the
+form x = xp + xn, where Axn = 0. If the strengths may be any real numbers, how many
+recipes give this force?
+(iii) Real lasers can only push, so in fact Fi ↔0 for every i. Show that there are still inﬁnitely
+many usable recipes by adding a multiple of (1, 1, 1, 1, 1, 1) to xp. What does this say
+about turning all six beams up together?
+(iv) In one sentence: what is the di!erence in role between xp and xn?
+(f) True or false? Give a reason.
+(i) Adding a seventh beam would make Col(A) bigger.
+(ii) If two patterns each hold the molecule still, so does their sum.
+(g) Challenge. Keeping the restriction Fi ↔0, can every net force b ↓R2 still be made? Argue
+yes, and give a rule for building a recipe with no negative strengths for any b.
+4
+
+
+=== LAB PAGE 31 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 8
+Name:
+ID/Batch:
+Easy
+Q.1) State True/False. Justify your answer.
+(a) If m = n then the row space of A equals the column space of A.
+(b) The matrices A and →A share the same four subspaces.
+(c) If A and B share the same four subspaces then A is a multiple of B.
+(d) A and AT have the same number of pivots.
+(e) If the row space equals the column space then AT = A.
+(f) If B is any echelon form of A, then the pivot columns of B form a basis for the
+column space of A.
+(g) The dimensions of the row space and the column space of an m ↑n matrix A are
+equal, even if A is not square.
+Q.2) Find the basis of column space and null space of the following matrix. Further determine
+the rank and nullity.
+)︄
+[︄
+1
+2
+3
+1
+2
+3
+2
+5
+8
+]︄
+⌊︄
+a)
+)︄
+⌋︄⌋︄[︄
+1
+2
+→1
+3
+2
+5
+1
+4
+3
+7
+0
+7
+4
+9
+→1
+10
+]︄
+⌈︄⌈︄⌊︄
+b)
+Q.3) Answer each part and explain your reasoning.
+(a) If A is a 7 ↑5 matrix, what is the largest possible rank of A? If A is a 5 ↑7 matrix,
+what is the largest possible rank of A?
+(b) If A is a 4 ↑3 matrix, what is the maximum possible dimension of the row space
+of A? If A is a 3 ↑4 matrix, what is the maximum possible dimension of the row
+space of A?
+(c) If the null space of a 5 ↑6 matrix A is 4-dimensional, what is the dimension of the
+row space of A?
+(d) If the null space of a 7 ↑6 matrix A is 5-dimensional, what is the dimension of the
+column space of A?
+Q.4) In each part, use the information in the table to ﬁnd the dimension of the row space of A,
+column space of A, null space of A, and left null space of A.
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+Size of A
+3 ↑3
+3 ↑3
+3 ↑3
+5 ↑9
+9 ↑5
+4 ↑4
+rank(A)
+3
+2
+1
+2
+2
+0
+1
+
+
+=== LAB PAGE 32 ===
+Newton School of Technology
+Mathematics-3
+Q.5) Find the complete solution x = xp + xn of Ax = b for
+A =
+)︄
+[︄
+1
+3
+3
+2
+2
+6
+9
+7
+→1
+→3
+3
+4
+]︄
+⌊︄,
+b =
+)︄
+[︄
+1
+5
+5
+]︄
+⌊︄.
+State the rank, the nullity, and the number of free variables, and check that no. of
+columns = rank(A) + nullity(A).
+Medium
+Q.6) Matrix B is the row echelon form of matrix A. Without calculations, list rank A and
+dim(N(A)). Then ﬁnd bases for C(A), C(AT ), and N(A).
+A =
+)︄
+⌋︄⌋︄[︄
+2
+→3
+6
+2
+5
+→2
+3
+→3
+→3
+→4
+4
+→6
+9
+5
+9
+→2
+3
+3
+→4
+1
+]︄
+⌈︄⌈︄⌊︄,
+B =
+)︄
+⌋︄⌋︄[︄
+2
+→3
+6
+2
+5
+0
+0
+3
+→1
+1
+0
+0
+0
+1
+3
+0
+0
+0
+0
+0
+]︄
+⌈︄⌈︄⌊︄
+Q.7) Given A = LU, without computing A, ﬁnd bases for the four fundamental subspaces:
+A =
+)︄
+[︄
+1
+0
+0
+6
+1
+0
+9
+8
+1
+]︄
+⌊︄
+)︄
+[︄
+1
+2
+3
+4
+0
+1
+2
+3
+0
+0
+1
+2
+]︄
+⌊︄.
+Q.8) Find the dimension and construct a basis for the four subspaces associated with each of
+the matrices
+A =
+⌉︄0
+1
+4
+0
+0
+2
+8
+0
+{︄
+and
+U =
+⌉︄0
+1
+4
+0
+0
+0
+0
+0
+{︄
+.
+Which of the four subspaces are the same for A and U, and which are di!erent? Explain
+why.
+Q.9) Under what conditions on b1, b2, b3 is the following system solvable? Augment b as a
+fourth column and perform elimination. Find all solutions when that condition holds.
+x + 2y →2z = b1
+2x + 5y →4z = b2
+4x + 9y →8z = b3
+Then ﬁnd a vector y spanning N(AT) and verify that your solvability condition is exactly
+the statement yTb = 0.
+Q.10) If V is the subspace spanned by (1, 1, 1) and (2, 1, 0), ﬁnd a matrix A that has V as its
+row space. Find a matrix B that has V as its null space.
+Q.11) Answer each part, with an explanation.
+(a) Suppose a 4 ↑7 matrix A has four pivot columns. Is C(A) = R4? Is N(A) = R3?
+(b) Suppose a 5↑6 matrix A has four pivot columns. What is dim(N(A))? Is C(A) = R4?
+Why or why not?
+2
+
+
+=== LAB PAGE 33 ===
+Newton School of Technology
+Mathematics-3
+Q.12) Are there values of r and s for which
+)︄
+⌋︄⌋︄[︄
+1
+0
+0
+0
+r →2
+2
+0
+s →1
+r + 2
+0
+0
+3
+]︄
+⌈︄⌈︄⌊︄
+has rank 1? Rank 2? If so, ﬁnd those values.
+Hard
+Q.13) If the product of two matrices is the zero matrix, AB = 0, show that the column space of
+B is contained in the null space of A. (Also the row space of A is contained in the left
+null space of B.) Why can’t A and B be 3 ↑3 matrices of rank 2?
+Q.14) Construct a matrix with the required property, or explain why this is impossible.
+(a) Column space contains (1, 1, 0) and (0, 0, 1); row space contains (1, 2) and (2, 5).
+(b) Column space has basis (1, 1, 3); null space has basis (3, 1, 1).
+(c) Dimension of null space = 1+ dimension of left null space.
+(d) Left null space contains (1, 0, 0, 0); row space contains (0, 0, 0, 1).
+(e) Row space = column space, but null space ↓= left null space.
+Q.15) Suppose A is an m ↑n matrix of rank r. Under what conditions on those numbers does
+(a) A have a two-sided inverse, AA→1 = A→1A = I?
+(b) Ax = b have inﬁnitely many solutions for every b?
+Q.16) A is an m ↑n matrix of rank r. Suppose there are right sides b for which Ax = b has no
+solution. What are all the inequalities (< or ↔) that must be true between m, n, and r?
+How do you know that ATy = 0 has solutions other than y = 0?
+Q.17) The graph below has 3 nodes and 3 edges. Write down its 3 ↑3 incidence matrix A,
+using one row per edge: put →1 in the column of the node the edge leaves and +1 in the
+column of the node it enters. (Note that this is the transpose of the convention used in
+the lecture sheet, where one column stood for one edge.)
+1
+2
+3
+e1
+e2
+e3
+(a) Find a solution to Ax = 0 and describe all other vectors in the null space of A.
+What do the entries of x measure here?
+(b) Find a solution to ATy = 0 and describe all other vectors in the null space of AT.
+What do the entries of y measure here?
+(c) Show directly from the columns of A that every b in the column space satisﬁes
+b1 +b2 →b3 = 0. Then derive the same condition from the three equations of Ax = b.
+3
+
+
+=== LAB PAGE 34 ===
+Newton School of Technology
+Mathematics-3
+Challenge
+Q.18) Six pipes, one water grid
+A campus water grid has 5 junctions v1, . . . , v5 joined by 6 pipes. Each pipe has been
+given a reference direction (the arrows below); a ﬂow fi is positive when water runs
+along the arrow and negative when it runs against it.
+e1 : v1 ↗v2,
+e2 : v2 ↗v3,
+e3 : v3 ↗v1,
+e4 : v3 ↗v4,
+e5 : v4 ↗v5,
+e6 : v5 ↗v3.
+v1
+v2
+v3
+v4
+v5
+e1
+e2
+e3
+e4
+e5
+e6
+Store the grid in the incidence matrix B with one row per junction, one column per pipe,
+as in the lecture sheet: →1 where a pipe leaves a junction, +1 where it enters. Then
+Bf is the vector of net inﬂows at the ﬁve junctions: positive means water accumulates
+there (a consumer draws it o!), negative means water is supplied there.
+(a) Write down B. What is its size? Which space is the input home and which is the
+output home, and what does a vector in each one physically represent?
+(b) Reduce B and ﬁnd rank(B). Pick out 4 pipes that connect all ﬁve junctions without
+closing a loop (a spanning tree), and use it to explain why a connected graph on n
+nodes has rank(B) = n →1.
+(c) Find a basis for N(B) and mark each basis vector on the diagram. What does each
+one do physically? Verify that
+nullity(B) = (number of pipes) →(number of junctions) + 1,
+and say why this counts the independent loops in the grid.
+(d) Find a basis for N(BT). Since BT turns junction pressures into pipe pressure-drops,
+state in one sentence what this space says about pressure.
+(e) Which demand vectors d ↘R5 can the grid actually meet, i.e. for which d is Bf = d
+solvable? Use your basis from (d) to compress the answer into a single scalar equation,
+and conﬁrm that
+d = (10, 0, →4, 0, →6)
+passes the test.
+Find the complete solution f = fp + fn for this d by setting
+f3 = f6 = 0. How many ﬂow patterns meet this demand? Interpret the negative
+entries of fp.
+(f) A vector w ↘R6 of pressure drops comes from junction pressures p exactly when
+w = BTp is solvable, i.e. when w ↘C(BT) — the row space. Using your loop basis
+from (c), show that this happens precisely when the entries of w sum to zero around
+each loop. Which physical law is this?
+(g) Pipe e3 is shut for maintenance, forcing f3 = 0. Delete column e3 from B to get B↑.
+(i) Give rank(B↑), nullity(B↑) and dim N(B↑T).
+(ii) Can the demand d of part (e) still be met? If so, how many ﬂow patterns meet
+it now?
+(iii) State which of the four subspaces changed and which did not, and explain each
+answer in one line.
+4
+
+

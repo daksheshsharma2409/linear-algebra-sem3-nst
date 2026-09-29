@@ -1,0 +1,1215 @@
+=== PAGE 102 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 8: FOUR SPACES, ONE MATRIX
+Complete Solution • Basis • Dimension • Fundamental Subspaces
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• ﬁnd a complete solution step by step;
+• ﬁnd bases for N(A) and C(A) and interpret their dimensions;
+• understand rank as dim C(A) and nullity as dim N(A);
+• discover a solvability condition using a vector perpendicular to the column space;
+• understand why the row space matters;
+• locate and interpret all four fundamental subspaces of a matrix;
+• read the four spaces of a small network incidence matrix.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== PAGE 103 ===
+Newton School of Technology
+Mathematics-3
+First: make the complete solution a procedure
+We already know the meaning:
+one working input + any invisible input change = another working input.
+Recipe to cook the Complete Solution
+Step 1:
+Apply Gaussian Elimination.
+Step 2:
+Find the null space: xn.
+Step 3:
+Find the particular solution (xP) by substituting free vari-
+ables as zero.
+Step 4:
+Add them. xC = xP + xn
+CHECKPOINT
+We solve Ax = 0 ﬁrst because it tells us the directions in which the input can change without
+changing the output.
+PREDICT
+Suppose N(A) = {0} and we ﬁnd one working input xp for a reachable target b.
+How many solutions can there be?
+Example 1 - Complete solution of the diet system
+We return to the same simpliﬁed nutrition model from Sheet 7.
+A =
+PB
+Bread
+Milk
+Sandwich
+Protein
+8
+3
+8
+14
+Carbs
+7
+12
+12
+31
+Fat
+15
+1
+5
+17
+b =
+)︄
+[︄[︄]︄
+22
+43
+22
+⌊︄
+⌋︄⌋︄⌈︄.
+The input x records four food quantities. The output records the three nutrition totals.
+Step 1 - Solve Ax = 0
+Row echelon form gives
+REF(A) =
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Therefore, the equations are,
+2
+
+
+=== PAGE 104 ===
+Newton School of Technology
+Mathematics-3
+Let x4 = t. Complete the null-space vector:
+xn = t
+)︄
+[︄[︄[︄[︄]︄
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+DO
+Fill the three missing entries, then check Axn = 0.
+Diet system: one working plan, then all plans
+Step 2 - Find one particular solution
+For the augmented system, the same elimination gives
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+So, the equations are,
+Set the free variable x4 = 0. Then one working diet is
+xp =
+)︄
+[︄[︄[︄[︄]︄
+1
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Step 3 - Add the null-space change
+From Step 1,
+N(A) =
+⌉︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+t
+)︄
+[︄[︄[︄[︄]︄
+→1
+→2
+0
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+: t ↑R
+⟩︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+Therefore
+x =
+)︄
+[︄[︄[︄[︄]︄
+1
+2
+1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
++ t
+)︄
+[︄[︄[︄[︄]︄
+→1
+→2
+0
+1
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+t ↑R.
+CHECKPOINT
+The null vector means: decrease PB by 1 serving and bread by 2 servings while increasing the
+sandwich by 1 serving. In this simpliﬁed model, all three tracked nutrition totals stay unchanged.
+3
+
+
+=== PAGE 105 ===
+Newton School of Technology
+Mathematics-3
+Example 2 - You complete the full solution
+Consider
+A =
+/︂
+1
+1
+1
+1
+2
+3
+\︂
+,
+b =
+/︂
+3
+5
+\︂
+.
+The input space is R3 and the output space is R2.
+DO Step 1 - Null space
+Row reduce A and solve Ax = 0.
+Your Answer:
+DO Step 2 - One working input
+Find one xp satisfying Axp = b.
+Your Answer:
+DO Step 3 - Complete solution
+x = xp + xn =
+Your Answer:
+What does the complete solution look like?
+For the previous 2 ↓3 system, the input lives in R3.
+You should ﬁnd
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+1
+→2
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+So the null space is a line through the origin in the input space.
+4
+
+
+=== PAGE 106 ===
+Newton School of Technology
+Mathematics-3
+A convenient particular solution is
+xp =
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+Therefore all solutions lie on the parallel line
+x =
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
++ t
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+x
+y
+z
+N(A)
+line through the origin
+x
+y
+z
+xp
+all solutions
+shifted parallel line
+CHECKPOINT
+The null space gives the direction of the solution family. The particular solution tells us where
+the family sits.
+How do we describe a whole space e!ciently?
+A line, plane, or higher-dimensional space contains inﬁnitely many vectors. We do not want to list
+them all.
+We want a small set of vectors that:
+1. can build every vector in the space;
+2. contains no redundant direction.
+PREDICT
+For R2, which set is enough to build every vector without redundancy?
+⎛/︂
+1
+0
+\︂
+,
+/︂
+0
+1
+\︂⎞
+.
+Can either vector be removed and still build all of R2?
+↭Yes
+↭No
+5
+
+
+=== PAGE 107 ===
+Newton School of Technology
+Mathematics-3
+NOW WE CAN NAME IT
+A basis of a Euclidean vector space is a set of vectors that is
+linearly independent and spanning.
+The dimension is the number of vectors in a basis.
+Space
+One basis
+Dimension
+R
+R2
+R3
+A line pass-
+ing through 0
+one nonzero direction vector
+A plane pass-
+ing through 0
+in R3
+two independent directions in the plane
+CHECKPOINT
+A basis is not “the most important vectors.” It is a nonredundant set that can build the entire
+space.
+Basis of the null space and column space
+Return to the diet matrix.
+A =
+)︄
+[︄[︄]︄
+8
+3
+8
+14
+7
+12
+12
+31
+15
+1
+5
+17
+⌊︄
+⌋︄⌋︄⌈︄.
+We already found
+N(A) = span
+⌉︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+There is one independent null direction.
+NOW WE CAN NAME IT
+The nullity of A is
+nullity(A) = dim N(A).
+For the diet matrix,
+nullity(A) = 1.
+Now look at the columns of A. The REF has pivots in columns 1, 2, and 3. Therefore a basis for the
+column space is given by the corresponding original columns:
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+8
+7
+15
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+3
+12
+1
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+8
+12
+5
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+6
+
+
+=== PAGE 108 ===
+Newton School of Technology
+Mathematics-3
+NOTE
+When ﬁnding a basis for C(A) using elimination, take the pivot columns from the original
+matrix, not from the REF.
+NOW WE CAN NAME IT
+This gives a third interpretation of rank:
+rank(A) = number of pivots = maximum number of independent columns = dim(C(A)).
+For the diet matrix, rank(A) = 3.
+How many input directions survive, and how many disappear?
+Suppose A has n columns. The input space has dimension n.
+Some independent input directions are visible through the matrix. Some directions disappear into the
+null space.
+For the diet matrix:
+A is 3 ↓4,
+n = 4,
+rank(A) = 3,
+nullity(A) = 1.
+Notice:
+4 = 3 + 1.
+PREDICT
+For the matrix
+B =
+/︂
+1
+1
+1
+1
+2
+3
+\︂
+,
+you found rank = 2 and one free variable.
+Complete:
+number of columns =
+= rank(B) + nullity(B) =
++
+.
+NOW WE CAN NAME IT
+For an m ↓n matrix,
+n = rank(A) + nullity(A).
+This is the rank-nullity relation for the input home.
+CHECKPOINT
+Do not confuse:
+nullity(A) = dim(N(A))
+with the size of the matrix. A matrix itself is not said to have “dimension = nullity.”
+A new solvability test appears during elimination
+Consider
+A =
+/︂
+1
+2
+2
+4
+\︂
+,
+b =
+/︂
+b1
+b2
+\︂
+.
+7
+
+
+=== PAGE 109 ===
+Newton School of Technology
+Mathematics-3
+Do not choose numbers for b1, b2. Keep the target general.
+DO
+Eliminate the second row:
+/︂
+1
+2
+b1
+2
+4
+b2
+\︂
+R2→2R1
+→→→→→↔
+/︂
+1
+2
+b1
+0
+0
+\︂
+.
+For the system to be solvable, what must be true?
+Your Answer:
+The condition is
+b2 →2b1 = 0.
+Rewrite it as
+⎡
+→2
+1
+⎤/︂
+b1
+b2
+\︂
+= 0.
+PREDICT
+The vector
+y =
+/︂
+→2
+1
+\︂
+is perpendicular to every solvable target b. What line do all solvable targets lie on?
+The solvable targets form exactly the column space
+The columns of
+A =
+/︂
+1
+2
+2
+4
+\︂
+are multiples of
+/︂
+\︂
+.
+Therefore
+C(A) = span
+⎛/︂
+\︂⎞
+.
+The elimination condition
+b2 = 2b1
+describes the same line.
+8
+
+
+=== PAGE 110 ===
+Newton School of Technology
+Mathematics-3
+b1
+b2
+y = (→2, 1)
+C(A): reachable targets
+b is solvable exactly when it lies on line perpendicular to C(A).
+Now check:
+AT y =
+/︂
+1
+2
+2
+4
+\︂/︂
+→2
+1
+\︂
+=
+/︂
+\︂
+.
+So y ↑N(AT ). It is often called the left null space of A.
+What lives opposite the column space?
+If y ↑N(AT ) and Ax is any reachable output, then
+yT (Ax) = (AT y)T x = 0T x = 0.
+So every vector in N(AT ) is perpendicular to every reachable output.
+NOW WE CAN NAME IT
+The vectors in N(AT ) live in the output home. They are perpendicular to every vector in the
+column space.
+Therefore
+Ax = b is solvable
+↗↘b is perpendicular to every vector in N(AT ).
+For this 2 ↓2 example, N(AT ) = span{
+⎡
+→2
+1
+⎤T } and the vectors perpendicular to that line are
+exactly C(A).
+Example 4 - A 2 ↓3 matrix: all outputs reachable, many inputs
+Consider
+A =
+/︂
+1
+0
+1
+0
+1
+1
+\︂
+.
+9
+
+
+=== PAGE 111 ===
+Newton School of Technology
+Mathematics-3
+DO
+1. Find N(A).
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+2. Find a basis for C(A).
+Basis for C(A) =
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+,
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+.
+3. What is rank(A)?
+4. What is nullity(A)?
+5. Is every b ↑R2 reachable? Explain.
+You should ﬁnd
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+,
+C(A) = R2.
+Therefore every target in the output plane is reachable, but each reachable target has inﬁnitely many
+input solutions.
+INPUT HOME
+R3
+null line inside input
+A
+OUTPUT HOME
+R2
+full output plane
+x
+Ax
+Home
+Visible / reachable part
+Invisible / forbidden direction
+Input Rn
+Row space C(AT )
+Null space N(A)
+Output Rm
+Column space C(A)
+Left null space N(AT )
+Why should we care about the rows?
+So far, the columns told us what outputs can be built. What information is stored in the rows?
+For
+A =
+/︂
+1
+0
+1
+0
+1
+1
+\︂
+,
+x =
+)︄
+[︄[︄]︄
+x1
+x2
+x3
+⌊︄
+⌋︄⌋︄⌈︄,
+we have
+Ax =
+/︂
+x1 + x3
+x2 + x3
+\︂
+.
+Each row creates one output number:
+[1 0 1]
+⎣⎦⎢⎥
+r1
+x = x1 + x3,
+[0 1 1]
+⎣⎦⎢⎥
+r2
+x = x2 + x3.
+10
+
+
+=== PAGE 112 ===
+Newton School of Technology
+Mathematics-3
+PREDICT
+Take the null vector
+z =
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄.
+What does each row report when it sees z?
+[1 0 1]z =
+,
+[0 1 1]z =
+.
+The rows describe the input directions that the machine actually measures. A null-space direction is
+invisible to every row.
+NOW WE CAN NAME IT
+The row space of A is the span of the rows of A.
+It lives in the input space Rn.
+Row(A) = C(AT ).
+CHECKPOINT
+Column space answers: What outputs can be made?
+Row space answers: Which directions of the input are being measured by the rows?
+Row space and null space share the input home
+For the same matrix,
+Row(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+1
+0
+1
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+is a plane in R3, while
+N(A) = span
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+is a line in R3.
+Check that the null vector is perpendicular to both row directions:
+)︄
+[︄[︄]︄
+1
+0
+1
+⌊︄
+⌋︄⌋︄⌈︄·
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄= 0,
+)︄
+[︄[︄]︄
+0
+1
+1
+⌊︄
+⌋︄⌋︄⌈︄·
+)︄
+[︄[︄]︄
+→1
+→1
+1
+⌊︄
+⌋︄⌋︄⌈︄= 0.
+CHECKPOINT
+The row space and null space point in perpendicular directions inside the input space.
+CHECKPOINT
+We now have two spaces in the input home and two spaces on the output home.
+11
+
+
+=== PAGE 113 ===
+Newton School of Technology
+Mathematics-3
+The four fundamental subspaces of a matrix
+For an m ↓n matrix A:
+Let r = rank(A).
+dim C(A) = r,
+dim C(AT ) = r,
+dim N(A) = n →r,
+dim N(AT ) = m →r.
+CHECKPOINT
+The row space and column space have the same dimension: the rank.
+One matrix, all four spaces
+Use
+A =
+)︄
+[︄[︄]︄
+1
+0
+1
+0
+1
+1
+2
+1
+3
+⌊︄
+⌋︄⌋︄⌈︄,
+rank(A) =
+Complete the table.
+12
+
+
+=== PAGE 114 ===
+Newton School of Technology
+Mathematics-3
+Space
+Host
+One basis
+Dimension
+C(A)
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+N(A)
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+C(AT )
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄,
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+N(AT )
+⌉︄
+{︄
+{︄
+}︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+/︄
+{︄
+{︄
+\︄
+DO
+1. Which space decides whether b is reachable?
+2.
+Which space decides whether two di!erent inputs can give the same reachable b?
+3. Which two spaces have dimension equal to rank?
+Application - one matrix for a small network
+The same matrix idea appears in water pipes, roads, and electrical networks.
+We use 4 nodes and 5 directed edges:
+e1 : v1 ↔v2,
+e2 : v2 ↔v3,
+e3 : v3 ↔v4,
+e4 : v4 ↔v1,
+e5 : v3 ↔v1.
+v1
+v2
+v3
+v4
+e1
+e2
+e3
+e4
+e5
+We store this network in the incidence matrix
+B =
+)︄
+[︄[︄[︄[︄]︄
+→1
+0
+0
+1
+1
+1
+→1
+0
+0
+0
+0
+1
+→1
+0
+→1
+0
+0
+1
+→1
+0
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+.
+13
+
+
+=== PAGE 115 ===
+Newton School of Technology
+Mathematics-3
+Each column is one edge. We put →1 where the edge leaves a node and +1 where it enters a node.
+CHECKPOINT
+B is 4 ↓5.
+Input home: 5 edge values.
+Output home: 4 node values.
+Network: null space and column space
+Let
+f =
+)︄
+[︄[︄[︄[︄[︄[︄[︄]︄
+f1
+f2
+f3
+f4
+f5
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+represent directed edge ﬂows. Then Bf gives the net ﬂow balance at the four nodes.
+Null space N(B)
+Solving Bf = 0 gives
+N(B) = span
+⌉︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+)︄
+[︄[︄[︄[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+DO
+Mark the edges used by each null vector on the network diagram from the previous page.
+What do you notice about the ﬂow at every node?
+Interpretation: these are ﬂow patterns that circulate through closed routes and create no net accumu-
+lation at any node.
+Column space C(B)
+A basis can be chosen as
+⌉︄
+{︄
+{︄
+{︄
+{︄
+}︄
+{︄
+{︄
+{︄
+{︄
+⟨︄
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+,
+)︄
+[︄[︄[︄[︄]︄
+⌊︄
+⌋︄⌋︄⌋︄⌋︄⌈︄
+⟩︄
+{︄
+{︄
+{︄
+{︄
+/︄
+{︄
+{︄
+{︄
+{︄
+\︄
+.
+So
+rank(B) =
+Every vector in C(B) has node entries whose total is zero.
+PREDICT
+Why must the four entries of Bf always add to zero?
+14
+
+
+=== PAGE 116 ===
+Newton School of Technology
+Mathematics-3
+For water: total injection must balance total withdrawal.
+For current: total current entering/leaving the network must balance.
+For tra"c: sources and sinks determine the net change at intersections.
+The four spaces explain four di"erent network questions
+For the 4 ↓5 incidence matrix B:
+rank(B) =
+,
+nullity(B) =
+,
+dim N(BT ) =
+Space
+Lives in
+Network meaning
+Dim.
+N(B)
+balanced loop-ﬂow changes that cause no net node
+imbalance
+C(BT )
+edge di!erences produced from node values
+C(B)
+reachable node source/sink patterns; entries sum to
+zero
+N(BT )
+common node shift that creates no edge di!erence
+CHECKPOINT
+One small network has hidden structure in both homes:
+• some edge-ﬂow changes are invisible at the nodes;
+• some node shifts are invisible on the edges;
+• only certain node-balance patterns are possible;
+• only certain edge-di!erence patterns can come from node values.
+PREDICT
+The graph has 4 nodes but the incidence matrix has rank 3. What repeated pattern in the rows
+explains why one row is redundant?
+DO
+Complete these statements.
+1. rank(A) = dim
+= dim
+.
+2. nullity(A) = dim
+.
+3. Ax = b is solvable when b ↑
+.
+4. If a solution exists and N(A) = {0}, the solution is
+.
+5. If a solution exists and N(A) contains a nonzero vector, there are
+solutions.
+FOUR SPACES, ONE MATRIX
+A matrix is not only a table of numbers. It comes with structure in the input home and in the
+output home.
+The complete solution of Ax = b sits inside that structure.
+15
+
+

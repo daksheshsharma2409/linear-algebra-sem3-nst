@@ -1,0 +1,459 @@
+=== LAB PAGE 4 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 2
+Name:
+ID/Batch:
+Easy
+Q.1) A startup manufactures three products: laptops, tablets and smart watches. Each column of
+A =
+
+
+2
+1
+0
+1
+3
+2
+0
+2
+4
+
+
+represents the amount of Steel, Plastic and Silicon required to produce one unit of each product.
+The production plan is
+x =
+
+
+1
+2
+1
+
+
+where the entries represent the number of laptops, tablets and smart watches to be produced.
+Compute the total amount of each raw material required given by Ax.
+Q.2) A music recommendation system stores user preferences as u and song characteristics as A
+u =
+%2
+1
+3&
+and
+A =
+
+
+1
+0
+2
+1
+0
+3
+
+
+The row vector s = uA gives the recommendation score assigned to each song. Compute s.
+Q.3) Tiny sound clips consisting of amplitudes of the Bach and MLK audios from the Lecture 0 have
+been stored in the matrix
+S =
+
+
+2
+1
+→1
+1
+1
+→1
+0
+2
+
+=
+
+
+|
+|
+Bach
+MLK
+|
+|
+
+.
+(a) Which recipe should produce both sounds at their original amplitudes?
+↭
+)1
+1
+*
+↭
+)1
+0
+*
+↭
+)0
+1
+*
+(b) Which recipe should reduce Bach to half amplitude while keeping MLK unchanged?
+↭
+)1
+1
+2
+*
+↭
+) 1
+2
+1
+*
+(c) We represent several recipes at once by storing them as columns of another matrix
+R =
+)
+1
+1
+1
+2
+0
+1
+1
+*
+=
+
+
+|
+|
+|
+r1
+r2
+r3
+|
+|
+|
+
+
+Without multiplying, interpret what happens with respect to each recipe column: Sr1, Sr2, Sr3.
+(d) Compute SR.
+1
+
+
+=== LAB PAGE 5 ===
+Newton School of Technology
+Mathematics-3
+Medium
+Q.4) A 5 ↑5 matrix contains zeros everywhere except
+aii = 1
+and
+ai,5 = 2
+for i = 1, . . . , 4. Let
+x =
+
+
+1
+1
+1
+1
+5
+
+
+Compute Ax without constructing the full matrix. Explain your reasoning.
+Q.5) Three stage lamps are pointed at a white wall. Each lamp’s colour is stored as its red, green and
+blue intensities, and the three lamps become the three columns of
+L =
+
+
+1
+0
+1
+0
+1
+1
+0
+1
+0
+
+
+↓R
+↓G
+↓B
+=
+
+
+|
+|
+|
+Red
+Cyan
+Yellow
+|
+|
+|
+
+.
+Each lamp has a dial running from 0 (o!) to 1 (full). A recipe is a column x holding the three dial
+settings, and Lx is the colour that lands on the wall.
+The three lamps — columns of L
+Red lamp (1, 0, 0)
+Cyan lamp (0, 1, 1)
+Yellow lamp (1, 1, 0)
+What the wall shows — columns of LR
+white (1, 1, 1)
+mid grey ( 1
+2 , 1
+2 , 1
+2 )
+pale green ( 1
+2 , 1, 1
+2 )
+(a) Which recipe turns the Red and Cyan lamps on at full power with Yellow switched o!?
+↭
+
+
+1
+1
+0
+
+
+↭
+
+
+1
+0
+1
+
+
+↭
+
+
+0
+1
+1
+
+
+What colour appears on the wall, and why is that colour not one of the three lamps?
+(b) Which recipe dims the Red lamp to half brightness while leaving Cyan at full and Yellow o!?
+↭
+
+
+1
+1
+2
+0
+
+
+↭
+
+
+1
+2
+1
+0
+
+
+2
+
+
+=== LAB PAGE 6 ===
+Newton School of Technology
+Mathematics-3
+(c) Several recipes are stored side by side as the columns of
+R =
+
+
+1
+1
+2
+0
+1
+1
+2
+1
+2
+0
+0
+1
+2
+
+=
+
+
+|
+|
+|
+r1
+r2
+r3
+|
+|
+|
+
+.
+Without multiplying anything out, say what happens for each of Lr1, Lr2, Lr3. In
+particular: what is the relationship between r1 and r2, and what does that force about the two
+colours they produce?
+(d) Look at the second row of L, namely (0, 1, 1). What does this row describe? When you
+compute the second entry of Lr1, what quantity are you calculating? Answer in words, not
+symbols.
+(e) The dials can only add light — they can never remove it. Explain why, no matter how the
+three dials are set, the wall can never show pure blue (0, 0, 1). (Hint: look at the last two rows
+of L and ask which lamps contribute blue.)
+Q.6) A communication system receives signals from six antennas. Their signal strengths are stored in
+x. The system does not process the six signals separately. Instead, it combines them into three
+aggregated channels using matrix A.
+A =
+
+
+1
+0
+0
+1
+0
+0
+0
+1
+0
+0
+1
+0
+0
+0
+1
+0
+0
+1
+
+
+and
+x =
+
+
+2
+4
+6
+8
+10
+12
+
+
+where the entries correspond to Antennas 1,2,. . . ,6.
+Thus, Ax represents the three aggregated channel strengths.
+(a) Without carrying out the matrix multiplication, determine which two antennas contribute to
+the ﬁrst aggregated channel? Which two contribute to the second and third channels?
+(b) An engineer says:
+“If Antenna 4 becomes twice as strong, only one of the three aggregated channels will be
+a!ected.”
+Do you agree? Which channel changes and why?
+(c) Suppose Antenna 2 suddenly stops transmitting. Which aggregated channel(s) will change?
+(d) Another engineer accidentally rearranges the antenna signals as
+x→=
+
+
+2
+6
+4
+8
+10
+12
+
+
+Without multiplying, identify which aggregated channel(s) changes compared with Ax, and
+explain why.
+(e) The system designer wants to modify A so that the ﬁrst aggregated channel combines Antennas
+1 and 5 instead of Antennas 1 and 4. Which row of A must be changed, and what should that
+row become?
+3
+
+
+=== LAB PAGE 7 ===
+Newton School of Technology
+Mathematics-3
+Hard
+Q.7) Let A be the 3 ↑3 matrix of subjects:
+A =
+
+
+⊋
+⊋
+Algebra
+⊋
+Matrix multiplication
+⊋
+Two planes
+⊋
+⊋
+
+
+and B be the 3 ↑3 matrix of predicates
+
+
+meet in a line
+can be parallel
+never meet at a point
+rocks
+combines the columns
+takes rows times columns
+is fun
+explains everything
+never lies
+
+
+and C the 3 ↑1 column of tails
+
+
+, and that is a fact
+, as Strang shows
+, believe it or not
+
+
+Let us deﬁne the operation as below:
+• x ↑y: stick the words together with a space
+• x + y: keep both as alternatives
+• ⊋: nothing at all; it wipes out whatever it touches, so ⊋↑y = ⊋
+(a) Which computations AB or BA is more meaningful? Compute and answer.
+(b) Compute (AB)11 and (BA)11. Use this to explain why AB ↔= BA.
+(c) Compute ((AB)C)31.
+Q.8) A social network contains 10 creators. Matrix A is a 10 × 10 inﬂuence matrix deﬁned as:
+• Every diagonal entry is 0.
+• Every o!-diagonal entry is 1.
+Let
+x =
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+Without performing standard matrix multiplication:
+(a) Compute Ax.
+(b) Compute A2x.
+(c) Predict A3x.
+(d) Derive a formula for Akx
+(e) Interpret your result in terms of repeated information propagation through a social-media
+network.
+4
+
+
+=== LAB PAGE 8 ===
+Newton School of Technology
+Mathematics-3
+Challenge: Can a Matrix Count Routes?
+Q.9) Consider the transportation network:
+A
+B
+C
+D
+E
+Let M be its adjacency matrix, where mij = 1 when one road directly connects i to j, and mij = 0
+otherwise.
+(a) Construct M using the vertex order A, B, C, D, E.
+(b) Compute M 2.
+(c) Examine (M 2)AE. List all walks from A to E using exactly two roads.
+(d) Explain why each term mAkmkE tests whether k can be the middle stop.
+(e) Complete:
+(M 2)ij = number of
+.
+(f) Predict what information is stored in M 3.
+5
+
+

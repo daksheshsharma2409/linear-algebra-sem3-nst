@@ -1,0 +1,437 @@
+=== LAB PAGE 27 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+LAB Sheet - Lecture 7
+Name:
+ID/Batch:
+Easy
+Q.1) State True/False. Justify your answer.
+(a) The null space of A is the solution set of the equation Ax = 0.
+(b) A square matrix has no free variables.
+(c) An invertible matrix has no free variables.
+(d) The null space of a m →n matrix is a subspace of Rm.
+(e) An m →n matrix has no more than n pivot variables.
+(f) An m →n matrix has no more than m pivot variables.
+(g) The set of all solutions of a system of m homogeneous equations in n unknowns is a subspace
+of Rm.
+Q.2) Find the null space of
+!1
+3
+3
+9
+"
+Q.3) Let
+A =
+
+
+2
+4
+↑2
+1
+↑2
+↑5
+7
+3
+3
+7
+↑8
+6
+
+
+(a) If the column space of A is a subspace of Rk, what is k?
+(b) If the null space of A is a subspace of Rk, what is k?
+Q.4) Find a 2 →2 matrices whose null space is the line 3x ↑5y = 0.
+Q.5) Find the complete solution of
+!2
+6
+1
+3
+" !x1
+x2
+"
+=
+!10
+5
+"
+Medium
+Q.6) Find the complete solution of Ax = b:
+
+
+1
+0
+2
+3
+1
+3
+2
+0
+2
+0
+4
+9
+
+
+
+
+x1
+x2
+x3
+x4
+
+=
+
+
+2
+5
+10
+
+
+(a)
+
+
+1
+↑2
+3
+2
+1
+4
+1
+↑7
+5
+
+
+
+
+x1
+x2
+x3
+
+=
+
+
+2
+7
+↑1
+
+
+(b)
+Q.7) Under what conditions on b1 and b2 does Ax = b have a solution?
+A =
+!1
+2
+0
+3
+2
+4
+0
+7
+"
+and
+b =
+!b1
+b2
+"
+Find the two vectors in the null space of A and the complete solution to Ax = b.
+1
+
+
+=== LAB PAGE 28 ===
+Newton School of Technology
+Mathematics-3
+Q.8) Construct a 2 →2 matrix whose null space equals column space. Further justify why no 3 →3 matrix
+will have a null space that equals its column space.
+Q.9) Find the null space of
+A =
+
+
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+
+
+Q.10) Determine whether the following are subspaces of R3:
+S =
+
+
+
+
+
+x
+y
+z
+
+: xy = 0
+
+
+
+(a)
+S =
+
+
+
+
+
+x
+y
+z
+
+: x ↑y = z
+
+
+
+(b)
+S =
+
+
+
+
+
+x
+y
+z
+
+: x2 + y2 = z2
+
+
+
+(c)
+S =
+
+
+
+
+
+x
+y
+z
+
+: x2 + y2 + z2 > 0
+
+
+
+(d)
+Hard
+Q.11) Assume that the sets include the bounding lines. In each case, give a speciﬁc reason why the set H
+is not a subspace of R2.
+(a)
+(b)
+(c)
+(d)
+Q.12) Construct a matrix whose column space contains (1, 1, 5) and (0, 3, 1) and whose null space contains
+(1, 1, 2).
+Q.13) Construct a matrix whose column space contains (1, 1, 0) and (0, 1, 1) and whose null space contains
+(1, 0, 1) and (0, 0, 1).
+Q.14) Find a 3 →3 matrix whose null space is the x-axis and whose column space is the yz-plane.
+Q.15) Find a 2 →3 matrix A such that the complete solution of the system
+Ax =
+!
+1
+↑1
+"
+is
+x =
+
+
+1
+2
+0
+
++ t
+
+
+1
+3
+1
+
+
+where t ↓R.
+2
+
+
+=== LAB PAGE 29 ===
+Newton School of Technology
+Mathematics-3
+Challenge
+Q.16) Six beams, one molecule
+Six laser beams are aimed at a single molecule sitting at the centre. Beam i pushes the
+molecule with strength Fi ↔0 along a ﬁxed direction ui. Beams 1 and 4 are horizontal;
+beams 2, 3, 5, 6 come in at 45→(see ﬁgure):
+u1 =
+!1
+0
+"
+, u2 =
+/ ↑
+2
+2
+↑
+↑
+2
+2
+
+, u3 =
+/
+↑
+↑
+2
+2
+↑
+↑
+2
+2
+
+, u4 =
+!↑1
+0
+"
+, u5 =
+/
+↑
+↑
+2
+2
+↑
+2
+2
+
+, u6 =
+/ ↑
+2
+2
+↑
+2
+2
+
+.
+A pattern x = (F1, . . . , F6) lists the six strengths. Adding up the six pushes gives the net
+force Ax, where the columns of A are u1, . . . , u6:
+/
+1
+↑
+2
+2
+↑
+↑
+2
+2
+↑1
+↑
+↑
+2
+2
+↑
+2
+2
+0
+↑
+↑
+2
+2
+↑
+↑
+2
+2
+0
+↑
+2
+2
+↑
+2
+2
+
+
+
+
+A
+
+
+F1
+F2
+F3
+F4
+F5
+F6
+
+
+
+x
+=
+!b1
+b2
+"
+
+b
+The molecule is held still when the net force is zero, that is, when Ax = 0. The set of net
+forces that can be made is Col(A).
+Figure 1: each arrow shows the direction in which that beam pushes.
+(a) Apply Gaussian elimination to A and write down R, the row echelon form. How many pivots
+are there? What is the rank? Which of F1, . . . , F6 are pivot variables and which are free?
+(b) Without any calculation, give a one-line reason based only on the shape of A why the six
+directions must be linearly dependent, and why Ax = 0 has a solution other than x = 0.
+(c) Patterns that hold the molecule still, found by eye.
+(i) Check that x = (1, 0, 0, 1, 0, 0) gives Ax = 0: only beams 1 and 4 are on, at equal strength.
+Write down two more patterns of this same “opposite pair” type.
+(ii) Now set all six strengths equal: x = (1, 1, 1, 1, 1, 1). Check that Ax = 0, and write this
+pattern as a sum of the three patterns from part (i).
+(iii) Beam 4 stops working, so F4 = 0. Show the molecule can still be held still: ﬁnd a pattern
+with F4 = 0 and all ﬁve other strengths strictly positive.
+(Hint: beams 3 and 5 both push in the ↑x direction. Use them against beam 1, then add
+an opposite pair to switch on the beams that are still o!.)
+(d) In one sentence, say what N(A) means here physically.
+(e) The molecule now has to be pushed sideways with net force b = (1, 0).
+3
+
+
+=== LAB PAGE 30 ===
+Newton School of Technology
+Mathematics-3
+(i) Write down the obvious one-beam recipe xp with Axp = b, and check it.
+(ii) Using the free variables from part (a), write the complete solution of Ax = (1, 0) in the
+form x = xp + xn, where Axn = 0. If the strengths may be any real numbers, how many
+recipes give this force?
+(iii) Real lasers can only push, so in fact Fi ↔0 for every i. Show that there are still inﬁnitely
+many usable recipes by adding a multiple of (1, 1, 1, 1, 1, 1) to xp. What does this say
+about turning all six beams up together?
+(iv) In one sentence: what is the di!erence in role between xp and xn?
+(f) True or false? Give a reason.
+(i) Adding a seventh beam would make Col(A) bigger.
+(ii) If two patterns each hold the molecule still, so does their sum.
+(g) Challenge. Keeping the restriction Fi ↔0, can every net force b ↓R2 still be made? Argue
+yes, and give a rule for building a recipe with no negative strengths for any b.
+4
+
+

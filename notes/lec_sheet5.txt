@@ -1,0 +1,732 @@
+=== PAGE 58 ===
+Newton School of Technology
+Mathematics-3
+Linear Algebra
+Sheet 5: PREP ONCE, SERVE MANY
+Elementary Matrices • LU • Repeated Solves
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• turn an elementary row operation into an elementary matrix;
+• explain LU decomposition as saved Gaussian elimination;
+• solve repeated systems Ax = b by forward and back substitution;
+• explain why factor-once, solve-many is useful in computation.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+- Confucius
+1
+
+
+=== PAGE 59 ===
+Newton School of Technology
+Mathematics-3
+Flashback: what did Gaussian elimination really do?
+FLASHBACK FROM SHEET 4
+In Sheet 4, we did not treat row operations as random tricks. We used them to rewrite
+the same system in an easier form. The equations changed, but the common solution
+set did not.
+Consider
+x + y = 5,
+2x + 3y = 12.
+Apply
+R2 →R2 ↑2R1.
+Complete the new second equation:
+x +
+y =
+.
+Equation move
+What stayed invariant?
+R2 →R2 ↑2R1
+PREDICT
+Suppose tomorrow you must perform exactly the same row operation on a di!erent matrix.
+Must the instruction remain a sentence, or could the operation itself become a reusable
+mathematical object?
+Your prediction:
+R2 →R2 ↑2R1
+?
+store the move
+CLICK
+Today we turn a procedure into an object.
+Elementary matrices: storing one row move
+Start from the blank template
+If we want to record only the row operation, the cleanest starting matrix is the identity:
+I2 =
+!1
+0
+0
+1
+"
+.
+Perform the same operation
+R2 →R2 ↑2R1
+on I2:
+!1
+0
+0
+1
+"
+↑→E1 =
+
+
+
+.
+2
+
+
+=== PAGE 60 ===
+Newton School of Technology
+Mathematics-3
+PREDICT
+Before multiplying anything: if E1 acts on a matrix A from the left, which row of A should
+change?
+↭R1
+↭R2
+↭both rows
+Now use
+A =
+!3
+1
+7
+4
+"
+.
+Do the same task in two ways.
+Route A: do the row operation
+Route B: multiply by E1
+'3 1
+7 4
+(
+R2→R2↑2R1
+↑↑↑↑↑↑↑→
+
+
+
+
+E1A =
+
+
+
+
+Do both routes lead to same destination?
+↭Yes
+↭No
+Deﬁnition
+An elementary matrix is obtained by performing exactly one elementary row operation
+on an identity matrix.
+When an elementary matrix multiplies another matrix on the left, it performs that same
+row operation.
+OPEN THE MACHINE
+instruction
+↑→
+stored operation
+R2 →R2 ↑2R1
+E1
+The visible action is a row move. The hidden mechanism can now be represented by a
+matrix.
+3
+
+
+=== PAGE 61 ===
+Newton School of Technology
+Mathematics-3
+Build the other two row-operation matrices
+Start from I2 each time.
+Row operation
+Elementary matrix
+Predict the e!ect on A
+R1 ↓R2
+S =
+
+
+
+
+R2 →3R2
+D =
+
+
+
+
+R2 →R2 + 4R1
+T =
+
+
+
+
+PREDICT LEFT OR RIGHT?
+We want to perform a row operation on A using an elementary matrix E. Which expression
+should we use?
+↭EA
+↭AE
+Connect your choice to what you discovered about left multiplication in Sheet 2.
+Your Answer:
+The undo button: inverse elementary matrices
+Suppose
+E1
+stores
+R2 →R2 ↑2R1.
+What row operation would undo it?
+R2 →
+.
+Apply that reverse move to I2 and write the matrix:
+E↑1
+1
+=
+
+
+
+.
+Check:
+E↑1
+1 E1 =
+
+
+
+= I2.
+CLICK
+Elementary matrix = stored row move. Inverse elementary matrix = stored
+undo move.
+4
+
+
+=== PAGE 62 ===
+Newton School of Technology
+Mathematics-3
+This idea is the key to LU decomposition: elimination sends A toward an easier matrix U;
+inverse elementary matrices let us reconstruct the path back to A.
+The same kitchen, a new order
+FLASHBACK FROM SHEETS 2 AND 3
+In the kitchen model, a matrix turns an ingredient recipe into a property vector:
+(properties ↔ingredients)(ingredients ↔1) = (properties ↔1).
+Sheet 3 asked whether a target b could be built from the columns of A. Today the target
+will change repeatedly while the kitchen matrix stays ﬁxed.
+For clean hand calculations, use this small training kitchen:
+A =
+
+
+2
+1
+1
+4
+3
+3
+8
+7
+9
+
+.
+Interpret the columns as three ingredients and the rows as three measured properties. The exact
+units are not important here; the structure is.
+Three customers request three di!erent target orders (dishes):
+b1 =
+
+
+3
+7
+15
+
+,
+b2 =
+
+
+2
+6
+16
+
+,
+b3 =
+
+
+5
+11
+25
+
+.
+For each customer we must solve
+Axi = bi.
+PREDICT
+Across all three orders, what changes and what stays ﬁxed?
+Stays ﬁxed:
+Changes:
+If we run Gaussian elimination from scratch for every bi, which part of the work will be
+repeated?
+Your Answer:
+CLICK
+The elimination structure belongs mainly to A. If A repeats, we should try to save that
+work.
+5
+
+
+=== PAGE 63 ===
+Newton School of Technology
+Mathematics-3
+Saving Gaussian elimination: build U once
+Reduce the training matrix to upper triangular form.
+A =
+
+
+2
+1
+1
+4
+3
+3
+8
+7
+9
+
+
+Step 1: eliminate below the ﬁrst pivot
+Choose the two row operations:
+R2 →
+,
+R3 →
+.
+After both moves:
+
+
+2
+1
+1
+
+.
+Step 2: eliminate below the second pivot
+Choose the next operation:
+R3 →
+.
+You should arrive at
+U =
+
+
+2
+1
+1
+0
+1
+1
+0
+0
+2
+
+.
+PREDICT
+Did we use a row swap anywhere?
+↭Yes
+↭No
+Keep this answer visible. It will matter when we write A = LU.
+Step 3: store each elimination move
+Let E1, E2, E3 store the three row-addition operations, in the same order in which you performed
+them.
+6
+
+
+=== PAGE 64 ===
+Newton School of Technology
+Mathematics-3
+Row move
+Elementary matrix
+Inverse elementary matrix
+R2 →R2 ↑2R1
+E1 =
+
+
+
+
+E↑1
+1
+=
+
+
+
+
+R3 →R3 ↑4R1
+E2 =
+
+
+
+
+E↑1
+2
+=
+
+
+
+
+R3 →R3 ↑3R2
+E3 =
+
+
+
+
+E↑1
+3
+=
+
+
+
+
+Step 4: compress the whole elimination path
+Because the stored row moves send A to U,
+E3E2E1A = U.
+Undo the operations one at a time. Fill the blanks:
+E3E2E1A = U
+E2E1A =
+U
+E1A =
+U
+A =
+U
+Deﬁne
+L = E↑1
+1 E↑1
+2 E↑1
+3 .
+Now multiply those inverse elementary matrices and obtain
+L =
+
+
+1
+0
+0
+1
+0
+1
+
+.
+Check by multiplication:
+LU =
+
+
+
+= A.
+7
+
+
+=== PAGE 65 ===
+Newton School of Technology
+Mathematics-3
+What L and U remember
+• U is the easier upper-triangular matrix created by elimination.
+• L stores the elimination multipliers needed to rebuild A from U.
+• Together, L and U are a compressed record of Gaussian elimination.
+CLICK
+Gaussian elimination was a procedure. LU stores its reusable
+structure.
+Factor once, solve many
+Return to the training kitchen. We now have
+A = LU,
+with
+L =
+
+
+1
+0
+0
+2
+1
+0
+4
+3
+1
+
+,
+U =
+
+
+2
+1
+1
+0
+1
+1
+0
+0
+2
+
+.
+To solve
+Ax = b,
+write
+LUx = b.
+Introduce
+y = Ux.
+Then solve two triangular systems:
+Ly = b
+then
+Ux = y .
+b
+solve Ly = b
+y
+solve Ux = y
+x
+Order 1: guided solve
+For
+b1 =
+
+
+3
+7
+15
+
+,
+ﬁrst solve
+
+
+1
+0
+0
+2
+1
+0
+4
+3
+1
+
+
+
+
+y1
+y2
+y3
+
+=
+
+
+3
+7
+15
+
+.
+Forward substitution:
+y1 =
+,
+y2 =
+,
+y3 =
+.
+8
+
+
+=== PAGE 66 ===
+Newton School of Technology
+Mathematics-3
+Then solve Ux = y
+
+
+2
+1
+1
+0
+1
+1
+0
+0
+2
+
+
+
+
+x1
+x2
+x3
+
+=
+
+
+
+.
+Back substitution:
+x3 =
+,
+x2 =
+,
+x1 =
+.
+Verify:
+Ax1 =
+
+
+
+
+?= b1.
+Order 2: you drive
+Now
+b2 =
+
+
+2
+6
+16
+
+.
+Do not refactor A. Reuse the same L and U.
+Forward: solve Ly = b2
+Back: solve Ux = y
+Your ﬁnal recipe:
+x2 =
+
+
+
+.
+Order 3: speed round
+For
+b3 =
+
+
+5
+11
+25
+
+,
+9
+
+
+=== PAGE 67 ===
+Newton School of Technology
+Mathematics-3
+complete only the essential chain:
+b3 ↑→y3 =
+
+
+
+↑→x3 =
+
+
+
+.
+CLICK
+Same A. Same factorisation. New b. Only the triangular
+solves repeat.
+Why do we use LU decomposition?
+Imagine a huge mountain covered with dense forest. On this mountain, there are hundreds of
+scenic spots. Each spot represents a di!erent right-hand side b in the system
+Ax = b
+The mountain itself never changes. Only the destination changes.
+Without LU Decomposition (Gaussian Elimination Every Time)
+Suppose someone asks you to reach Spot A. You begin at the base
+and have no established path. So you cut through thick forest, climb
+over rocks, avoid cli!s, and eventually reach Spot A. The next day,
+someone asks you to reach Spot B. What do you do? You start all
+over again. You cut through the forest again, clear bushes again,
+and navigate around obstacles again. Every journey repeats almost
+all of the hard work. This repeated e!ort is exactly what happens
+when we perform Gaussian elimination every time we solve Ax = b.
+The elimination process is like carving a temporary route through
+the mountain from scratch.
+With LU Decomposition
+Now imagine that, instead of repeatedly hacking through the forest,
+you spend one weekend constructing a sturdy staircase that climbs
+the mountain. Building the staircase takes e!or but you do it only
+once. Now someone says, “I want to reach Spot A.” You simply climb
+the staircase until you’re approximately at the required elevation,
+then take a short trail to the destination. The next person wants
+Spot B. Again, you use the same staircase and leave it only near
+the end. The di”cult part i.e. the climb, never has to be repeated.
+Only the ﬁnal short walk changes.
+Here
+• Building the staircase =↗Computing the LU decomposition.
+• Climbing to the appropriate base camp =↗Solving Ly = b (forward substitution).
+• Taking the local trail to the ﬁnal viewpoint =↗Solving Ux = y (back substitution).
+10
+
+
+=== PAGE 68 ===
+Newton School of Technology
+Mathematics-3
+Why computers care
+For a large dense n ↔n matrix, the rough computational picture is:
+factorisation ↘O(n3),
+each triangular solve ↘O(n2).
+The exact constants and algorithms matter in practice, but the strategic idea is already visible.
+PREDICT
+A ﬁxed matrix A will be used with 1000 di!erent right-hand sides b1, . . . , b1000.
+Which plan is structurally wiser?
+↭A. redo full elimination independently 1000 times;
+↭B. factor A once, then reuse the factors for all 1000 solves.
+Why?
+OPEN THE MACHINE
+A command such as solve(A,b) looks like one button. Numerical linear algebra libraries
+open that button into factorisation, pivoting, triangular solves, and careful numerical
+decisions.
+This is the Lecture 0 promise again: do not remain satisﬁed with the dial; open the
+casing.
+Practice: from row move to reusable solver
+1. Store the row operation
+For
+R3 →R3 + 5R1,
+construct the 3 ↔3 elementary matrix E and its inverse E↑1.
+Your Answer:
+11
+
+
+=== PAGE 69 ===
+Newton School of Technology
+Mathematics-3
+2. Factor a clean matrix
+Without row swaps, ﬁnd L and U for
+B =
+
+
+2
+1
+0
+4
+3
+1
+2
+2
+3
+
+.
+Record the elimination multipliers explicitly.
+Your Answer:
+3. Reuse the factors
+Using your factors from Question 2, solve
+Bx =
+
+
+3
+8
+7
+
+
+and
+Bx =
+
+
+1
+3
+5
+
+.
+Circle the work that was reused between the two solves.
+Your Answer:
+12
+
+
+=== PAGE 70 ===
+Newton School of Technology
+Mathematics-3
+Do not confuse the tool with the next question
+LU is a powerful computational organisation of elimination. But a deeper question remains:
+For which targets b does Ax = b have a solution at all?
+Do not answer that with a slogan about LU. In the next sheet, we will step back and ask a
+simpler question: what kind of outputs can A actually produce?
+PREDICT : QUESTION FOR SHEET 6
+If one column of A can already be built from the others, is it contributing genuinely new
+output information?
+Your prediction:
+Summary of the sheet
+Complete each sentence in your own words.
+REFLECT
+1. An elementary matrix is
+2. LU decomposition saves
+3. P appears when
+4. Repeated right-hand sides are cheaper because
+FACTOR ONCE.
+SOLVE MANY.
+The recipe changed. The kitchen did not.
+13
+
+

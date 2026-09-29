@@ -1,0 +1,1157 @@
+=== PAGE 10 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Linear Algebra
+Sheet 2: MUL-TEA-PLICATION
+Name:
+ID/Batch:
+By the end of this sheet, you should be able to:
+• compute matrix–vector products by organising complete columns or complete rows;
+• interpret a matrix on the right as several vectors placed side by side;
+• explain the meanings of the rows and columns of a matrix product;
+• choose whether left or right multiplication is useful for a given task;
+• manipulate binary images using shift and ﬂip matrices;
+• construct a multiplier that changes an initial matrix into a speciﬁed target, when possible.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+1
+
+
+=== PAGE 11 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Quick Recap
+In high school, you learned the familiar row–column rule: take one row and one column, multiply
+corresponding entries, and add those products to obtain one entry of the answer. This rule is
+correct, but it is only one view of matrix multiplication. Today, we will investigate views that
+reveal complete rows, complete columns, and the structure of a product before every entry is
+calculated.
+In Lecture Zero, colours and sounds were not used as decoration. They revealed one repeated
+mathematical move:
+Scale objects of the same kind, then add them.
+Colour mixing
+Treat the pure lights as columns:
+r =
+
+
+1
+0
+0
+
+,
+g =
+
+
+0
+1
+0
+
+,
+b =
+
+
+0
+0
+1
+
+.
+A colour recipe is
+2r + g + 0b.
+Compute the resulting colour vector:
+2
+
+
+1
+0
+0
+
++
+
+
+0
+1
+0
+
++ 0
+
+
+0
+0
+1
+
+=
+
+
+
+.
+Sound mixing
+Represent two tiny sound clips by sam-
+pled amplitudes:
+Bach =
+
+
+2
+→1
+1
+0
+
+,
+MLK =
+
+
+1
+1
+→1
+2
+
+.
+Predict and then compute:
+Bach + MLK =
+
+
+
+,
+1
+2Bach + MLK =
+
+
+
+.
+In both examples:
+• the numbers on the outside told us how much of each object to use;
+• addition produced another object of the same kind.
+What might a column vector beside a matrix be telling us?
+Your Answer:
+Note
+We are deliberately not naming this repeated operation yet. Sheet 3 will isolate it, draw it,
+and give it a formal name.
+2
+
+
+=== PAGE 12 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Reconnect with the familiar method
+Let
+A =
+'1
+2
+2
+5
+(
+,
+B =
+'3
+1
+2
+0
+(
+.
+Compute AB, taking the ﬁrst displayed matrix as A.
+Your Answer:
+Let us move a step forward. Let
+A =
+
+
+1
+0
+2
+→1
+3
+1
+0
+1
+4
+
+,
+B =
+
+
+2
+1
+3
+4
+0
+→1
+1
+2
+0
+
+.
+Compute AB.
+Your Answer:
+How many individual scalar multiplications did the entry-by-entry method require?
+Your Answer:
+Now consider rectangular matrices:
+A =
+'2
+1
+4
+0
+→2
+3
+(
+,
+B =
+
+
+1
+3
+2
+2
+0
+1
+→1
+4
+0
+
+.
+Compute C = AB.
+C = AB =
+Write the dimensions of A, B, and C:
+Your Answer:
+Now try the reverse product BA. What prevents it from being formed?
+Your Answer:
+If A is an m ↑n matrix and B is a p ↑q matrix, what structural requirement must hold for AB
+to exist? Why do the inner dimensions control compatibility?
+3
+
+
+=== PAGE 13 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Your ﬁrst explanation:
+Keep this answer
+Later in the sheet, the cooking example will give these dimensions concrete meanings. You
+will return to this explanation and revise it.
+A large product: choose a viewpoint
+Suppose you need only the second column of a large product AB. Would you still calculate
+every entry of AB?
+↭Yes
+↭No
+What information from B might be enough?
+Your Answer:
+Consider
+A =
+
+
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+
+
+,
+x =
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+.
+Before calculating, circle a strategy:
+eight separate row calculations
+combine complete columns
+Compute Ax.
+Your Answer:
+Method audit
+1. How many distinct columns does A actually have?
+2. Which columns repeat?
+4
+
+
+=== PAGE 14 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+3. Did you calculate eight unrelated dot products, or did you combine repeated complete
+columns? Explain.
+4. If only the ﬁfth entry of Ax were needed, which viewpoint would be more direct?
+Today’s goal
+Pause the entry-by-entry calculation. Let us look for structure before doing more arithmetic.
+one complete column at a time
+or
+one complete row at a time .
+The familiar entry method remains correct. Our goal is to stop treating it as the only
+possible viewpoint.
+Matrix–Vector Multiplication
+Matrix multiplication is a crucial skill in linear algebra. Let us use a memorable visual grammar
+to organise it: Column Tea, Row Tea, and together, MUL-TEA-PLICATION.
+Column MUL-TEA-PLICATION
+A matrix stores complete ingredient columns. A column vector on the right tells us how much
+of each complete column to use.
+Try it:
+
+
+1
+1
+1
+1
+→1
+0
+1
+1
+1
+
+
+
+
+1
+1
+→2
+
+=
+Now recompute the previous 8 ↑8 by 8 ↑1 product using the Column Way.
+Your Answer:
+5
+
+
+=== PAGE 15 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Column-Way audit
+1. Which complete columns were scaled?
+2. Which complete columns were repeated?
+3. What structural feature became visible that the entry-by-entry method hid?
+Row MUL-TEA-PLICATION
+To form a weighted combination of the rows of an m ↑n matrix A, place a compatible 1 ↑m
+row vector on the left. Its entries tell us how much of each complete row to use.
+A question to keep alive
+Matrices care whether a multiplier is placed on the left or on the right. We will explain
+this much more deeply when matrices are studied as transformations and transformations
+are composed.
+Try it:
+(a)
+)
+1
+1
+→2
+*
+
+
+1
+1
+1
+1
+→1
+0
+1
+1
+1
+
+=
+(b)
+)
+1
+0
+→1
+2
+4
+*
+
+
+5
+3
+1
+2
+2
+4
+1
+6
+0
+3
+→4
+2
+0
+3
+9
+
+
+=
+Row-Way audit
+1. Which complete rows were scaled in part (b)?
+2. Which rows contributed nothing? Why?
+6
+
+
+=== PAGE 16 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+3. How was this organisation di!erent from computing three separate output entries?
+From One Recipe to a Recipe Book
+One recipe makes one dish
+Suppose a canteen works with three ingredients:
+Rice,
+Paneer,
+Vegetables.
+Each ingredient has three recorded properties:
+Cost,
+Calories,
+Protein.
+A =
+
+
+20
+60
+30
+200
+250
+80
+4
+18
+3
+
+
+Rice
+Paneer
+Vegetables
+Cost
+20
+60
+30
+Calories
+200
+250
+80
+Protein
+4
+18
+3
+Before multiplying anything:
+• What does one complete column of A describe?
+• What does one complete row of A describe?
+A rice–vegetable bowl uses one unit of rice, no paneer, and one unit of vegetables:
+cv1 =
+
+
+1
+0
+1
+
+.
+Why must the recipe vector have exactly three entries? What three quantities should Ar1
+contain?
+Your Answer:
+Acv1 = 1
+
+
+20
+200
+4
+
++ 0
+
+
+60
+250
+18
+
++ 1
+
+
+30
+80
+3
+
+=
+
+
+
+.
+Interpret every entry of the answer in words.
+Your Answer:
+7
+
+
+=== PAGE 17 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Three recipes make a recipe book
+The canteen now wants three dishes:
+cv1 =
+
+
+1
+0
+1
+
+,
+cv2 =
+
+
+1
+1
+1
+
+,
+cv3 =
+
+
+0
+2
+1
+
+.
+We could calculate Acv1, Acv2, and Acv3 separately. Instead, place the three recipe vectors side
+by side:
+B =
+
+
+|
+|
+|
+cv1
+cv2
+cv3
+|
+|
+|
+
+=
+
+
+1
+1
+0
+0
+1
+2
+1
+1
+1
+
+.
+Dish 1
+Dish 2
+Dish 3
+Rice
+1
+1
+0
+Paneer
+0
+1
+2
+Vegetables
+1
+1
+1
+Predict before calculating:
+• What should one column of AB represent?
+• What should the ﬁrst column of AB be: Acv1, Acv2, or Acv3? Why?
+• What should the second row of AB contain?
+• Predict the dimensions of AB and attach meaning to both dimensions.
+Column Way: one ﬁnished dish at a time
+AB = A
+
+
+|
+|
+|
+cv1
+cv2
+cv3
+|
+|
+|
+
+=
+
+
+|
+|
+|
+Acv1
+Acv2
+Acv3
+|
+|
+|
+
+.
+Calculate:
+Acv2 =
+=
+
+
+
+,
+Acv3 =
+=
+
+
+
+.
+8
+
+
+=== PAGE 18 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Therefore,
+AB =
+
+
+
+.
+The matrix–matrix click
+AB =
+)
+Ab1
+Ab2
+· · ·
+Abp
+*
+.
+A vector on the right is one recipe. A matrix on the right is a recipe book: several recipe
+vectors placed side by side.
+MUL-TEA-PLICATION: one recipe vector brews one cup; one recipe matrix
+brews an entire tray.
+Row Way: one property across the whole menu
+Take the cost row of A:
+)
+20
+60
+30
+*
+.
+Compute
+)
+20
+60
+30
+*
+B =
+Complete the menu row by row:
+)
+200
+250
+80
+*
+B =
+)
+4
+18
+3
+*
+B =
+Hence
+AB =
+
+
+
+.
+What does each resulting row mean?
+Your Answer:
+Two views of the same product
+Columns of AB : one complete ﬁnished dish per column,
+Rows of AB : one property across every dish.
+Column Way and Row Way are not unrelated tricks. They organise the same product
+around di!erent questions.
+Why the inner dimensions match
+Write dimensions with meanings:
+(properties ↑ingredients)
++
+,-
+.
+A
+(ingredients ↑dishes)
++
+,-
+.
+B
+= (properties ↑dishes)
++
+,-
+.
+AB
+.
+9
+
+
+=== PAGE 19 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Return to your ﬁrst explanation
+A recipe book has only two ingredient rows, but the ingredient-proﬁle matrix contains
+three ingredients. What information is missing? Why can the product not be formed
+meaningfully?
+Now return to the explanation you wrote earlier. What can you add or correct?
+Transfer: From a Dish Menu to a Colour Palette
+Use additive light mixing, consistent with the RGB-bulb demonstration from Lecture Zero.
+Let the columns of C be RGB proﬁles of two base lights:
+C =
+
+
+1
+0
+1
+2
+1
+0
+1
+
+=
+
+
+|
+|
+Amber
+Cyan
+|
+|
+
+.
+Rows correspond to red, green, and blue intensity.
+Three colour recipes are
+c1 =
+'1
+0
+(
+,
+c2 =
+' 1
+21
+2
+(
+,
+c3 =
+' 1
+54
+5
+(
+.
+Place them into a palette-recipe matrix:
+D =
+'1
+1
+2
+1
+5
+0
+1
+2
+4
+5
+(
+.
+Without calculating:
+• What should each column of CD represent?
+• What should the second row of CD represent?
+• What should the dimensions of CD be?
+Compute the palette. Since C is 3 ↑2 and D is 2 ↑3, your answer must be a 3 ↑3 matrix:
+CD = .
+Draw three colour swatches and annotate each one with its RGB column.
+10
+
+
+=== PAGE 20 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Your Answer:
+The same skeleton survives
+Base-light matrix ↑colour-recipe matrix = palette matrix.
+The physical objects changed from ingredients to light, but the column/row skeleton
+remained the same.
+One skeleton, two worlds
+World
+Left matrix
+Right matrix
+Product
+Cooking
+ingredient proﬁles
+dish recipes
+ﬁnished menu
+Colour
+base-light RGB proﬁles
+colour recipes
+palette
+Binary Images: Matrices You Can See
+A 4 ↑4 black-and-white image can be represented by a binary matrix:
+1 = shaded cell,
+0 = unshaded cell.
+Mathematical convention
+All products in this section use ordinary real-number matrix multiplication. We are
+not using Boolean matrix multiplication and we are not working modulo 2. The selected
+shift and ﬂip matrices keep the outputs in these activities binary.
+Start with a 2 ↑2 shaded block in the centre:
+X0 =
+
+
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+1
+0
+0
+0
+0
+0
+
+.
+Shift matrices
+The following matrices shift rows or columns by one cell, inserting zeros at the new boundary:
+U =
+
+
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+
+,
+D =
+
+
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+
+,
+11
+
+
+=== PAGE 21 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+L =
+
+
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+
+,
+R =
+
+
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+
+.
+Notice that U and R have identical numerical entries, while D and L have identical numerical
+entries. Why can the same array create a di!erent visible e!ect depending on whether it appears
+on the left or right?
+Your Answer:
+Forward Direction 1: Given the matrix, ﬁnd the image
+Initial image
+Operation
+Shade the result
+UX0
+X0L
+UX0R
+After shading, explain:
+• Which multiplication moved the shaded cells vertically?
+• Which multiplication moved them horizontally?
+• In UX0R, which factor changes column positions and which changes row positions?
+12
+
+
+=== PAGE 22 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Compress the evidence
+Left multiplication reorganises complete rows.
+Right multiplication reorganises complete columns.
+The shaded grids are the evidence. The rule is a compression of what you observed.
+Forward Direction 2: Flips
+Let
+F =
+
+
+0
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+0
+
+
+reverse an order. Start with
+XL =
+
+
+1
+0
+0
+0
+1
+0
+0
+0
+1
+1
+1
+0
+0
+0
+0
+0
+
+.
+Initial
+FXL
+XLF
+Before multiplying, predict which expression ﬂips the picture top-to-bottom and which ﬂips it
+left-to-right. Explain using rows and columns, not by quoting a rule.
+Your Answer:
+Reverse Direction: Design the Multiplier
+Now the product is not given. The initial and target images are given. Decide what belongs on
+the left, what belongs on the right, or whether both are needed.
+You may use
+I, U, D, L, R, F
+and repeated multiplication such as U2 or R2, where needed.
+Challenge 1: Move the centre block to the top-right corner
+Initial
+Target
+13
+
+
+=== PAGE 23 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Find P and Q such that
+PX0Q = target.
+Your Answer:
+Why does P belong on the left and Q on the right?
+Your Answer:
+Challenge 2: Turn the main diagonal into the anti-diagonal
+Initial I4
+Target
+Find two di!erent multiplication expressions that produce the target.
+Method 1
+Method 2
+Why can multiplication on two di!erent sides produce the same visible answer when the starting
+image is I4? Would the same be true for every initial image X?
+Your Answer:
+14
+
+
+=== PAGE 24 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Challenge 3: Can every shape be reached?
+Allowed operations for this challenge
+Use only matrices that permute complete rows or complete columns without deleting
+any cell. Examples include the identity, reversal matrix F, and other permutation matrices.
+Do not use the zero-inserting shifts U, D, L, R in this particular challenge.
+Compare the centre block with the plus-shaped target:
+Initial
+Desired target
+Can row and column permutations alone create the plus shape? Do not search blindly. Compare:
+• the total number of shaded cells;
+• the multiset of shaded-cell counts across rows;
+• the multiset of shaded-cell counts across columns.
+State your conclusion and evidence.
+Your Answer:
+Partner Design Studio
+1. Draw any 4 ↑4 binary image with at least ﬁve shaded cells.
+2. Create a target using row shifts, column shifts, ﬂips, or a combination.
+3. Do not show your matrices to your partner.
+4. Your partner decides whether the operation belongs on the left, right, or both sides.
+5. Your partner writes the matrices and veriﬁes the result by multiplication.
+My initial image
+My target image
+P =
+,
+Q =
+.
+Reasoning:
+15
+
+
+=== PAGE 25 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Your Answer:
+Scale Up: The 8 ↑8 Image Challenge
+Start with a centred 4 ↑4 shaded square inside an 8 ↑8 frame. It occupies rows 3 through 6
+and columns 3 through 6:
+The target is the same 4 ↑4 square in the top-left corner:
+Construct, do not guess
+The picture must move upward by two rows and leftward by two columns.
+Construct an 8 ↑8 left multiplier P→2 and an 8 ↑8 right multiplier Q↑2.
+For P→2, decide which old row should become new row 1, new row 2, and so on. For Q↑2, decide
+which old column should become new column 1, new column 2, and so on.
+Fill P→2
+Fill Q↑2
+16
+
+
+=== PAGE 26 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Verify
+Let the centred image matrix be X8. Shade the result of
+P→2X8Q↑2.
+Open 8 ↑8 challenge
+Create an arrow, letter, staircase, or symmetric pattern in an 8 ↑8 grid. Then design:
+1. one left multiplication that changes only its vertical arrangement;
+2. one right multiplication that changes only its horizontal arrangement;
+3. one two-sided multiplication that moves it to a chosen corner;
+4. one target impossible under row and column permutations, together with an invariant-based
+explanation.
+17
+
+
+=== PAGE 27 ===
+Newton School of Technology, ADYPU
+Mathematics-3
+Final Reﬂection: What Changed?
+Return to the opening
+At the beginning, matrix multiplication may have looked like many unrelated row–column
+calculations. Complete the statements:
+I now understand Ax as
+I now understand AB as
+Left multiplication a!ects
+Right multiplication a!ects
+One pattern I can now predict without calculating every entry is
+Does matrix multiplication still look ugly, or can you now see why its structure is useful?
+Throughout this lecture, you repeatedly multiplied complete columns or complete rows by
+numbers and added the results.
+In the next sheet, we will isolate this operation, draw it
+geometrically, give it a formal name, and ask what all possible such combinations can generate.
+Lecture Credo
+I see, I forget.
+I hear, I remember.
+I do, I understand.
+18
+
+
