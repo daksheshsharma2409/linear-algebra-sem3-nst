@@ -1,0 +1,10 @@
+nbformat
+sympy
+numpy
+scipy
+matplotlib
+plotly
+pandas
+networkx
+ipython
+jupyter
